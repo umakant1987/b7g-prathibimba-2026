@@ -1153,32 +1153,32 @@
     },
     {
       "name": "9. Sponsors and previous events",
-      "purpose": "Sponsors are provisional placeholders until confirmed. Previous events come from the 2025 gallery.",
+      "purpose": "Sponsors are not announced yet; the assistant says they are coming soon. Previous events come from the 2025 gallery.",
       "cases": [
         {
           "q": "Who are the sponsors?",
-          "behaviour": "Sponsor list, marked provisional",
+          "behaviour": "Sponsors to be announced soon",
           "expect": {
             "includes": [
-              "Provisional"
+              "announced soon"
             ]
           }
         },
         {
           "q": "Who is the title sponsor?",
-          "behaviour": "Sponsor list incl. title sponsor",
+          "behaviour": "Sponsors to be announced soon",
           "expect": {
             "includes": [
-              "Title Sponsor"
+              "announced soon"
             ]
           }
         },
         {
           "q": "How can I become a sponsor?",
-          "behaviour": "Lists sponsors; enquiry details not yet available",
+          "behaviour": "Coming soon, pointed to the Contribute section",
           "expect": {
             "includes": [
-              "Provisional"
+              "Contribute"
             ]
           }
         },

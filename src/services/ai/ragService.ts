@@ -38,10 +38,10 @@ const FALLBACK: Record<Language, string> = {
   kn: 'ಆ ಮಾಹಿತಿ ನನ್ನ B7G ಕಾರ್ಯಕ್ರಮ ಜ್ಞಾನಭಂಡಾರದಲ್ಲಿ ಇನ್ನೂ ಇಲ್ಲ. ದಯವಿಟ್ಟು ಕಾರ್ಯಕ್ರಮ ಸಂಘಟಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.',
 };
 
-// Sponsors are still draft data — see knowledge/sponsors.md.
-const PROVISIONAL_NOTE: Record<Language, string> = {
-  en: ' (Provisional — subject to confirmation by the organisers.)',
-  kn: ' (ತಾತ್ಕಾಲಿಕ — ಸಂಘಟಕರಿಂದ ದೃಢೀಕರಣಕ್ಕೆ ಒಳಪಟ್ಟಿದೆ.)',
+// Until the first sponsor is confirmed (src/data/sponsors.ts is empty) — see knowledge/sponsors.md.
+const SPONSORS_SOON: Record<Language, string> = {
+  en: "Sponsors for B7G Kannada Rajyotsava 2026 will be announced soon. Businesses and well-wishers who would like to support the celebration are welcome. See the Contribute section on this page.",
+  kn: "B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಪ್ರೋತ್ಸಾಹಕರನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಘೋಷಿಸಲಾಗುವುದು. ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಲು ಬಯಸುವ ಉದ್ಯಮಗಳು ಮತ್ತು ಹಿತೈಷಿಗಳಿಗೆ ಸ್ವಾಗತ. ಈ ಪುಟದ ಕೊಡುಗೆ ವಿಭಾಗವನ್ನು ನೋಡಿ.",
 };
 
 const NO_TIMINGS: Record<Language, string> = {
@@ -192,10 +192,11 @@ export async function answerQuestion(
   if (intent === 'sponsors') {
     const list = sponsors.map((s) => `${s.name} (${s.category})`).join(', ');
     return {
-      answer:
-        language === 'kn'
-          ? `ನಮ್ಮ ಪ್ರೋತ್ಸಾಹಕರು: ${list}.${PROVISIONAL_NOTE.kn}`
-          : `Our sponsors are: ${list}.${PROVISIONAL_NOTE.en}`,
+      answer: sponsors.length
+        ? language === 'kn'
+          ? `ನಮ್ಮ ಪ್ರೋತ್ಸಾಹಕರು: ${list}.`
+          : `Our sponsors are: ${list}.`
+        : SPONSORS_SOON[language],
       sources: [{ label: 'Sponsors', type: 'sponsor' }],
       suggestedFollowUps: ['Show me the full schedule', 'Who are the Chief Guests?'],
       grounded: true,

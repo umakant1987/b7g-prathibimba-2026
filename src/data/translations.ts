@@ -128,6 +128,26 @@ export const translations = {
   sponsors: {
     title: { en: 'Our Sponsors', kn: 'ನಮ್ಮ ಪ್ರೋತ್ಸಾಹಕರು' },
     subtitle: { en: 'Made possible by the generous support of our community partners.', kn: 'ನಮ್ಮ ಸಮುದಾಯ ಪಾಲುದಾರರ ಉದಾರ ಬೆಂಬಲದಿಂದ ಸಾಧ್ಯವಾಗಿದೆ.' },
+    // Shown until the first sponsor is confirmed (src/data/sponsors.ts is empty).
+    soonEyebrow: { en: 'Coming Soon', kn: 'ಶೀಘ್ರದಲ್ಲೇ' },
+    soonTitle: { en: 'Sponsors to Be Announced', kn: 'ಪ್ರೋತ್ಸಾಹಕರ ಘೋಷಣೆ ಶೀಘ್ರದಲ್ಲೇ' },
+    soonSubtitle: {
+      en: 'The partners who will help bring this year’s Rajyotsava to life will be unveiled here.',
+      kn: 'ಈ ಬಾರಿಯ ರಾಜ್ಯೋತ್ಸವಕ್ಕೆ ಜೊತೆಯಾಗುವ ಪಾಲುದಾರರನ್ನು ಇಲ್ಲಿ ಶೀಘ್ರದಲ್ಲೇ ಪರಿಚಯಿಸಲಾಗುವುದು.',
+    },
+    tiers: [
+      { en: 'Title Sponsor', kn: 'ಮುಖ್ಯ ಪ್ರೋತ್ಸಾಹಕರು' },
+      { en: 'Gold Sponsor', kn: 'ಚಿನ್ನದ ಪ್ರೋತ್ಸಾಹಕರು' },
+      { en: 'Silver Sponsor', kn: 'ಬೆಳ್ಳಿ ಪ್ರೋತ್ಸಾಹಕರು' },
+      { en: 'Community Partner', kn: 'ಸಮುದಾಯ ಪಾಲುದಾರರು' },
+    ],
+    revealing: { en: 'Revealing soon', kn: 'ಶೀಘ್ರದಲ್ಲೇ ಅನಾವರಣ' },
+    partnerTitle: { en: 'Be a part of Namma Rajyotsava', kn: 'ನಮ್ಮ ರಾಜ್ಯೋತ್ಸವದ ಭಾಗವಾಗಿ' },
+    partnerText: {
+      en: 'Celebrate Kannada with the B7G community on 31 October and 1 November. Businesses and well-wishers who would like to support the celebration are warmly welcome.',
+      kn: 'ಅಕ್ಟೋಬರ್ 31 ಮತ್ತು ನವೆಂಬರ್ 1ರಂದು B7G ಸಮುದಾಯದೊಂದಿಗೆ ಕನ್ನಡವನ್ನು ಸಂಭ್ರಮಿಸಿ. ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಲು ಬಯಸುವ ಉದ್ಯಮಗಳು ಮತ್ತು ಹಿತೈಷಿಗಳಿಗೆ ಆತ್ಮೀಯ ಸ್ವಾಗತ.',
+    },
+    partnerCta: { en: 'Support the celebration', kn: 'ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಿ' },
   },
   contributions: {
     title: { en: 'What Karnataka Gave India', kn: 'ಕರ್ನಾಟಕ ಭಾರತಕ್ಕೆ ಕೊಟ್ಟದ್ದು' },

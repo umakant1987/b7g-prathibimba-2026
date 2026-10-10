@@ -1,49 +1,13 @@
 import type { Sponsor } from '../types';
 
-export const sponsors: Sponsor[] = [
-  {
-    id: 'sponsor-001',
-    name: 'B7G Foundation',
-    logo: '/sponsors/b7g-foundation.svg',
-    category: 'Title Sponsor',
-  },
-  {
-    id: 'sponsor-002',
-    name: 'Namma Bengaluru Tech',
-    logo: '/sponsors/namma-bengaluru-tech.svg',
-    category: 'Powered By',
-  },
-  {
-    id: 'sponsor-003',
-    name: 'Kaveri Enterprises',
-    logo: '/sponsors/kaveri-enterprises.svg',
-    category: 'Gold Sponsor',
-  },
-  {
-    id: 'sponsor-004',
-    name: 'Mysuru Silks',
-    logo: '/sponsors/mysuru-silks.svg',
-    category: 'Gold Sponsor',
-  },
-  {
-    id: 'sponsor-005',
-    name: 'Malnad Coffee Co.',
-    logo: '/sponsors/malnad-coffee.svg',
-    category: 'Silver Sponsor',
-  },
-  {
-    id: 'sponsor-006',
-    name: 'Hampi Crafts',
-    logo: '/sponsors/hampi-crafts.svg',
-    category: 'Silver Sponsor',
-  },
-  {
-    id: 'sponsor-007',
-    name: 'Kannada Kalika Trust',
-    logo: '/sponsors/kannada-kalika-trust.svg',
-    category: 'Community Partner',
-  },
-];
+/**
+ * Confirmed sponsors only. While this list is empty the Sponsors section shows
+ * "Sponsors to be announced" and the assistant says sponsors are coming soon.
+ * To announce one, add an entry (logo under public/sponsors/) and update
+ * knowledge/sponsors.md, e.g.
+ *   { id: 'sponsor-001', name: 'Company Name', logo: '/sponsors/company.svg', category: 'Title Sponsor' },
+ */
+export const sponsors: Sponsor[] = [];
 
 export const sponsorCategoryOrder: Sponsor['category'][] = [
   'Title Sponsor',

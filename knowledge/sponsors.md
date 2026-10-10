@@ -1,28 +1,20 @@
 ---
 title: Sponsors
 type: sponsors
-status: provisional
+status: coming_soon
 category: sponsor
 event: B7G Kannada Rajyotsava 2026
 language: en
-version: 1
-updated_at: 2026-10-06
+version: 2
+updated_at: 2026-10-10
 ---
 
 # Sponsors
 
-> **Status: provisional.** These are placeholder sponsors currently shown on the website (`src/data/sponsors.ts`). They have not been confirmed by the organisers. Replace this list with the confirmed sponsors before launch, and keep both files in sync.
+Sponsors for B7G Kannada Rajyotsava 2026 have not been announced yet. They will be announced soon, and the Sponsors section of the website will show them once they are confirmed.
 
-| Sponsor | Category |
-|---|---|
-| B7G Foundation | Title Sponsor |
-| Namma Bengaluru Tech | Powered By |
-| Kaveri Enterprises | Gold Sponsor |
-| Mysuru Silks | Gold Sponsor |
-| Malnad Coffee Co. | Silver Sponsor |
-| Hampi Crafts | Silver Sponsor |
-| Kannada Kalika Trust | Community Partner |
+If someone asks who the sponsors are, who the title sponsor is, or which companies are supporting the event, say that the sponsors will be announced soon. Do not name any company as a sponsor.
 
 ## Becoming a sponsor
 
-Sponsorship enquiry details have not been provided yet. If asked, say: "I don't have that information in my B7G event knowledge base yet."
+Businesses and well-wishers who would like to support the celebration are welcome. Point them to the **Contribute** section of the website. Specific sponsorship packages, tiers and contact details have not been provided yet; if asked for them, say: "I don't have that information in my B7G event knowledge base yet."
