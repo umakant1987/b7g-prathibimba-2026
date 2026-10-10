@@ -1,0 +1,100 @@
+{
+  "documents": [
+    {
+      "id": "b7g-santhe",
+      "title": "B7G Santhe - Taste of Karnataka",
+      "category": "programme_highlights",
+      "subcategory": "community_market",
+      "entity_type": "event",
+      "entity_name": "B7G Santhe",
+      "aliases": [
+        "Taste of Karnataka",
+        "B7G Sante",
+        "Santhe",
+        "Sante",
+        "B7G ಸಂತೆ",
+        "ಸಂತೆ",
+        "Kannada food festival",
+        "B7G market"
+      ],
+      "event_date": "2026-11-01",
+      "session": "afternoon",
+      "language": "en",
+      "event": "B7G Kannada Rajyotsava 2026",
+      "source": "B7G Santhe Promotional Flyer",
+      "source_url": "/posters/b7g-santhe-853.webp",
+      "version": 1,
+      "updated_by": "B7G Admin",
+      "updated_at": "2026-10-10",
+      "is_active": true,
+      "metadata": {
+        "stall_categories": ["Food & Beverages", "Handmade & Creative", "Shopping & Lifestyle", "Games & Activities", "Other"],
+        "food_preference": "Karnataka-style food is especially welcome",
+        "participation_method": "Join the designated WhatsApp group for more information",
+        "flyer": "public/b7g-santhe.jpeg"
+      },
+      "sections": [
+        {
+          "heading": "What is B7G Santhe (Taste of Karnataka)?",
+          "subcategory": "overview",
+          "content": "B7G Santhe (ಸಂತೆ, a traditional market), also searchable as Taste of Karnataka, is part of the B7G Kannada Rajyotsava 2026 celebration at Brigade 7 Gardens (B7G), Bengaluru. It is a community market where residents set up stalls to showcase their talents, products or services to the B7G community — food and beverages, handmade and creative products, shopping and lifestyle items, games and activities, and more. Karnataka-style food stalls are especially welcome. The flyer's call: \"Let's make B7G Santhe a Kannada festival for all of us!\""
+        },
+        {
+          "heading": "When is B7G Santhe?",
+          "subcategory": "date_and_session",
+          "event_date": "2026-11-01",
+          "content": "B7G Santhe is on 1 November 2026, in the afternoon session of the B7G Kannada Rajyotsava programme. The 1 November programme begins at 9 AM, but the exact start time of Santhe has not been announced."
+        },
+        {
+          "heading": "Who can participate in B7G Santhe? Can I put up a stall?",
+          "subcategory": "participation",
+          "content": "Yes — B7G Santhe calls all B7G residents who are interested in putting up a stall. It is a chance to showcase your talent, hobbies, products or services to the B7G community."
+        },
+        {
+          "heading": "What types of stalls can I set up at B7G Santhe?",
+          "subcategory": "stall_categories",
+          "content": "B7G Santhe stall categories:\n- Food & Beverages\n- Handmade & Creative (for example handmade items, crafts and artwork)\n- Shopping & Lifestyle\n- Games & Activities (for example a games stall)\n- And more — other stall ideas are welcome too."
+        },
+        {
+          "heading": "Are food stalls allowed at B7G Santhe? Are Karnataka-style food stalls welcome?",
+          "subcategory": "food_stalls",
+          "content": "Yes — food and beverage stalls are one of the B7G Santhe categories. For food stalls, Karnataka-style food is especially welcome: the flyer gives Karnataka-flavour dishes first preference."
+        },
+        {
+          "heading": "How can I participate in B7G Santhe or learn more?",
+          "subcategory": "how_to_participate",
+          "content": "Residents interested in putting up a stall at B7G Santhe should join the designated B7G Santhe WhatsApp group to know more about participation."
+        },
+        {
+          "heading": "B7G Santhe details not announced yet (WhatsApp link, fee, deadline, timings, location)",
+          "subcategory": "unknowns",
+          "content": "The B7G Santhe flyer does not give a WhatsApp group link, a stall registration deadline, a stall fee, the exact afternoon timings, or where the stalls will be set up within Brigade 7 Gardens. These details have not been announced yet."
+        },
+        {
+          "heading": "B7G ಸಂತೆ ಎಂದರೇನು? (Kannada)",
+          "subcategory": "overview",
+          "language": "kn",
+          "content": "B7G ಸಂತೆ — ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವದ ಸಂಭ್ರಮ. ನವೆಂಬರ್ 1, 2026ರ ಮಧ್ಯಾಹ್ನ, ಬ್ರಿಗೇಡ್ 7 ಗಾರ್ಡನ್ಸ್‌ನಲ್ಲಿ. ಮಳಿಗೆ ಹಾಕಲು ಆಸಕ್ತ ನಿವಾಸಿಗಳಿಗೆ ಆಹ್ವಾನ! ನಿಮ್ಮ ಪ್ರತಿಭೆ, ಹವ್ಯಾಸ, ಉತ್ಪನ್ನ ಅಥವಾ ಸೇವೆಯನ್ನು B7G ಬಳಗಕ್ಕೆ ಪರಿಚಯಿಸುವ ಅವಕಾಶ. B7G ಸಂತೆಯನ್ನು ನಮ್ಮೆಲ್ಲರ ಕನ್ನಡ ಹಬ್ಬವಾಗಿಸೋಣ! ಸಂತೆಯ ನಿಖರ ಸಮಯವನ್ನು ಇನ್ನೂ ಪ್ರಕಟಿಸಲಾಗಿಲ್ಲ."
+        },
+        {
+          "heading": "B7G ಸಂತೆಯಲ್ಲಿ ಯಾವ ಮಳಿಗೆಗಳನ್ನು ಹಾಕಬಹುದು? (Kannada)",
+          "subcategory": "stall_categories",
+          "language": "kn",
+          "content": "B7G ಸಂತೆಯ ಮಳಿಗೆ ವಿಭಾಗಗಳು:\n- ಊಟ–ತಿಂಡಿ (Food & Beverages)\n- ಕರಕುಶಲ ವಸ್ತುಗಳು (Handmade & Creative)\n- ಶಾಪಿಂಗ್ (Shopping & Lifestyle)\n- ಆಟೋಟಗಳು (Games & Activities)\n- ಇನ್ನೂ ಹಲವು (And more)"
+        },
+        {
+          "heading": "B7G ಸಂತೆಯಲ್ಲಿ ಊಟದ ಮಳಿಗೆ ಹಾಕಬಹುದೇ? (Kannada)",
+          "subcategory": "food_stalls",
+          "language": "kn",
+          "content": "ಹೌದು. ಊಟದ ಮಳಿಗೆಗಳಿಗೆ: ಕರ್ನಾಟಕದ ಸೊಗಡಿನ ತಿನಿಸುಗಳಿಗೆ ಮೊದಲ ಆದ್ಯತೆ."
+        },
+        {
+          "heading": "B7G ಸಂತೆಯಲ್ಲಿ ಭಾಗವಹಿಸುವುದು ಹೇಗೆ? (Kannada)",
+          "subcategory": "how_to_participate",
+          "language": "kn",
+          "content": "ಆಸಕ್ತಿ ಇದೆಯೇ? ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ B7G ಸಂತೆ ವಾಟ್ಸ್‌ಆ್ಯಪ್ ಗುಂಪಿಗೆ ಸೇರಿ. ಗುಂಪಿನ ಲಿಂಕ್, ಮಳಿಗೆ ಶುಲ್ಕ ಮತ್ತು ನೋಂದಣಿ ಕೊನೆಯ ದಿನಾಂಕವನ್ನು ಇನ್ನೂ ಪ್ರಕಟಿಸಲಾಗಿಲ್ಲ."
+        }
+      ]
+    }
+  ]
+}

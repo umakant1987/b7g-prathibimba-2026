@@ -1,0 +1,34 @@
+{
+  "documents": [
+    {
+      "id": "programme-highlights",
+      "title": "Prathibimba — Programme Highlights",
+      "category": "programme_highlights",
+      "subcategory": "overview",
+      "entity_type": "event",
+      "entity_name": "Prathibimba",
+      "aliases": ["prathibimba", "ಪ್ರತಿಬಿಂಬ"],
+      "language": "en",
+      "event": "B7G Kannada Rajyotsava 2026",
+      "source": "B7G Kannada Rajyotsava 2026 programme posters",
+      "version": 1,
+      "updated_at": "2026-10-10",
+      "sections": [
+        {
+          "heading": "What is Prathibimba?",
+          "content": "The B7G Kannada Rajyotsava 2026 celebration is titled Prathibimba — Our Heritage. Our Story. It runs over two days, 31 October and 1 November 2026, at Brigade 7 Gardens. Everyone is welcome. Posters for both days, in English and Kannada, are in the Programmes section of the website."
+        },
+        {
+          "heading": "31 October 2026 — evening programme highlights",
+          "event_date": "2026-10-31",
+          "content": "The 31 October 2026 programme runs from 5 PM to 10 PM at Brigade 7 Gardens.\n- Kannada film actor Nagabhushana NS joins the evening.\n- Performances by B7G residents: singing, dance, drama and dance drama.\n- Evening highlight: live sand art by Mr. Raghavendra Hegde, a renowned sand artist."
+        },
+        {
+          "heading": "1 November 2026 — programme highlights",
+          "event_date": "2026-11-01",
+          "content": "The 1 November 2026 programme begins at 9 AM at Brigade 7 Gardens.\n- Chief Guests: Mr. Prakash Belawadi and Mr. Dharmendra Kumar (Dharmi).\n- B7G Santhe: food stalls run by B7G residents.\n- Evening highlights: Hulivesha (Huli Kunita) and a live band / jamming."
+        }
+      ]
+    }
+  ]
+}

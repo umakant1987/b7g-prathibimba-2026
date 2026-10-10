@@ -1,0 +1,29 @@
+{
+  "documents": [
+    {
+      "title": "Example Folk Troupe — Performer",
+      "category": "performer",
+      "entity_type": "group",
+      "entity_name": "Example Folk Troupe",
+      "aliases": ["example troupe"],
+      "language": "en",
+      "event": "B7G Kannada Rajyotsava 2026",
+      "event_date": "2026-11-01",
+      "source": "B7G Event Knowledge Base",
+      "version": 1,
+      "updated_by": "B7G Admin",
+      "updated_at": "2026-10-06",
+      "metadata": { "status": "provisional" },
+      "sections": [
+        {
+          "heading": "About the troupe",
+          "content": "Example Folk Troupe is a placeholder showing the JSON format. Copy this file to knowledge/performers.json (without the leading underscore folder), replace it with real details, and run npm run rag:ingest."
+        },
+        {
+          "heading": "Performance at B7G Kannada Rajyotsava 2026",
+          "content": "Example Folk Troupe's performance time and stage will be added when the programme is confirmed."
+        }
+      ]
+    }
+  ]
+}

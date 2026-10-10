@@ -1,0 +1,169 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Backgrounds: vibrant Karnataka red (ಹಳದಿ–ಕೆಂಪು, the flag's yellow and red) instead of black.
+     Alternate sections use the slightly deeper shade. Gold and cream text keep ≥4.5:1 contrast. */
+  --color-ink: #9b1026;
+  --color-ink-light: #861022;
+  --color-maroon: #5c0f1f;
+  --color-crimson: #c81d35;
+  /* Red accents (badges, icons) need to stand out on a red page, so this is a light coral. */
+  --color-crimson-light: #ff9a8a;
+  --color-gold: #e8b84b;
+  --color-gold-light: #f6d784;
+  --color-saffron: #f0a500;
+  --color-cream: #f7f1e3;
+
+  --font-kannada-display: 'Baloo Tamma 2', 'Noto Sans Kannada', sans-serif;
+  --font-kannada-body: 'Noto Sans Kannada', sans-serif;
+  --font-display: 'Poppins', 'Noto Sans Kannada', sans-serif;
+  --font-body: 'Inter', 'Noto Sans Kannada', sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow: glow 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+.font-kannada {
+  font-family: var(--font-kannada-display);
+  /* Kannada conjuncts (vattakshara, e.g. ಮ್ಮ, ಭ್ರ) extend well below the
+     baseline. A tight line-height clips them, especially combined with
+     background-clip: text below, so this script needs a looser default. */
+  line-height: 1.5;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f6d784 0%, #e8b84b 50%, #f0a500 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Reserve paint room above and below the glyph box so background-clip:
+     text doesn't cut off Kannada vowel signs (top) or conjunct descenders
+     (bottom) — the first line in a stack has no preceding line to borrow
+     top half-leading space from, so padding-top matters even with a loose
+     line-height. */
+  padding-block: 0.12em 0.1em;
+}
+
+.glass {
+  /* Warm translucent panel: a touch of gold so cards read clearly on the red background. */
+  background: linear-gradient(135deg, rgba(247, 241, 227, 0.1), rgba(232, 184, 75, 0.06));
+  border: 1px solid rgba(246, 215, 132, 0.25);
+  backdrop-filter: blur(16px);
+}
+
+/*
+ * Rangoli / mandala line-art background (public/patterns/*.svg), used on every
+ * section: a partial mandala in two opposite corners plus a faint floret texture.
+ *   .mandala-bg      on a section — drawn behind its content via ::before
+ *   .mandala-alt     add to flip the corners (alternate sections, so it doesn't look stamped)
+ *   .mandala-layer   as its own absolutely-positioned element (where a section paints
+ *                    its own background layers, e.g. the hero gradient)
+ */
+.mandala-bg {
+  position: relative;
+  isolation: isolate;
+}
+
+.mandala-bg::before,
+.mandala-layer {
+  background-image: url('/patterns/mandala.svg'), url('/patterns/mandala.svg'), url('/patterns/florets.svg');
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: 520px, 600px, 320px;
+  background-position:
+    left -210px top -210px,
+    right -260px bottom -260px,
+    center;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.mandala-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.mandala-alt::before,
+.mandala-layer.mandala-alt {
+  background-position:
+    right -210px top -210px,
+    left -260px bottom -260px,
+    center;
+}
+
+/* Phones: smaller mandalas that frame the content instead of sitting behind it.
+   Scaled down, the regular lines would be under 1px and disappear, so phones use
+   a bolder version of the same artwork, a little stronger. */
+@media (max-width: 639px) {
+  .mandala-bg::before,
+  .mandala-layer {
+    background-image: url('/patterns/mandala-bold.svg'), url('/patterns/mandala-bold.svg'), url('/patterns/florets-bold.svg');
+    background-size: 320px, 360px, 220px;
+    background-position:
+      left -125px top -125px,
+      right -145px bottom -145px,
+      center;
+    opacity: 0.26;
+  }
+
+  .mandala-alt::before,
+  .mandala-layer.mandala-alt {
+    background-position:
+      right -125px top -125px,
+      left -145px bottom -145px,
+      center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
