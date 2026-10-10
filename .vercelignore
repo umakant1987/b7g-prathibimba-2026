@@ -1,0 +1,18 @@
+# Never upload secrets or local artefacts to Vercel
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+node_modules
+dist
+.tmp-*
+*.tmp
+coverage
+
+# Website-only deploy: the RAG backend runs elsewhere (see docs/RAG.md)
+backend/*
+!backend/tsconfig.json
+evals
+scripts
