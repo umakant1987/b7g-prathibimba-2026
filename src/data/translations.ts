@@ -135,12 +135,7 @@ export const translations = {
       en: 'The partners who will help bring this year’s Rajyotsava to life will be unveiled here.',
       kn: 'ಈ ಬಾರಿಯ ರಾಜ್ಯೋತ್ಸವಕ್ಕೆ ಜೊತೆಯಾಗುವ ಪಾಲುದಾರರನ್ನು ಇಲ್ಲಿ ಶೀಘ್ರದಲ್ಲೇ ಪರಿಚಯಿಸಲಾಗುವುದು.',
     },
-    tiers: [
-      { en: 'Title Sponsor', kn: 'ಮುಖ್ಯ ಪ್ರೋತ್ಸಾಹಕರು' },
-      { en: 'Gold Sponsor', kn: 'ಚಿನ್ನದ ಪ್ರೋತ್ಸಾಹಕರು' },
-      { en: 'Silver Sponsor', kn: 'ಬೆಳ್ಳಿ ಪ್ರೋತ್ಸಾಹಕರು' },
-      { en: 'Community Partner', kn: 'ಸಮುದಾಯ ಪಾಲುದಾರರು' },
-    ],
+    slot: { en: 'Sponsor', kn: 'ಪ್ರೋತ್ಸಾಹಕರು' },
     revealing: { en: 'Revealing soon', kn: 'ಶೀಘ್ರದಲ್ಲೇ ಅನಾವರಣ' },
     partnerTitle: { en: 'Be a part of Namma Rajyotsava', kn: 'ನಮ್ಮ ರಾಜ್ಯೋತ್ಸವದ ಭಾಗವಾಗಿ' },
     partnerText: {

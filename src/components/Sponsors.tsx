@@ -44,7 +44,9 @@ export function Sponsors() {
   );
 }
 
-/** Until sponsors are confirmed: veiled tier cards waiting to be unveiled, plus a partner invitation. */
+/** Until sponsors are confirmed: veiled sponsor cards waiting to be unveiled, plus a partner invitation. */
+const SPONSOR_SLOTS = [0, 1, 2, 3];
+
 function SponsorsComingSoon() {
   const { t, language } = useLanguage();
   const reducedMotion = useReducedMotion();
@@ -55,9 +57,9 @@ function SponsorsComingSoon() {
       <SectionHeader title={s.soonTitle} subtitle={s.soonSubtitle} eyebrow={t(s.soonEyebrow)} />
 
       <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
-        {s.tiers.map((tier, index) => (
+        {SPONSOR_SLOTS.map((index) => (
           <motion.div
-            key={tier.en}
+            key={index}
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -86,7 +88,7 @@ function SponsorsComingSoon() {
                 ?
               </motion.span>
             </motion.div>
-            <p className="font-kannada text-base sm:text-lg font-bold text-gold leading-snug">{t(tier)}</p>
+            <p className="font-kannada text-base sm:text-lg font-bold text-gold leading-snug">{t(s.slot)}</p>
             <p className="mt-1.5 text-xs sm:text-sm text-cream/60">{t(s.revealing)}</p>
           </motion.div>
         ))}
