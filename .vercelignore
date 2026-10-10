@@ -11,8 +11,8 @@ dist
 *.tmp
 coverage
 
-# Website-only deploy: the RAG backend runs elsewhere (see docs/RAG.md)
-backend/*
-!backend/tsconfig.json
+# Not needed at runtime (the RAG API in api/ uses the rest of backend/)
+backend/tests
+backend/scripts
 evals
 scripts

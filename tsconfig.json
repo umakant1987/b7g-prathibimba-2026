@@ -1,14 +1,18 @@
 {
   "files": [],
   "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./backend"
-    }
-  ]
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" },
+    { "path": "./backend" }
+  ],
+  // Used by Vercel when it compiles the functions in api/ (and the backend they import):
+  // the backend imports "./x.ts" so Node can run it directly; rewrite those to "./x.js" on emit.
+  "compilerOptions": {
+    "module": "nodenext",
+    "target": "es2023",
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
+  }
 }
