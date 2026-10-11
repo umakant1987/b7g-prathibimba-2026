@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { MapPin, X } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { districts, KARNATAKA_VIEWBOX, type District } from '../data/karnatakaDistricts';
+import { districtsKn } from '../data/karnatakaDistrictsKn';
 import { translations } from '../data/translations';
 
 /**
@@ -26,7 +27,10 @@ export default function KarnatakaDistrictMap() {
     () => (activeId ? [...districts.filter((d) => d.id !== activeId), districts.find((d) => d.id === activeId)!] : districts),
     [activeId],
   );
-  const sortedForSelect = useMemo(() => [...districts].sort((a, b) => a.name.localeCompare(b.name)), []);
+  const sortedForSelect = useMemo(
+    () => [...districts].sort((a, b) => (language === 'kn' ? a.kn.localeCompare(b.kn, 'kn') : a.name.localeCompare(b.name))),
+    [language],
+  );
 
   // Phones/tablets: close the bottom sheet once the map scrolls out of view, so it never
   // lingers over other sections.
@@ -91,7 +95,7 @@ export default function KarnatakaDistrictMap() {
                   stroke={isActive ? '#f6d784' : '#e8b84b'}
                   strokeWidth={isActive ? 2.4 : 1.1}
                 >
-                  <title>{`${d.name} (${d.kn})`}</title>
+                  <title>{language === 'kn' ? `${d.kn} (${d.name})` : `${d.name} (${d.kn})`}</title>
                 </path>
               );
             })}
@@ -154,7 +158,7 @@ export default function KarnatakaDistrictMap() {
           <motion.div
             key="sheet"
             role="dialog"
-            aria-label={`${active.name} — ${active.kn}`}
+            aria-label={label(active)}
             initial={{ y: '110%' }}
             animate={{ y: 0 }}
             exit={{ y: '110%' }}
@@ -176,24 +180,36 @@ export default function KarnatakaDistrictMap() {
 }
 
 function DistrictDetails({ district, onClose }: { district: District; onClose: () => void }) {
+  const { language } = useLanguage();
+  const kn = language === 'kn' ? districtsKn[district.id] : undefined;
+  const known = kn?.known ?? district.known;
+  const facts = kn?.facts ?? district.facts;
   return (
     <>
       <button
         type="button"
         onClick={onClose}
-        aria-label="Close"
+        aria-label={language === 'kn' ? 'ಮುಚ್ಚಿ' : 'Close'}
         className="absolute top-3 right-3 p-1 text-cream/60 hover:text-cream"
       >
         <X size={20} />
       </button>
-      <p className="flex flex-wrap items-center gap-x-2 font-bold text-cream text-lg pr-8">
-        <MapPin size={18} className="text-gold shrink-0" />
-        {district.name}
-        <span className="font-kannada font-medium text-cream/70 text-base">{district.kn}</span>
-      </p>
-      <p className="mt-1 text-xs font-semibold tracking-wider uppercase text-gold">{district.known}</p>
-      <ul className="mt-3 space-y-1.5 text-sm text-cream/85 leading-relaxed list-disc pl-5 marker:text-gold">
-        {district.facts.map((fact) => (
+      {kn ? (
+        <p className="flex flex-wrap items-center gap-x-2 font-bold text-cream text-lg pr-8">
+          <MapPin size={18} className="text-gold shrink-0" />
+          <span className="font-kannada">{district.kn}</span>
+          <span className="font-medium text-cream/70 text-base">{district.name}</span>
+        </p>
+      ) : (
+        <p className="flex flex-wrap items-center gap-x-2 font-bold text-cream text-lg pr-8">
+          <MapPin size={18} className="text-gold shrink-0" />
+          {district.name}
+          <span className="font-kannada font-medium text-cream/70 text-base">{district.kn}</span>
+        </p>
+      )}
+      <p className={`mt-1 text-xs font-semibold tracking-wider uppercase text-gold ${kn ? 'font-kannada text-sm normal-case tracking-normal' : ''}`}>{known}</p>
+      <ul className={`mt-3 space-y-1.5 text-sm text-cream/85 leading-relaxed list-disc pl-5 marker:text-gold ${kn ? 'font-kannada' : ''}`}>
+        {facts.map((fact) => (
           <li key={fact}>{fact}</li>
         ))}
       </ul>
