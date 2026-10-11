@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { HandHeart, Menu, X } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../data/translations';
+import { SHOW_CONTRIBUTE } from '../config/env';
 
 const NAV_LINKS: { key: keyof typeof translations.nav; href: string }[] = [
   { key: 'why', href: '#why' },
@@ -58,25 +59,29 @@ export function Navbar() {
           >
             {language === 'en' ? 'ಕನ್ನಡ' : 'English'}
           </button>
-          <a
-            href="#contribute"
-            className="inline-flex items-center gap-2 text-base font-bold px-5 py-2.5 rounded-full bg-gradient-to-r from-gold to-saffron text-ink hover:brightness-110 transition"
-          >
-            <HandHeart size={19} />
-            {t(translations.nav.contribute)}
-          </a>
+          {SHOW_CONTRIBUTE && (
+            <a
+              href="#contribute"
+              className="inline-flex items-center gap-2 text-base font-bold px-5 py-2.5 rounded-full bg-gradient-to-r from-gold to-saffron text-ink hover:brightness-110 transition"
+            >
+              <HandHeart size={19} />
+              {t(translations.nav.contribute)}
+            </a>
+          )}
         </div>
 
         {/* Phones: the main action stays visible in the bar, not hidden in the menu */}
         <div className="md:hidden flex items-center gap-3">
-          <a
-            href="#contribute"
-            onClick={() => setMobileOpen(false)}
-            className="inline-flex items-center gap-1.5 text-sm font-bold px-3.5 py-2 rounded-full bg-gradient-to-r from-gold to-saffron text-ink"
-          >
-            <HandHeart size={16} />
-            {t(translations.nav.contribute)}
-          </a>
+          {SHOW_CONTRIBUTE && (
+            <a
+              href="#contribute"
+              onClick={() => setMobileOpen(false)}
+              className="inline-flex items-center gap-1.5 text-sm font-bold px-3.5 py-2 rounded-full bg-gradient-to-r from-gold to-saffron text-ink"
+            >
+              <HandHeart size={16} />
+              {t(translations.nav.contribute)}
+            </a>
+          )}
           <button
             type="button"
             className="text-cream"

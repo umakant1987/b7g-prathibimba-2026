@@ -13,4 +13,11 @@ export const RAG_API_URL = import.meta.env.VITE_RAG_API_URL ?? '';
  */
 export const SHOW_PROGRAMME_DETAILS = import.meta.env.VITE_SHOW_PROGRAMME_DETAILS === 'true';
 
+/**
+ * Contribute section (QR codes, phone) and every Contribute button, on the website and in
+ * the AI assistant. Off until the organisers are ready to collect contributions.
+ * Turn on with VITE_SHOW_CONTRIBUTE=true, then rebuild and restart the RAG server.
+ */
+export const SHOW_CONTRIBUTE = import.meta.env.VITE_SHOW_CONTRIBUTE === 'true';
+
 export const EVENT_DATE = '2026-11-01';

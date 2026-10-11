@@ -1,4 +1,5 @@
 import type { FAQ, Venue } from '../types';
+import { SHOW_CONTRIBUTE } from '../config/env';
 
 // Kannada-language entries for the AI assistant. The English knowledge base
 // lives in /knowledge/*.md; these cover questions asked in Kannada, so keep the
@@ -28,8 +29,12 @@ export const faqs: FAQ[] = [
     id: 'faq-003',
     question: { en: 'Can I contribute or donate?', kn: 'ನಾನು ದಾನ ಮಾಡಬಹುದೇ?' },
     answer: {
-      en: 'Yes — contributions support the community programmes. Use the Contribute button at the top of the website: the Contribute section has QR codes to scan and a phone number for contribution queries.',
-      kn: 'ಹೌದು — ದೇಣಿಗೆಗಳು ಸಮುದಾಯ ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತವೆ. ವೆಬ್‌ಸೈಟ್‌ನ ಮೇಲ್ಭಾಗದಲ್ಲಿರುವ "ಕೊಡುಗೆ ನೀಡಿ" ಬಟನ್ ಒತ್ತಿ: ಅಲ್ಲಿ ಸ್ಕ್ಯಾನ್ ಮಾಡಲು QR ಕೋಡ್‌ಗಳು ಮತ್ತು ಮಾಹಿತಿಗಾಗಿ ದೂರವಾಣಿ ಸಂಖ್ಯೆ ಇದೆ.',
+      en: SHOW_CONTRIBUTE
+        ? 'Yes — contributions support the community programmes. Use the Contribute button at the top of the website: the Contribute section has QR codes to scan and a phone number for contribution queries.'
+        : 'Thank you for wanting to support the celebration! Details on how to contribute will be shared on this website soon.',
+      kn: SHOW_CONTRIBUTE
+        ? 'ಹೌದು — ದೇಣಿಗೆಗಳು ಸಮುದಾಯ ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತವೆ. ವೆಬ್‌ಸೈಟ್‌ನ ಮೇಲ್ಭಾಗದಲ್ಲಿರುವ "ಕೊಡುಗೆ ನೀಡಿ" ಬಟನ್ ಒತ್ತಿ: ಅಲ್ಲಿ ಸ್ಕ್ಯಾನ್ ಮಾಡಲು QR ಕೋಡ್‌ಗಳು ಮತ್ತು ಮಾಹಿತಿಗಾಗಿ ದೂರವಾಣಿ ಸಂಖ್ಯೆ ಇದೆ.'
+        : 'ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಲು ಬಯಸಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು! ಕೊಡುಗೆ ನೀಡುವ ವಿವರಗಳನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಲಾಗುವುದು.',
     },
   },
   {

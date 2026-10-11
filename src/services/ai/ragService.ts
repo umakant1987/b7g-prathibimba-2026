@@ -11,7 +11,7 @@ import {
 } from '../schedule';
 import { answerGuestQuestion } from './guestService';
 import { detectIntent, extractCategory, extractTime } from './intentDetection';
-import { RAG_API_URL, SHOW_PROGRAMME_DETAILS } from '../../config/env';
+import { RAG_API_URL, SHOW_CONTRIBUTE, SHOW_PROGRAMME_DETAILS } from '../../config/env';
 import { queryRagApi, type RagApiTurn } from './ragApiClient';
 import { retrieveRelevantDocs } from './retrieval';
 
@@ -40,8 +40,8 @@ const FALLBACK: Record<Language, string> = {
 
 // Until the first sponsor is confirmed (src/data/sponsors.ts is empty) — see knowledge/sponsors.md.
 const SPONSORS_SOON: Record<Language, string> = {
-  en: "Sponsors for B7G Kannada Rajyotsava 2026 will be announced soon. Businesses and well-wishers who would like to support the celebration are welcome. See the Contribute section on this page.",
-  kn: "B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಪ್ರೋತ್ಸಾಹಕರನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಘೋಷಿಸಲಾಗುವುದು. ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಲು ಬಯಸುವ ಉದ್ಯಮಗಳು ಮತ್ತು ಹಿತೈಷಿಗಳಿಗೆ ಸ್ವಾಗತ. ಈ ಪುಟದ ಕೊಡುಗೆ ವಿಭಾಗವನ್ನು ನೋಡಿ.",
+  en: "Sponsors for B7G Kannada Rajyotsava 2026 will be announced soon. Businesses and well-wishers who would like to support the celebration are welcome." + (SHOW_CONTRIBUTE ? " See the Contribute section on this page." : ""),
+  kn: "B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಪ್ರೋತ್ಸಾಹಕರನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಘೋಷಿಸಲಾಗುವುದು. ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಲು ಬಯಸುವ ಉದ್ಯಮಗಳು ಮತ್ತು ಹಿತೈಷಿಗಳಿಗೆ ಸ್ವಾಗತ." + (SHOW_CONTRIBUTE ? " ಈ ಪುಟದ ಕೊಡುಗೆ ವಿಭಾಗವನ್ನು ನೋಡಿ." : ""),
 };
 
 const NO_TIMINGS: Record<Language, string> = {

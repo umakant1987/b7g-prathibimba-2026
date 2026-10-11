@@ -65,6 +65,8 @@ export function loadConfig(): RagConfig {
   // Detailed programme released? Off: hide the programme records, keep the "coming soon" note.
   // On: the reverse. Shared with the website so both always agree.
   const showProgrammeDetails = env('VITE_SHOW_PROGRAMME_DETAILS') === 'true';
+  // Same idea for the Contribute section (VITE_SHOW_CONTRIBUTE).
+  const showContribute = env('VITE_SHOW_CONTRIBUTE') === 'true';
   if (!['low', 'medium', 'high', 'xhigh', 'max'].includes(effort)) {
     throw new Error(`RAG_LLM_EFFORT must be low, medium, high, xhigh or max, got "${effort}"`);
   }
@@ -88,7 +90,10 @@ export function loadConfig(): RagConfig {
       similarityThreshold: envNumber('RAG_SIMILARITY_THRESHOLD', DEFAULT_THRESHOLD[provider] ?? 0.3),
       keywordMinCoverage: envNumber('RAG_KEYWORD_MIN_COVERAGE', 0.5),
       maxChunksPerDocument: envNumber('RAG_MAX_CHUNKS_PER_DOCUMENT', 3),
-      hiddenCategories: showProgrammeDetails ? ['programme_teaser'] : ['programme'],
+      hiddenCategories: [
+        showProgrammeDetails ? 'programme_teaser' : 'programme',
+        showContribute ? 'contribute_teaser' : 'contribute',
+      ],
     },
     chunking: {
       maxTokens: envNumber('RAG_CHUNK_MAX_TOKENS', 600),

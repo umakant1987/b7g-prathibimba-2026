@@ -11,6 +11,7 @@ const bank = JSON.parse(readFileSync(new URL('../evals/question-bank.json', impo
 process.env.VITE_RAG_API_URL = '';
 // Test the full assistant, as it will be once the detailed programme is released.
 process.env.VITE_SHOW_PROGRAMME_DETAILS = 'true';
+process.env.VITE_SHOW_CONTRIBUTE = 'true';
 const server = await createServer({ server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' });
 const { answerQuestion } = await server.ssrLoadModule('/src/services/ai/ragService.ts');
 

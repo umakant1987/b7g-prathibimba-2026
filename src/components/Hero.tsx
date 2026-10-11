@@ -7,6 +7,7 @@ import { useFloatingParticles } from '../hooks/useFloatingParticles';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 import { AnimatedCounter } from './AnimatedCounter';
 import { FloatingParticles } from './FloatingParticles';
+import { SHOW_CONTRIBUTE } from '../config/env';
 
 export function Hero() {
   const { t } = useLanguage();
@@ -130,13 +131,15 @@ export function Hero() {
             {t(translations.hero.ctaPrimary)}
             <ArrowRight size={18} />
           </a>
-          <a
-            href="#contribute"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass text-cream font-semibold hover:bg-cream/10 transition w-full sm:w-auto justify-center"
-          >
-            <HandHeart size={20} />
-            {t(translations.hero.ctaSecondary)}
-          </a>
+          {SHOW_CONTRIBUTE && (
+            <a
+              href="#contribute"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass text-cream font-semibold hover:bg-cream/10 transition w-full sm:w-auto justify-center"
+            >
+              <HandHeart size={20} />
+              {t(translations.hero.ctaSecondary)}
+            </a>
+          )}
         </motion.div>
 
         <motion.div

@@ -1,4 +1,4 @@
-import { SHOW_PROGRAMME_DETAILS } from '../../config/env';
+import { SHOW_CONTRIBUTE, SHOW_PROGRAMME_DETAILS } from '../../config/env';
 import { faqs, venues } from '../../data/knowledgeBase';
 import type { ChatSource, Language } from '../../types';
 import { knowledgeChunks, type KnowledgeChunk } from './knowledgeLoader';
@@ -45,6 +45,8 @@ function buildCorpus(language: Language): RetrievedDoc[] {
   // The "coming soon" note applies only while the detailed programme is unreleased.
   const docs = knowledgeChunks
     .filter((chunk) => !(SHOW_PROGRAMME_DETAILS && chunk.file === 'programme-coming-soon.md'))
+    // Contribute details only while the Contribute section is on; the "coming soon" note otherwise.
+    .filter((chunk) => chunk.file !== (SHOW_CONTRIBUTE ? 'contribute-coming-soon.md' : 'contribute.md'))
     .map(chunkToDoc);
   if (language !== 'kn') return docs;
 

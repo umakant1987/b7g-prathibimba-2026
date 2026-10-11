@@ -23,10 +23,6 @@ The 31 October evening programme runs from 5 PM to 10 PM, and the 1 November pro
 
 Yes, entry is free and open to all members of the B7G community and their families.
 
-## Can I contribute or donate?
-
-Yes — contributions support the community programmes. Use the Contribute button at the top of the website: the Contribute section has QR codes to scan and a phone number for contribution queries.
-
 ## Do I need to speak Kannada to attend?
 
 Not at all. The celebration is inclusive and welcoming to residents and families from all backgrounds. It's a great opportunity to learn about and enjoy Karnataka's culture.

@@ -6,6 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 import { SectionHeader } from './SectionHeader';
 import { SponsorLogo } from './SponsorLogo';
+import { SHOW_CONTRIBUTE } from '../config/env';
 
 export function Sponsors() {
   const s = translations.sponsors;
@@ -108,6 +109,7 @@ function SponsorsComingSoon() {
           <h3 className="font-kannada text-xl sm:text-2xl font-bold text-gradient-gold">{t(s.partnerTitle)}</h3>
           <p className={`mt-2 text-cream/75 leading-relaxed ${language === 'kn' ? 'font-kannada' : ''}`}>{t(s.partnerText)}</p>
         </div>
+        {SHOW_CONTRIBUTE && (
         <a
           href="#contribute"
           className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-gold to-saffron px-6 py-3 font-semibold text-ink shadow-lg hover:brightness-110 transition shrink-0"
@@ -115,6 +117,7 @@ function SponsorsComingSoon() {
           {t(s.partnerCta)}
           <ArrowRight size={18} />
         </a>
+        )}
       </motion.div>
     </>
   );

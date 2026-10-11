@@ -10,6 +10,7 @@ import { ProgramSchedule } from '../components/ProgramSchedule';
 import { Sponsors } from '../components/Sponsors';
 import { Contribute } from '../components/Contribute';
 import { WhyKannada } from '../components/WhyKannada';
+import { SHOW_CONTRIBUTE } from '../config/env';
 
 export function Home() {
   return (
@@ -24,7 +25,7 @@ export function Home() {
         <ProgramSchedule />
         <Gallery />
         <Sponsors />
-        <Contribute />
+        {SHOW_CONTRIBUTE && <Contribute />}
       </main>
       <Footer />
       <AIChatAssistant />

@@ -17,4 +17,4 @@ If someone asks who the sponsors are, who the title sponsor is, or which compani
 
 ## Becoming a sponsor
 
-Businesses and well-wishers who would like to support the celebration are welcome. Point them to the **Contribute** section of the website. Specific sponsorship packages, tiers and contact details have not been provided yet; if asked for them, say: "I don't have that information in my B7G event knowledge base yet."
+Businesses and well-wishers who would like to support the celebration are welcome. Specific sponsorship packages, tiers and contact details have not been provided yet; if asked for them, say: "I don't have that information in my B7G event knowledge base yet."
