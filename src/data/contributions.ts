@@ -121,3 +121,59 @@ export const contributions: Contribution[] = [
     },
   },
 ];
+
+/** "Other Significant Achievements" card — keep in sync with knowledge/achievers/. */
+export interface Achiever {
+  id: string;
+  name: LocalizedText;
+  honour: LocalizedText;
+  description: LocalizedText;
+}
+
+export const achievers: Achiever[] = [
+  {
+    id: 'cv-raman',
+    name: { en: 'Sir C. V. Raman', kn: 'ಸರ್ ಸಿ.ವಿ. ರಾಮನ್' },
+    honour: { en: 'Nobel Prize in Physics, 1930', kn: 'ಭೌತಶಾಸ್ತ್ರ ನೊಬೆಲ್ ಪ್ರಶಸ್ತಿ, 1930' },
+    description: {
+      en: 'Discovered the Raman Effect: light scattered by a substance changes colour slightly, revealing what it is made of. Asia’s first Nobel Prize in science; he later led IISc and founded the Raman Research Institute in Bengaluru.',
+      kn: 'ವಸ್ತುವಿನ ಮೂಲಕ ಚದುರುವ ಬೆಳಕಿನ ಬಣ್ಣ ಸ್ವಲ್ಪ ಬದಲಾಗಿ ಆ ವಸ್ತುವಿನ ರಚನೆಯನ್ನು ತಿಳಿಸುತ್ತದೆ ಎಂಬ "ರಾಮನ್ ಪರಿಣಾಮ"ವನ್ನು ಕಂಡುಹಿಡಿದರು. ವಿಜ್ಞಾನದಲ್ಲಿ ಏಷ್ಯಾಕ್ಕೆ ಮೊದಲ ನೊಬೆಲ್; ನಂತರ ಬೆಂಗಳೂರಿನ ಭಾರತೀಯ ವಿಜ್ಞಾನ ಸಂಸ್ಥೆಯನ್ನು ಮುನ್ನಡೆಸಿ, ರಾಮನ್ ಸಂಶೋಧನಾ ಸಂಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸಿದರು.',
+    },
+  },
+  {
+    id: 'cnr-rao',
+    name: { en: 'Dr. C. N. R. Rao', kn: 'ಡಾ. ಸಿ.ಎನ್.ಆರ್. ರಾವ್' },
+    honour: { en: 'Bharat Ratna, 2014', kn: 'ಭಾರತ ರತ್ನ, 2014' },
+    description: {
+      en: 'Bengaluru-born pioneer of solid-state and materials chemistry, exploring how the arrangement of atoms gives materials powers like superconductivity, work that feeds into nanoscience. He founded JNCASR in Bengaluru and inspired generations of scientists.',
+      kn: 'ಬೆಂಗಳೂರಿನಲ್ಲಿ ಜನಿಸಿದ ಘನಸ್ಥಿತಿ ಮತ್ತು ವಸ್ತು ರಸಾಯನಶಾಸ್ತ್ರದ ಪ್ರವರ್ತಕರು. ಪರಮಾಣುಗಳ ಜೋಡಣೆ ವಸ್ತುಗಳಿಗೆ ಅತಿವಾಹಕತೆಯಂತಹ ವಿಶೇಷ ಗುಣಗಳನ್ನು ಹೇಗೆ ನೀಡುತ್ತದೆ ಎಂದು ಸಂಶೋಧಿಸಿದರು; ಇದು ನ್ಯಾನೋವಿಜ್ಞಾನಕ್ಕೆ ಬುನಾದಿ. ಬೆಂಗಳೂರಿನಲ್ಲಿ JNCASR ಸ್ಥಾಪಿಸಿ ವಿಜ್ಞಾನಿಗಳ ತಲೆಮಾರುಗಳಿಗೆ ಸ್ಫೂರ್ತಿಯಾದರು.',
+    },
+  },
+  {
+    id: 'raja-ramanna',
+    name: { en: 'Dr. Raja Ramanna', kn: 'ಡಾ. ರಾಜಾ ರಾಮಣ್ಣ' },
+    honour: { en: 'Padma Vibhushan, 1975', kn: 'ಪದ್ಮವಿಭೂಷಣ, 1975' },
+    description: {
+      en: 'Tumakuru-born nuclear physicist who led the scientific team behind India’s first nuclear test, Pokhran-I (1974). As head of BARC and the Atomic Energy Commission, he strengthened India’s nuclear research and energy programme.',
+      kn: 'ತುಮಕೂರಿನಲ್ಲಿ ಜನಿಸಿದ ಅಣು ಭೌತವಿಜ್ಞಾನಿ. ಭಾರತದ ಮೊದಲ ಅಣು ಪರೀಕ್ಷೆ ಪೋಖ್ರಾನ್–1ರ (1974) ವೈಜ್ಞಾನಿಕ ತಂಡವನ್ನು ಮುನ್ನಡೆಸಿದರು. BARC ಮತ್ತು ಅಣುಶಕ್ತಿ ಆಯೋಗದ ಮುಖ್ಯಸ್ಥರಾಗಿ ಭಾರತದ ಅಣು ಸಂಶೋಧನೆ ಮತ್ತು ಇಂಧನ ಕಾರ್ಯಕ್ರಮವನ್ನು ಬಲಪಡಿಸಿದರು.',
+    },
+  },
+  {
+    id: 'dr-rajkumar',
+    name: { en: 'Dr. Rajkumar', kn: 'ಡಾ. ರಾಜ್‌ಕುಮಾರ್' },
+    honour: { en: 'Dadasaheb Phalke Award, 1995', kn: 'ದಾದಾಸಾಹೇಬ್ ಫಾಲ್ಕೆ ಪ್ರಶಸ್ತಿ, 1995' },
+    description: {
+      en: 'Nata Saarvabhouma of Kannada cinema: a theatre-trained actor and beloved singer whose 200+ films carried Kannada language, literature and values into every home. He lent his voice to the Gokak movement and remains an icon of Kannada pride.',
+      kn: 'ಕನ್ನಡ ಚಿತ್ರರಂಗದ ನಟಸಾರ್ವಭೌಮ. ರಂಗಭೂಮಿಯಿಂದ ಬಂದ ನಟ ಮತ್ತು ಜನಪ್ರಿಯ ಗಾಯಕ; 200ಕ್ಕೂ ಹೆಚ್ಚು ಚಿತ್ರಗಳ ಮೂಲಕ ಕನ್ನಡ ಭಾಷೆ, ಸಾಹಿತ್ಯ ಮತ್ತು ಮೌಲ್ಯಗಳನ್ನು ಮನೆಮನೆಗೆ ತಲುಪಿಸಿದರು. ಗೋಕಾಕ್ ಚಳವಳಿಗೆ ಧ್ವನಿಯಾದ ಅವರು ಕನ್ನಡ ಅಭಿಮಾನದ ಶಾಶ್ವತ ಪ್ರತೀಕ.',
+    },
+  },
+  {
+    id: 'adi-shankaracharya',
+    name: { en: 'Adi Shankaracharya', kn: 'ಆದಿ ಶಂಕರಾಚಾರ್ಯರು' },
+    honour: { en: 'Exponent of Advaita Vedanta', kn: 'ಅದ್ವೈತ ವೇದಾಂತದ ಪ್ರತಿಪಾದಕರು' },
+    description: {
+      en: 'Taught Advaita: the inner Self (Atman) and the ultimate reality (Brahman) are not two but one. His commentaries on the Upanishads, Bhagavad Gita and Brahma Sutras shaped Indian thought; tradition holds he founded the Sringeri Sharada Peetham on the Tunga.',
+      kn: 'ಆತ್ಮ ಮತ್ತು ಪರಮ ಸತ್ಯವಾದ ಬ್ರಹ್ಮ ಎರಡಲ್ಲ, ಒಂದೇ ಎಂಬ ಅದ್ವೈತ ತತ್ವವನ್ನು ಬೋಧಿಸಿದರು. ಉಪನಿಷತ್ತುಗಳು, ಭಗವದ್ಗೀತೆ ಮತ್ತು ಬ್ರಹ್ಮಸೂತ್ರಗಳ ಮೇಲಿನ ಅವರ ಭಾಷ್ಯಗಳು ಭಾರತೀಯ ಚಿಂತನೆಯನ್ನು ರೂಪಿಸಿದವು. ತುಂಗಾ ತೀರದ ಶೃಂಗೇರಿ ಶಾರದಾ ಪೀಠವನ್ನು ಅವರು ಸ್ಥಾಪಿಸಿದರೆಂದು ಪರಂಪರೆ ಹೇಳುತ್ತದೆ.',
+    },
+  },
+];

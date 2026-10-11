@@ -145,6 +145,15 @@ export const translations = {
     partnerCta: { en: 'Support the celebration', kn: 'ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಿ' },
   },
   contributions: {
+    achieversTitle: { en: 'Other Significant Achievements', kn: 'ಇತರ ಮಹತ್ವದ ಸಾಧನೆಗಳು' },
+    achieversSubtitle: {
+      en: 'Great minds associated with Karnataka who enriched India and the world through science, art and philosophy.',
+      kn: 'ವಿಜ್ಞಾನ, ಕಲೆ ಮತ್ತು ತತ್ವಜ್ಞಾನದ ಮೂಲಕ ಭಾರತ ಮತ್ತು ಜಗತ್ತನ್ನು ಶ್ರೀಮಂತಗೊಳಿಸಿದ ಕರ್ನಾಟಕದೊಂದಿಗೆ ನಂಟು ಹೊಂದಿರುವ ಮಹನೀಯರು.',
+    },
+    achieversClosing: {
+      en: 'These great personalities, who gave to the world through science, philosophy, art and culture, are our pride. May their achievements inspire future generations towards knowledge, perseverance and service to society.',
+      kn: 'ವಿಜ್ಞಾನ, ತತ್ವಜ್ಞಾನ, ಕಲೆ ಮತ್ತು ಸಂಸ್ಕೃತಿಯ ಮೂಲಕ ಜಗತ್ತಿಗೆ ಕೊಡುಗೆ ನೀಡಿದ ಇಂತಹ ಮಹನೀಯರು ನಮ್ಮ ಹೆಮ್ಮೆ. ಅವರ ಸಾಧನೆಗಳು ಮುಂದಿನ ಪೀಳಿಗೆಗೆ ಜ್ಞಾನ, ಪರಿಶ್ರಮ ಮತ್ತು ಸಮಾಜಕ್ಕೆ ಕೊಡುಗೆ ನೀಡುವ ಸ್ಫೂರ್ತಿಯಾಗಲಿ.',
+    },
     title: { en: 'What Karnataka Gave India', kn: 'ಕರ್ನಾಟಕ ಭಾರತಕ್ಕೆ ಕೊಟ್ಟದ್ದು' },
     subtitle: {
       en: 'A few things our state carries that belong to the whole nation.',
