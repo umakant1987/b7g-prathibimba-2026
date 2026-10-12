@@ -37,8 +37,6 @@ export interface Sponsor {
   fullName?: string;
   /** Logo under public/, e.g. "/sponsor-logos/b7glogo.jpeg". */
   logo: string;
-  /** Sponsorship amount (not shown on the website). */
-  amount: LocalizedText;
   website?: string;
 }
 

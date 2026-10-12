@@ -190,7 +190,7 @@ export async function answerQuestion(
   }
 
   if (intent === 'sponsors') {
-    const list = sponsors.map((s) => `${s.fullName ? `${s.name} (${s.fullName})` : s.name} — ${s.amount[language]}`).join('; ');
+    const list = sponsors.map((s) => (s.fullName ? `${s.name} (${s.fullName})` : s.name)).join('; ');
     const invite = SHOW_CONTRIBUTE
       ? language === 'kn'
         ? ' ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಲು ಈ ಪುಟದ ಕೊಡುಗೆ ವಿಭಾಗವನ್ನು ನೋಡಿ.'
