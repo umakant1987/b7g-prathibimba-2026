@@ -8,26 +8,15 @@ import { isSuggestionVisible } from '../services/ai/suggestions';
 import { onOpenChat } from '../services/chatLauncher';
 import { GuestCardView, RichText } from './ChatMessageContent';
 
-/** The chat opens by itself once per visit: after this much scrolling, or this long without any interaction. */
-const AUTO_OPEN_SCROLL_SCREENS = 2.5;
-const AUTO_OPEN_IDLE_MS = 20_000;
-const AUTO_OPEN_KEY = 'b7g-chat-auto-opened';
+/**
+ * The chat opens by itself once per page load (unless the visitor already opened it):
+ * after this much scrolling, or this long without any interaction.
+ */
+const AUTO_OPEN_SCROLL_SCREENS = 2;
+const AUTO_OPEN_IDLE_MS = 15_000;
 
-function alreadyShown(): boolean {
-  try {
-    return sessionStorage.getItem(AUTO_OPEN_KEY) === '1';
-  } catch {
-    return false;
-  }
-}
-
-function markShown(): void {
-  try {
-    sessionStorage.setItem(AUTO_OPEN_KEY, '1');
-  } catch {
-    // Private mode / storage blocked: the auto-open may simply happen again next visit.
-  }
-}
+/** Page scroll position; read from every candidate so it also works where the body scrolls (some mobile browsers). */
+const scrollTop = () => Math.max(window.scrollY, document.documentElement.scrollTop, document.body.scrollTop);
 
 export function AIChatAssistant() {
   const [open, setOpen] = useState(false);
@@ -36,8 +25,10 @@ export function AIChatAssistant() {
   const { messages, isTyping, error, sendMessage } = useAIChat(language);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  // Set once the chat has been open in this page load, so the auto-open never interrupts twice.
+  const shownRef = useRef(false);
   const openPanel = () => {
-    markShown();
+    shownRef.current = true;
     setOpen(true);
   };
 
@@ -46,11 +37,9 @@ export function AIChatAssistant() {
 
   // Help visitors discover the assistant: open it once, after a few screens of scrolling or a pause.
   useEffect(() => {
-    if (alreadyShown()) return;
     let idleTimer = 0;
     const trigger = () => {
-      if (alreadyShown()) return cleanup();
-      openPanel();
+      if (!shownRef.current) openPanel();
       cleanup();
     };
     const resetIdle = () => {
@@ -58,16 +47,17 @@ export function AIChatAssistant() {
       idleTimer = window.setTimeout(trigger, AUTO_OPEN_IDLE_MS);
     };
     const onScroll = () => {
-      if (window.scrollY > window.innerHeight * AUTO_OPEN_SCROLL_SCREENS) trigger();
+      if (scrollTop() > window.innerHeight * AUTO_OPEN_SCROLL_SCREENS) trigger();
       else resetIdle();
     };
     const activity = ['pointerdown', 'keydown', 'touchstart'] as const;
     function cleanup() {
       window.clearTimeout(idleTimer);
-      window.removeEventListener('scroll', onScroll);
+      document.removeEventListener('scroll', onScroll, true);
       activity.forEach((e) => window.removeEventListener(e, resetIdle));
     }
-    window.addEventListener('scroll', onScroll, { passive: true });
+    // Capture phase on document catches scrolling of the window and of the body alike.
+    document.addEventListener('scroll', onScroll, { capture: true, passive: true });
     activity.forEach((e) => window.addEventListener(e, resetIdle, { passive: true }));
     resetIdle();
     return cleanup;

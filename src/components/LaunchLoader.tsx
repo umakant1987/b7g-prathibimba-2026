@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 
 /** Loading steps shown in the neon counter; 75 % holds until the page has finished loading. */
 const STEPS = [0, 25, 50, 75, 100];
-const STEP_MS = 550;
+const STEP_MS = 900;
 /** Never keep visitors waiting longer than this for slow images. */
 const MAX_WAIT_MS = 2500;
-const FADE_MS = 650;
+const FADE_MS = 800;
 
 /** Sparkles floating up behind the intro (fixed, seeded positions). */
 const SPARKS = (() => {
@@ -48,7 +48,7 @@ export function LaunchLoader() {
       await sleep(STEP_MS);
       if (cancelled) return;
       setStep(4);
-      await sleep(500);
+      await sleep(800);
       if (cancelled) return;
       setLeaving(true);
       document.body.style.overflow = '';
