@@ -6,6 +6,7 @@ export const translations = {
     gallery: { en: 'Gallery', kn: 'ಗ್ಯಾಲರಿ' },
     sponsors: { en: 'Sponsors', kn: 'ಪ್ರೋತ್ಸಾಹಕರು' },
     contribute: { en: 'Contribute', kn: 'ಕೊಡುಗೆ ನೀಡಿ' },
+    siri: { en: 'B7G Siri', kn: 'B7G ಸಿರಿ' },
   },
   hero: {
     titleLines: ['ಕನ್ನಡ ನಮ್ಮ ಹೆಮ್ಮೆ', 'ಕನ್ನಡ ನಮ್ಮ ಗುರುತು', 'ಕನ್ನಡವೇ ನಮ್ಮ ಸಂಭ್ರಮ'],
@@ -157,8 +158,8 @@ export const translations = {
     },
     title: { en: 'What Karnataka Gave India', kn: 'ಕರ್ನಾಟಕ ಭಾರತಕ್ಕೆ ಕೊಟ್ಟದ್ದು' },
     subtitle: {
-      en: 'A few things our state carries that belong to the whole nation.',
-      kn: 'ನಮ್ಮ ರಾಜ್ಯ ಹೊತ್ತಿರುವ, ಇಡೀ ದೇಶಕ್ಕೆ ಸೇರಿದ ಕೆಲವು ಸಂಗತಿಗಳು.',
+      en: 'Many proud contributions our Karnataka has given to India and to the whole world.',
+      kn: 'ನಮ್ಮ ಕರ್ನಾಟಕ ರಾಜ್ಯ ಭಾರತ ದೇಶ ಹಾಗೂ ಇಡೀ ವಿಶ್ವಕ್ಕೆ ಕೊಟ್ಟಿರುವ ಹೆಸರಿಸಬಹುದಾದ ಹಲವು ಹೆಮ್ಮೆಯ ಕೊಡುಗೆಗಳು.',
     },
   },
   love: {
@@ -213,8 +214,8 @@ export const translations = {
     comingSoon: { en: 'Phone number coming soon', kn: 'ದೂರವಾಣಿ ಸಂಖ್ಯೆ ಶೀಘ್ರದಲ್ಲೇ' },
   },
   chat: {
-    title: { en: 'B7G AI Assistant', kn: 'B7G AI ಸಹಾಯಕ' },
-    subtitle: { en: 'Ask me about Kannada Rajyotsava', kn: 'ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವದ ಬಗ್ಗೆ ಕೇಳಿ' },
+    title: { en: 'B7G Siri', kn: 'B7G ಸಿರಿ' },
+    subtitle: { en: 'Your AI assistant · Ask me about Kannada Rajyotsava', kn: 'ನಿಮ್ಮ AI ಸಹಾಯಕ · ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವದ ಬಗ್ಗೆ ಕೇಳಿ' },
     placeholder: { en: 'Type your question...', kn: 'ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ಟೈಪ್ ಮಾಡಿ...' },
     launcher: { en: 'Ask B7G AI', kn: 'B7G AI ಕೇಳಿ' },
     fallback: {

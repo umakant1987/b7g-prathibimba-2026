@@ -128,6 +128,8 @@ export interface Achiever {
   name: LocalizedText;
   honour: LocalizedText;
   description: LocalizedText;
+  /** Further honours, shown as small badges under the description. */
+  awards?: LocalizedText[];
 }
 
 export const achievers: Achiever[] = [
@@ -166,6 +168,11 @@ export const achievers: Achiever[] = [
       en: 'Nata Saarvabhouma of Kannada cinema: a theatre-trained actor and beloved singer whose 200+ films carried Kannada language, literature and values into every home. He lent his voice to the Gokak movement and remains an icon of Kannada pride.',
       kn: 'ಕನ್ನಡ ಚಿತ್ರರಂಗದ ನಟಸಾರ್ವಭೌಮ. ರಂಗಭೂಮಿಯಿಂದ ಬಂದ ನಟ ಮತ್ತು ಜನಪ್ರಿಯ ಗಾಯಕ; 200ಕ್ಕೂ ಹೆಚ್ಚು ಚಿತ್ರಗಳ ಮೂಲಕ ಕನ್ನಡ ಭಾಷೆ, ಸಾಹಿತ್ಯ ಮತ್ತು ಮೌಲ್ಯಗಳನ್ನು ಮನೆಮನೆಗೆ ತಲುಪಿಸಿದರು. ಗೋಕಾಕ್ ಚಳವಳಿಗೆ ಧ್ವನಿಯಾದ ಅವರು ಕನ್ನಡ ಅಭಿಮಾನದ ಶಾಶ್ವತ ಪ್ರತೀಕ.',
     },
+    awards: [
+      { en: 'Padma Bhushan (1983)', kn: 'ಪದ್ಮಭೂಷಣ ಪ್ರಶಸ್ತಿ (1983)' },
+      { en: 'Karnataka Ratna (1992)', kn: 'ಕರ್ನಾಟಕ ರತ್ನ ಪ್ರಶಸ್ತಿ (1992)' },
+      { en: 'National Award for Best Male Playback Singer (1993)', kn: 'ಶ್ರೇಷ್ಠ ಗಾಯಕ ರಾಷ್ಟ್ರಪ್ರಶಸ್ತಿ (1993)' },
+    ],
   },
   {
     id: 'adi-shankaracharya',

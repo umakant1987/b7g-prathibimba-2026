@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { HandHeart, Menu, X } from 'lucide-react';
+import { HandHeart, Menu, Sparkles, X } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../data/translations';
 import { SHOW_CONTRIBUTE } from '../config/env';
+import { openChat } from '../services/chatLauncher';
 
 const NAV_LINKS: { key: keyof typeof translations.nav; href: string }[] = [
   { key: 'why', href: '#why' },
@@ -72,6 +73,18 @@ export function Navbar() {
 
         {/* Phones: the main action stays visible in the bar, not hidden in the menu */}
         <div className="md:hidden flex items-center gap-3">
+          {/* Phones: a named button, because the floating chat icon alone isn't recognised as the assistant */}
+          <button
+            type="button"
+            onClick={() => {
+              setMobileOpen(false);
+              openChat();
+            }}
+            className="inline-flex items-center gap-1.5 text-sm font-bold px-3.5 py-2 rounded-full bg-gradient-to-r from-gold to-saffron text-ink shadow-[0_0_16px_rgba(246,215,132,0.45)]"
+          >
+            <Sparkles size={15} />
+            <span className="font-kannada">{t(translations.nav.siri)}</span>
+          </button>
           {SHOW_CONTRIBUTE && (
             <a
               href="#contribute"

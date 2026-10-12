@@ -80,6 +80,15 @@ export function KarnatakaContributions() {
                     {t(person.honour)}
                   </span>
                   <p className={`mt-3 text-cream/70 text-sm leading-relaxed ${kn}`}>{t(person.description)}</p>
+                  {person.awards && (
+                    <ul className="mt-3 flex flex-wrap gap-1.5">
+                      {person.awards.map((award) => (
+                        <li key={award.en} className={`rounded-full border border-cream/20 bg-cream/5 px-2.5 py-0.5 text-[11px] text-cream/80 ${kn}`}>
+                          🏅 {t(award)}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               ))}
             </div>

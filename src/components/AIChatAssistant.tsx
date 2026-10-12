@@ -5,7 +5,29 @@ import { useAIChat } from '../hooks/useAIChat';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../data/translations';
 import { isSuggestionVisible } from '../services/ai/suggestions';
+import { onOpenChat } from '../services/chatLauncher';
 import { GuestCardView, RichText } from './ChatMessageContent';
+
+/** The chat opens by itself once per visit: after this much scrolling, or this long without any interaction. */
+const AUTO_OPEN_SCROLL_SCREENS = 2.5;
+const AUTO_OPEN_IDLE_MS = 20_000;
+const AUTO_OPEN_KEY = 'b7g-chat-auto-opened';
+
+function alreadyShown(): boolean {
+  try {
+    return sessionStorage.getItem(AUTO_OPEN_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+function markShown(): void {
+  try {
+    sessionStorage.setItem(AUTO_OPEN_KEY, '1');
+  } catch {
+    // Private mode / storage blocked: the auto-open may simply happen again next visit.
+  }
+}
 
 export function AIChatAssistant() {
   const [open, setOpen] = useState(false);
@@ -13,6 +35,43 @@ export function AIChatAssistant() {
   const { language, t } = useLanguage();
   const { messages, isTyping, error, sendMessage } = useAIChat(language);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  const openPanel = () => {
+    markShown();
+    setOpen(true);
+  };
+
+  // Header "B7G Siri" button (and anything else that calls openChat()).
+  useEffect(() => onOpenChat(openPanel), []);
+
+  // Help visitors discover the assistant: open it once, after a few screens of scrolling or a pause.
+  useEffect(() => {
+    if (alreadyShown()) return;
+    let idleTimer = 0;
+    const trigger = () => {
+      if (alreadyShown()) return cleanup();
+      openPanel();
+      cleanup();
+    };
+    const resetIdle = () => {
+      window.clearTimeout(idleTimer);
+      idleTimer = window.setTimeout(trigger, AUTO_OPEN_IDLE_MS);
+    };
+    const onScroll = () => {
+      if (window.scrollY > window.innerHeight * AUTO_OPEN_SCROLL_SCREENS) trigger();
+      else resetIdle();
+    };
+    const activity = ['pointerdown', 'keydown', 'touchstart'] as const;
+    function cleanup() {
+      window.clearTimeout(idleTimer);
+      window.removeEventListener('scroll', onScroll);
+      activity.forEach((e) => window.removeEventListener(e, resetIdle));
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    activity.forEach((e) => window.addEventListener(e, resetIdle, { passive: true }));
+    resetIdle();
+    return cleanup;
+  }, []);
 
   // Your question and the typing indicator scroll to the bottom, but a new
   // answer scrolls to its own start so long answers are read from the top.
@@ -40,7 +99,7 @@ export function AIChatAssistant() {
     <>
       <motion.button
         type="button"
-        onClick={() => setOpen(true)}
+        onClick={openPanel}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: open ? 0 : 1, scale: open ? 0.8 : 1 }}
         className="fixed bottom-5 right-5 z-50 flex items-center gap-2 px-5 py-3.5 rounded-full bg-gradient-to-r from-gold to-saffron text-ink font-semibold shadow-lg hover:brightness-110 transition"
