@@ -1,18 +1,23 @@
 import type { Sponsor } from '../types';
 
 /**
- * Confirmed sponsors only. While this list is empty the Sponsors section shows
- * "Sponsors to be announced" and the assistant says sponsors are coming soon.
- * To announce one, add an entry (logo under public/sponsors/) and update
- * knowledge/sponsors.md, e.g.
- *   { id: 'sponsor-001', name: 'Company Name', logo: '/sponsors/company.svg', category: 'Title Sponsor' },
+ * Confirmed sponsors, shown in this order. While the list is empty the Sponsors
+ * section shows "Sponsors to be announced". When adding one: put the logo in
+ * public/sponsor-logos/, add an entry here, and update knowledge/sponsors.md
+ * (then npm run rag:ingest).
  */
-export const sponsors: Sponsor[] = [];
-
-export const sponsorCategoryOrder: Sponsor['category'][] = [
-  'Title Sponsor',
-  'Powered By',
-  'Gold Sponsor',
-  'Silver Sponsor',
-  'Community Partner',
+export const sponsors: Sponsor[] = [
+  {
+    id: 'b7g-aoa',
+    name: 'B7G AOA',
+    fullName: 'Brigade 7 Gardens Apartment Owners Association',
+    logo: '/sponsor-logos/b7glogo.jpeg',
+    amount: { en: '₹2.5 Lakh', kn: '₹2.5 ಲಕ್ಷ' },
+  },
+  {
+    id: '7wow-ventures',
+    name: '7WOW Ventures',
+    logo: '/sponsor-logos/7wowlogo.jpeg',
+    amount: { en: '₹10,000', kn: '₹10,000' },
+  },
 ];

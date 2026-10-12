@@ -1153,29 +1153,29 @@
     },
     {
       "name": "9. Sponsors and previous events",
-      "purpose": "Sponsors are not announced yet; the assistant says they are coming soon. Previous events come from the 2025 gallery.",
+      "purpose": "Confirmed sponsors: B7G AOA and 7WOW Ventures. Previous events come from the 2025 gallery.",
       "cases": [
         {
           "q": "Who are the sponsors?",
-          "behaviour": "Sponsors to be announced soon",
+          "behaviour": "Names both sponsors",
           "expect": {
             "includes": [
-              "announced soon"
+              "7WOW Ventures"
             ]
           }
         },
         {
           "q": "Who is the title sponsor?",
-          "behaviour": "Sponsors to be announced soon",
+          "behaviour": "Names B7G AOA",
           "expect": {
             "includes": [
-              "announced soon"
+              "B7G AOA"
             ]
           }
         },
         {
           "q": "How can I become a sponsor?",
-          "behaviour": "Coming soon, pointed to the Contribute section",
+          "behaviour": "Lists sponsors and points to the Contribute section",
           "expect": {
             "includes": [
               "Contribute"

@@ -190,12 +190,17 @@ export async function answerQuestion(
   }
 
   if (intent === 'sponsors') {
-    const list = sponsors.map((s) => `${s.name} (${s.category})`).join(', ');
+    const list = sponsors.map((s) => `${s.fullName ? `${s.name} (${s.fullName})` : s.name} — ${s.amount[language]}`).join('; ');
+    const invite = SHOW_CONTRIBUTE
+      ? language === 'kn'
+        ? ' ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಲು ಈ ಪುಟದ ಕೊಡುಗೆ ವಿಭಾಗವನ್ನು ನೋಡಿ.'
+        : ' Want to support the celebration too? See the Contribute section on this page.'
+      : '';
     return {
       answer: sponsors.length
         ? language === 'kn'
-          ? `ನಮ್ಮ ಪ್ರೋತ್ಸಾಹಕರು: ${list}.`
-          : `Our sponsors are: ${list}.`
+          ? `ನಮ್ಮ ಪ್ರೋತ್ಸಾಹಕರು: ${list}. ಅವರ ಉದಾರ ಬೆಂಬಲಕ್ಕೆ ಧನ್ಯವಾದಗಳು!${invite}`
+          : `Our sponsors are: ${list}. Thank you for your generous support!${invite}`
         : SPONSORS_SOON[language],
       sources: [{ label: 'Sponsors', type: 'sponsor' }],
       suggestedFollowUps: ['Show me the full schedule', 'Who are the Chief Guests?'],

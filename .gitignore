@@ -43,3 +43,6 @@ coverage
 
 .vercel
 .env*
+
+# Promo videos/GIFs (large media, not part of the site)
+promo/

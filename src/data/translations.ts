@@ -127,7 +127,8 @@ export const translations = {
   },
   sponsors: {
     title: { en: 'Our Sponsors', kn: 'ನಮ್ಮ ಪ್ರೋತ್ಸಾಹಕರು' },
-    subtitle: { en: 'Made possible by the generous support of our community partners.', kn: 'ನಮ್ಮ ಸಮುದಾಯ ಪಾಲುದಾರರ ಉದಾರ ಬೆಂಬಲದಿಂದ ಸಾಧ್ಯವಾಗಿದೆ.' },
+    subtitle: { en: 'This year’s celebration is made possible by the generous support of our sponsors.', kn: 'ನಮ್ಮ ಪ್ರೋತ್ಸಾಹಕರ ಉದಾರ ಬೆಂಬಲದಿಂದ ಈ ಬಾರಿಯ ಆಚರಣೆ ಸಾಧ್ಯವಾಗಿದೆ.' },
+    thankYou: { en: 'Thank You', kn: 'ಧನ್ಯವಾದಗಳು' },
     // Shown until the first sponsor is confirmed (src/data/sponsors.ts is empty).
     soonEyebrow: { en: 'Coming Soon', kn: 'ಶೀಘ್ರದಲ್ಲೇ' },
     soonTitle: { en: 'Sponsors to Be Announced', kn: 'ಪ್ರೋತ್ಸಾಹಕರ ಘೋಷಣೆ ಶೀಘ್ರದಲ್ಲೇ' },

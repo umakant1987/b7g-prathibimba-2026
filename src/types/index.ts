@@ -29,18 +29,16 @@ export interface Program {
   endTime?: string;
 }
 
-export type SponsorCategory =
-  | 'Title Sponsor'
-  | 'Powered By'
-  | 'Gold Sponsor'
-  | 'Silver Sponsor'
-  | 'Community Partner';
-
 export interface Sponsor {
   id: string;
+  /** Short name shown on the card, e.g. "B7G AOA". */
   name: string;
+  /** Full organisation name, shown under the short name. */
+  fullName?: string;
+  /** Logo under public/, e.g. "/sponsor-logos/b7glogo.jpeg". */
   logo: string;
-  category: SponsorCategory;
+  /** Sponsorship amount as shown on the card. */
+  amount: LocalizedText;
   website?: string;
 }
 
