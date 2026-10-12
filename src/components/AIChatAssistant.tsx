@@ -6,14 +6,14 @@ import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../data/translations';
 import { isSuggestionVisible } from '../services/ai/suggestions';
 import { onOpenChat } from '../services/chatLauncher';
+import { onLaunchDone } from '../services/launch';
 import { GuestCardView, RichText } from './ChatMessageContent';
 
 /**
- * The chat opens by itself once per page load (unless the visitor already opened it):
- * after this much scrolling, or this long without any interaction.
+ * The chat opens by itself once per page load (unless the visitor already opened it),
+ * after the launch loader has finished and the visitor has scrolled this far themselves.
  */
 const AUTO_OPEN_SCROLL_SCREENS = 2;
-const AUTO_OPEN_IDLE_MS = 15_000;
 
 /** Page scroll position; read from every candidate so it also works where the body scrolls (some mobile browsers). */
 const scrollTop = () => Math.max(window.scrollY, document.documentElement.scrollTop, document.body.scrollTop);
@@ -35,32 +35,31 @@ export function AIChatAssistant() {
   // Header "B7G Siri" button (and anything else that calls openChat()).
   useEffect(() => onOpenChat(openPanel), []);
 
-  // Help visitors discover the assistant: open it once, after a few screens of scrolling or a pause.
+  // Help visitors discover the assistant: once the website is showing, open it after the
+  // visitor's own scrolling adds up to ~2 screens (2–3 swipes on a phone). Only downward
+  // movement from that point counts, so a restored scroll position can't trigger it.
   useEffect(() => {
-    let idleTimer = 0;
-    const trigger = () => {
-      if (!shownRef.current) openPanel();
-      cleanup();
-    };
-    const resetIdle = () => {
-      window.clearTimeout(idleTimer);
-      idleTimer = window.setTimeout(trigger, AUTO_OPEN_IDLE_MS);
-    };
+    let last = 0;
+    let scrolled = 0;
     const onScroll = () => {
-      if (scrollTop() > window.innerHeight * AUTO_OPEN_SCROLL_SCREENS) trigger();
-      else resetIdle();
+      const y = scrollTop();
+      if (y > last) scrolled += y - last;
+      last = y;
+      if (scrolled >= window.innerHeight * AUTO_OPEN_SCROLL_SCREENS) {
+        if (!shownRef.current) openPanel();
+        stop();
+      }
     };
-    const activity = ['pointerdown', 'keydown', 'touchstart'] as const;
-    function cleanup() {
-      window.clearTimeout(idleTimer);
-      document.removeEventListener('scroll', onScroll, true);
-      activity.forEach((e) => window.removeEventListener(e, resetIdle));
-    }
     // Capture phase on document catches scrolling of the window and of the body alike.
-    document.addEventListener('scroll', onScroll, { capture: true, passive: true });
-    activity.forEach((e) => window.addEventListener(e, resetIdle, { passive: true }));
-    resetIdle();
-    return cleanup;
+    const stop = () => document.removeEventListener('scroll', onScroll, true);
+    const unsubscribe = onLaunchDone(() => {
+      last = scrollTop();
+      document.addEventListener('scroll', onScroll, { capture: true, passive: true });
+    });
+    return () => {
+      unsubscribe();
+      stop();
+    };
   }, []);
 
   // Your question and the typing indicator scroll to the bottom, but a new

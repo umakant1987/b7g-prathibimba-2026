@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { markLaunchDone } from '../services/launch';
 
 /** Loading steps shown in the neon counter; 75 % holds until the page has finished loading. */
 const STEPS = [0, 25, 50, 75, 100];
@@ -31,6 +32,10 @@ export function LaunchLoader() {
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
+    // Every visit starts at the top behind the loader (unless a #section link was opened),
+    // instead of jumping back to where the previous visit left off.
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    if (!window.location.hash) window.scrollTo(0, 0);
     const loaded = new Promise<void>((resolve) => {
       if (document.readyState === 'complete') resolve();
       else window.addEventListener('load', () => resolve(), { once: true });
@@ -53,7 +58,9 @@ export function LaunchLoader() {
       setLeaving(true);
       document.body.style.overflow = '';
       await sleep(FADE_MS);
-      if (!cancelled) setGone(true);
+      if (cancelled) return;
+      setGone(true);
+      markLaunchDone();
     })();
 
     return () => {
