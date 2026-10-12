@@ -89,20 +89,16 @@ function SponsorsComingSoon() {
   );
 }
 
-/** A confirmed sponsor: logo on a white panel (logos are designed for light backgrounds), name and amount. */
+/** A confirmed sponsor: logo and name. */
 function SponsorCard({ sponsor, index }: { sponsor: Sponsor; index: number }) {
-  const { t } = useLanguage();
   const card = (
     <>
-      <div className="rounded-xl bg-white p-4 sm:p-5 aspect-[4/3] flex items-center justify-center overflow-hidden">
-        <img src={sponsor.logo} alt={sponsor.fullName ?? sponsor.name} loading="lazy" className="max-h-full max-w-full object-contain" />
+      <div className="aspect-[4/3] flex items-center justify-center p-2">
+        <img src={sponsor.logo} alt={sponsor.fullName ?? sponsor.name} loading="lazy" className="max-h-full max-w-full object-contain rounded-lg" />
       </div>
       <div className="mt-4 text-center">
         <p className="font-display text-xl font-bold text-cream">{sponsor.name}</p>
         {sponsor.fullName && <p className="mt-0.5 text-sm text-cream/65 leading-snug">{sponsor.fullName}</p>}
-        <span className="mt-3 inline-block rounded-full bg-gradient-to-r from-gold to-saffron px-4 py-1.5 font-kannada text-base font-bold text-ink shadow">
-          {t(sponsor.amount)}
-        </span>
       </div>
     </>
   );

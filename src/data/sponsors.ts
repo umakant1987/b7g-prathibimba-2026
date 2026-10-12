@@ -10,7 +10,7 @@ export const sponsors: Sponsor[] = [
   {
     id: 'b7g-aoa',
     name: 'B7G AOA',
-    logo: '/sponsor-logos/b7glogo.jpeg',
+    logo: '/sponsor-logos/b7glogo-transparent.png',
     amount: { en: '₹2.5 Lakh', kn: '₹2.5 ಲಕ್ಷ' },
   },
   {
