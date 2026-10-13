@@ -19,7 +19,8 @@ export function Sponsors() {
         {announced ? (
           <>
             <SectionHeader title={s.title} subtitle={s.subtitle} eyebrow={t(s.thankYou)} />
-            <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {/* Flex-wrap rather than grid, so a short last row stays centred. */}
+            <div className="mt-14 flex flex-wrap justify-center gap-6">
               {sponsors.map((sponsor, index) => (
                 <SponsorCard key={sponsor.id} sponsor={sponsor} index={index} />
               ))}
@@ -89,12 +90,16 @@ function SponsorsComingSoon() {
   );
 }
 
-/** A confirmed sponsor: logo and name. */
+/** A confirmed sponsor: logo (or a monogram badge when there is no logo) and name. */
 function SponsorCard({ sponsor, index }: { sponsor: Sponsor; index: number }) {
   const card = (
     <>
       <div className="aspect-[4/3] flex items-center justify-center p-2">
-        <img src={sponsor.logo} alt={sponsor.fullName ?? sponsor.name} loading="lazy" className="max-h-full max-w-full object-contain rounded-lg" />
+        {sponsor.logo ? (
+          <img src={sponsor.logo} alt={sponsor.fullName ?? sponsor.name} loading="lazy" className="max-h-full max-w-full object-contain rounded-lg" />
+        ) : (
+          <SponsorMonogram name={sponsor.name} />
+        )}
       </div>
       <div className="mt-4 text-center">
         <p className="font-display text-xl font-bold text-cream">{sponsor.name}</p>
@@ -108,7 +113,7 @@ function SponsorCard({ sponsor, index }: { sponsor: Sponsor; index: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.12 }}
-      className="rounded-2xl border border-gold/40 bg-maroon/40 p-4 sm:p-5 shadow-[0_12px_40px_rgba(0,0,0,0.3)]"
+      className="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] max-w-sm rounded-2xl border border-gold/40 bg-maroon/40 p-4 sm:p-5 shadow-[0_12px_40px_rgba(0,0,0,0.3)]"
     >
       {sponsor.website ? (
         <a href={sponsor.website} target="_blank" rel="noopener noreferrer" className="block">
@@ -118,6 +123,27 @@ function SponsorCard({ sponsor, index }: { sponsor: Sponsor; index: number }) {
         card
       )}
     </motion.div>
+  );
+}
+
+/** Default badge for a sponsor without a logo: initials in a gold ring, in the site's mandala style. */
+function SponsorMonogram({ name }: { name: string }) {
+  const initials = name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((word) => word[0].toUpperCase())
+    .join('');
+  return (
+    <div
+      role="img"
+      aria-label={name}
+      className="relative flex h-full max-h-40 aspect-square items-center justify-center rounded-full border-2 border-gold/70 bg-gradient-to-br from-ink-light to-maroon shadow-[0_0_30px_rgba(232,184,75,0.25)]"
+    >
+      <span aria-hidden="true" className="absolute inset-2 rounded-full border border-dashed border-gold/40" />
+      <span aria-hidden="true" className="absolute inset-0 rounded-full bg-[url('/patterns/mandala.svg')] bg-center bg-contain bg-no-repeat opacity-15" />
+      <span className="relative font-display text-4xl sm:text-5xl font-bold tracking-wide text-gradient-gold">{initials}</span>
+    </div>
   );
 }
 

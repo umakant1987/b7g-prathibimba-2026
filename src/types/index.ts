@@ -35,8 +35,8 @@ export interface Sponsor {
   name: string;
   /** Full organisation name, shown under the short name. */
   fullName?: string;
-  /** Logo under public/, e.g. "/sponsor-logos/b7glogo.jpeg". */
-  logo: string;
+  /** Logo under public/, e.g. "/sponsor-logos/b7glogo.jpeg". Leave out when there is none: a monogram badge is shown. */
+  logo?: string;
   website?: string;
 }
 
