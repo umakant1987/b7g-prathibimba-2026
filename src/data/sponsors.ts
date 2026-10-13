@@ -20,11 +20,12 @@ export const sponsors: Sponsor[] = [
   {
     id: 'space-factor-interiors',
     name: 'Space Factor Interiors',
+    logo: '/sponsor-logos/spacefactor-logo.jpg',
   },
   {
     id: 'fundskart',
     name: 'Fundskart',
-    logo: '/sponsor-logos/fundskart-transparent.png',
+    logo: '/sponsor-logos/fundskart-logo.png',
   },
   {
     id: 'pranathi-enterprises',
