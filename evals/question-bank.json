@@ -1062,11 +1062,9 @@
         },
         {
           "q": "What is the contact number for the organisers?",
-          "behaviour": "Gives the contribution contacts (no other organiser contact published)",
+          "behaviour": "Declines — no general organiser contact published",
           "expect": {
-            "includes": [
-              "Anant"
-            ]
+            "declines": true
           }
         },
         {

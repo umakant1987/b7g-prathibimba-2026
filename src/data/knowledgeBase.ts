@@ -30,10 +30,10 @@ export const faqs: FAQ[] = [
     question: { en: 'Can I contribute or donate?', kn: 'ನಾನು ದಾನ ಮಾಡಬಹುದೇ?' },
     answer: {
       en: SHOW_CONTRIBUTE
-        ? 'Yes — contributions support the celebration. Please contact Anant (95382 41456) or Umakant (98448 74394); both numbers are in the Contribute section of the website.'
+        ? 'Yes — contributions support the celebration. Pay by UPI to ananth.pallaki@okicici (Anant) or umakanth.friend-1@okhdfcbank (Umakant); the Contribute section has Pay buttons and a copy option.'
         : 'Thank you for wanting to support the celebration! Details on how to contribute will be shared on this website soon.',
       kn: SHOW_CONTRIBUTE
-        ? 'ಹೌದು — ನಿಮ್ಮ ಕೊಡುಗೆ ಆಚರಣೆಗೆ ಬೆಂಬಲ. ದಯವಿಟ್ಟು ಅನಂತ್ (95382 41456) ಅಥವಾ ಉಮಾಕಾಂತ್ (98448 74394) ಅವರನ್ನು ಸಂಪರ್ಕಿಸಿ; ಸಂಖ್ಯೆಗಳು ವೆಬ್‌ಸೈಟ್‌ನ ಕೊಡುಗೆ ವಿಭಾಗದಲ್ಲಿವೆ.'
+        ? 'ಹೌದು — ನಿಮ್ಮ ಕೊಡುಗೆ ಆಚರಣೆಗೆ ಬೆಂಬಲ. UPI ಮೂಲಕ ಪಾವತಿಸಿ: ananth.pallaki@okicici (ಅನಂತ್) ಅಥವಾ umakanth.friend-1@okhdfcbank (ಉಮಾಕಾಂತ್). ಕೊಡುಗೆ ವಿಭಾಗದಲ್ಲಿ ಪಾವತಿ ಬಟನ್‌ಗಳಿವೆ.'
         : 'ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಲು ಬಯಸಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು! ಕೊಡುಗೆ ನೀಡುವ ವಿವರಗಳನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಲಾಗುವುದು.',
     },
   },

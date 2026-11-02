@@ -1,7 +1,7 @@
 import { useState, useSyncExternalStore } from 'react';
 import { motion } from 'framer-motion';
 import { Check, Copy, IndianRupee, Phone, UserRound } from 'lucide-react';
-import { contributeConfig, formatPhone, upiPayLink, type ContributeContact } from '../data/contribute';
+import { contributeConfig, detectPlatform, formatPhone, upiLinks, type ContributeContact } from '../data/contribute';
 import { translations } from '../data/translations';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -31,32 +31,33 @@ export function Contribute() {
           </figcaption>
         </motion.figure>
 
-        <p className="mt-10 text-cream/90 text-lg sm:text-xl">{t(c.contactLabel)}</p>
+        <p className="mt-10 text-cream/90 text-lg sm:text-xl">{t(c.payLabel)}</p>
 
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 max-w-xl mx-auto">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 max-w-2xl mx-auto">
           {contributeConfig.contacts.map((contact) => (
-            <ContactCard key={contact.id} contact={contact} touch={touch} />
+            <PayCard key={contact.id} contact={contact} touch={touch} />
           ))}
         </div>
-        <p className="mt-4 text-xs text-cream/55">{t(touch ? c.tapToCall : c.clickToCopy)}</p>
+        <p className="mt-4 text-xs text-cream/60 max-w-md mx-auto">{t(touch ? c.payHintMobile : c.payHintDesktop)}</p>
       </div>
     </section>
   );
 }
 
-function ContactCard({ contact, touch }: { contact: ContributeContact; touch: boolean }) {
+function PayCard({ contact, touch }: { contact: ContributeContact; touch: boolean }) {
   const { t } = useLanguage();
   const c = translations.contribute;
-  const [copied, setCopied] = useState<'phone' | 'upi' | null>(null);
-  const display = formatPhone(contact.phone);
+  const [copied, setCopied] = useState<'upi' | 'phone' | null>(null);
+  const links = upiLinks(contact, contributeConfig.upiNote, detectPlatform(navigator.userAgent));
+  const phone = formatPhone(contact.phone);
 
-  const copy = async (text: string, what: 'phone' | 'upi') => {
+  const copy = async (text: string, what: 'upi' | 'phone') => {
     try {
       await navigator.clipboard.writeText(text);
       setCopied(what);
       window.setTimeout(() => setCopied(null), 1600);
     } catch {
-      // Clipboard unavailable: the number stays visible to copy by hand.
+      // Clipboard unavailable: the UPI ID stays visible to copy by hand.
     }
   };
 
@@ -73,50 +74,53 @@ function ContactCard({ contact, touch }: { contact: ContributeContact; touch: bo
       </span>
       <p className="mt-2 font-kannada text-xl font-bold text-cream">{t(contact.name)}</p>
 
-      {/* Phones: tap to call. Desktop: click to copy (tel: links do nothing useful there). */}
+      {/* UPI ID: always visible and copyable, so it works with any UPI app on any device */}
+      <button
+        type="button"
+        onClick={() => copy(contact.upiId, 'upi')}
+        className="mt-3 inline-flex max-w-full items-center gap-2 rounded-xl border border-gold/40 bg-ink/30 px-3 py-2 text-sm font-semibold text-cream hover:border-gold"
+        aria-label={`${t(c.copyUpi)}: ${contact.upiId}`}
+      >
+        <span className="break-all">{contact.upiId}</span>
+        {copied === 'upi' ? <Check size={15} className="shrink-0 text-gold" /> : <Copy size={15} className="shrink-0 text-gold" />}
+      </button>
+      {copied === 'upi' && <span className="mt-1 text-xs text-gold">{t(c.copied)}</span>}
+
+      {/* Phones: open a UPI app with the ID and note filled in; the payer enters the amount */}
+      {touch && (
+        <div className="mt-4 flex w-full flex-col items-center gap-2">
+          <a
+            href={links.any}
+            className="inline-flex w-full max-w-60 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold to-saffron px-5 py-2.5 font-semibold text-ink hover:brightness-110"
+          >
+            <IndianRupee size={17} />
+            {t(c.payUpi)}
+          </a>
+          <div className="flex w-full max-w-60 gap-2">
+            <a href={links.gpay} className="flex-1 rounded-full border border-cream/30 px-3 py-2 text-sm font-semibold text-cream hover:border-gold">
+              Google Pay
+            </a>
+            <a href={links.phonepe} className="flex-1 rounded-full border border-cream/30 px-3 py-2 text-sm font-semibold text-cream hover:border-gold">
+              PhonePe
+            </a>
+          </div>
+        </div>
+      )}
+
+      {/* Questions: call on phones, copy the number on desktop */}
       <a
         href={`tel:${contact.phone}`}
         onClick={(e) => {
           if (!touch) {
             e.preventDefault();
-            void copy(display, 'phone');
+            void copy(phone, 'phone');
           }
         }}
-        className="mt-3 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-gold to-saffron text-ink font-semibold text-lg tabular-nums hover:brightness-110 transition"
-        aria-label={`${t(contact.name)}: ${display}`}
+        className="mt-4 inline-flex items-center gap-1.5 text-xs text-cream/70 hover:text-gold tabular-nums"
       >
-        {copied === 'phone' ? <Check size={18} /> : <Phone size={18} />}
-        {copied === 'phone' ? t(c.copied) : display}
+        <Phone size={13} />
+        {t(c.questions)} {copied === 'phone' ? t(c.copied) : phone}
       </a>
-      <button
-        type="button"
-        onClick={() => copy(display, 'phone')}
-        className="mt-2 inline-flex items-center gap-1.5 text-xs text-gold hover:text-gold-light"
-      >
-        <Copy size={13} />
-        {t(c.copyNumber)}
-      </button>
-
-      {/* Only with a confirmed UPI ID: phones open their UPI app chooser; desktops can copy the ID. */}
-      {contact.upiId &&
-        (touch ? (
-          <a
-            href={upiPayLink(contact, contributeConfig.upiNote)}
-            className="mt-3 inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-gold/50 text-sm font-semibold text-gold hover:bg-gold/10"
-          >
-            <IndianRupee size={15} />
-            {t(c.payUpi)}
-          </a>
-        ) : (
-          <button
-            type="button"
-            onClick={() => copy(contact.upiId, 'upi')}
-            className="mt-3 inline-flex items-center gap-1.5 text-xs text-cream/75 hover:text-cream break-all"
-          >
-            UPI: {contact.upiId}
-            {copied === 'upi' ? <Check size={13} /> : <Copy size={13} />}
-          </button>
-        ))}
     </motion.div>
   );
 }

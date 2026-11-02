@@ -3,24 +3,20 @@ import type { LocalizedText } from '../types';
 export interface ContributeContact {
   id: string;
   name: LocalizedText;
-  /** Mobile number as dialled, with country code, e.g. '+919538241456'. */
-  phone: string;
-  /**
-   * UPI ID (VPA) such as 'name@okaxis'. Leave empty until it is confirmed — a mobile
-   * number is not necessarily a UPI ID. When set, a "Pay via UPI" button appears that
-   * opens the phone's UPI apps (Google Pay, PhonePe, …) through a upi://pay link.
-   */
+  /** UPI ID (VPA) to pay to, e.g. 'name@okicici'. */
   upiId: string;
+  /** Mobile number with country code, for questions about contributions. */
+  phone: string;
 }
 
 /**
- * Contribute section: contact names and numbers only (no QR codes, bank details or amounts).
+ * Contribute section: pay by UPI to these IDs (no QR codes, bank details or amounts).
  * Shown while VITE_SHOW_CONTRIBUTE=true. Keep knowledge/contribute.md in sync.
  */
 export const contributeConfig: { contacts: ContributeContact[]; upiNote: string } = {
   contacts: [
-    { id: 'anant', name: { en: 'Anant', kn: 'ಅನಂತ್' }, phone: '+919538241456', upiId: '' },
-    { id: 'umakant', name: { en: 'Umakant', kn: 'ಉಮಾಕಾಂತ್' }, phone: '+919844874394', upiId: '' },
+    { id: 'anant', name: { en: 'Anant', kn: 'ಅನಂತ್' }, upiId: 'ananth.pallaki@okicici', phone: '+919538241456' },
+    { id: 'umakant', name: { en: 'Umakant', kn: 'ಉಮಾಕಾಂತ್' }, upiId: 'umakanth.friend-1@okhdfcbank', phone: '+919844874394' },
   ],
   /** Payment note pre-filled in the UPI app. */
   upiNote: 'B7G Kannada Rajyotsava 2026',
@@ -32,8 +28,27 @@ export function formatPhone(phone: string): string {
   return digits.length === 10 ? `${digits.slice(0, 5)} ${digits.slice(5)}` : phone;
 }
 
-/** UPI payment intent; on Android the system lets the visitor choose their UPI app. */
-export function upiPayLink(contact: ContributeContact, note: string): string {
-  const params = new URLSearchParams({ pa: contact.upiId, pn: contact.name.en, cu: 'INR', tn: note });
-  return `upi://pay?${params.toString()}`;
+export type MobilePlatform = 'android' | 'ios' | 'other';
+
+export function detectPlatform(userAgent: string): MobilePlatform {
+  if (/android/i.test(userAgent)) return 'android';
+  if (/iphone|ipad|ipod/i.test(userAgent)) return 'ios';
+  return 'other';
+}
+
+const ANDROID_PACKAGES = { gpay: 'com.google.android.apps.nbu.paisa.user', phonepe: 'com.phonepe.app' };
+
+/**
+ * UPI payment links (the amount is left for the payer to enter):
+ *  - any:     upi://pay — Android shows its chooser of installed UPI apps.
+ *  - gpay / phonepe: open that app directly (Android intent with the app's package; iOS app schemes).
+ */
+export function upiLinks(contact: ContributeContact, note: string, platform: MobilePlatform) {
+  const query = new URLSearchParams({ pa: contact.upiId, pn: contact.name.en, cu: 'INR', tn: note }).toString();
+  const android = (pkg: string) => `intent://pay?${query}#Intent;scheme=upi;package=${pkg};end`;
+  return {
+    any: `upi://pay?${query}`,
+    gpay: platform === 'android' ? android(ANDROID_PACKAGES.gpay) : `gpay://upi/pay?${query}`,
+    phonepe: platform === 'android' ? android(ANDROID_PACKAGES.phonepe) : `phonepe://pay?${query}`,
+  };
 }
