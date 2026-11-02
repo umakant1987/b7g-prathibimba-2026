@@ -33,8 +33,8 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-5 sm:px-8 h-16 sm:h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2.5">
           <img src="/logo.jpg" alt="B7G Kannada Rajyotsava" className="h-11 w-11 sm:h-16 sm:w-16 rounded-full object-cover shrink-0" />
-          {/* On very narrow phones only the logo shows, leaving room for Contribute + menu */}
-          <span className="hidden min-[420px]:inline font-kannada text-base sm:text-xl font-bold text-gradient-gold">
+          {/* Phones show only the logo, leaving room for B7G Siri, Contribute, language and menu */}
+          <span className="hidden md:inline font-kannada text-base sm:text-xl font-bold text-gradient-gold">
             B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ
           </span>
         </a>
@@ -72,7 +72,7 @@ export function Navbar() {
         </div>
 
         {/* Phones: the main action stays visible in the bar, not hidden in the menu */}
-        <div className="md:hidden flex items-center gap-3">
+        <div className="md:hidden flex items-center gap-2 min-[480px]:gap-3">
           {/* Phones: a named button, because the floating chat icon alone isn't recognised as the assistant */}
           <button
             type="button"
@@ -80,7 +80,7 @@ export function Navbar() {
               setMobileOpen(false);
               openChat();
             }}
-            className="inline-flex items-center gap-1.5 text-sm font-bold px-3.5 py-2 rounded-full bg-gradient-to-r from-gold to-saffron text-ink shadow-[0_0_16px_rgba(246,215,132,0.45)]"
+            className="inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-bold px-3.5 py-2 rounded-full bg-gradient-to-r from-gold to-saffron text-ink shadow-[0_0_16px_rgba(246,215,132,0.45)]"
           >
             <Sparkles size={15} />
             <span className="font-kannada">{t(translations.nav.siri)}</span>
@@ -89,12 +89,24 @@ export function Navbar() {
             <a
               href="#contribute"
               onClick={() => setMobileOpen(false)}
-              className="inline-flex items-center gap-1.5 text-sm font-bold px-3.5 py-2 rounded-full bg-gradient-to-r from-gold to-saffron text-ink"
+              aria-label={t(translations.nav.contribute)}
+              className="inline-flex items-center gap-1.5 text-sm font-bold px-2.5 min-[480px]:px-3.5 py-2 rounded-full whitespace-nowrap bg-gradient-to-r from-gold to-saffron text-ink"
             >
               <HandHeart size={16} />
-              {t(translations.nav.contribute)}
+              {/* Narrow phones: icon only, to leave room for the language switch */}
+              <span className="max-[479px]:sr-only">{t(translations.nav.contribute)}</span>
             </a>
           )}
+          {/* Language switch stays in the bar (not hidden in the menu) so it is always one tap away */}
+          <button
+            type="button"
+            onClick={toggleLanguage}
+            aria-label={language === 'en' ? 'Switch language to Kannada' : 'Switch language to English'}
+            lang={language === 'en' ? 'kn' : 'en'}
+            className="inline-flex min-h-9 items-center rounded-full border border-cream/30 px-2.5 py-1.5 text-sm font-semibold text-cream hover:text-gold"
+          >
+            {language === 'en' ? <span className="font-kannada">ಕನ್ನಡ</span> : 'EN'}
+          </button>
           <button
             type="button"
             className="text-cream"
@@ -123,16 +135,6 @@ export function Navbar() {
               {t(translations.nav[link.key])}
             </a>
           ))}
-          <div className="pt-2">
-            <button
-              type="button"
-              onClick={toggleLanguage}
-              aria-label="Switch language"
-              className="text-sm font-semibold text-cream/80 px-3 py-1.5 rounded-full border border-cream/20"
-            >
-              {language === 'en' ? 'ಕನ್ನಡ' : 'English'}
-            </button>
-          </div>
         </motion.div>
       )}
     </header>
