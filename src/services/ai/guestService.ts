@@ -145,10 +145,13 @@ function isGuestListQuery(question: string): boolean {
 
 function guestListReply(question: string, language: Language): GuestReply {
   const chiefOnly = /chief|ಮುಖ್ಯ/i.test(question);
-  let guests = guestProfiles;
-  if (/\b31(st)?\b|october|\boct\b|ಅಕ್ಟೋಬರ್/i.test(question)) guests = guests.filter((g) => /october/i.test(g.eventDate));
-  else if (/november|\bnov\b|ನವೆಂಬರ್/i.test(question)) guests = guests.filter((g) => /november/i.test(g.eventDate));
-  const singleDate = guests !== guestProfiles && guests.length > 0;
+  // The celebration moved from 31 October / 1 November to 15 November: a question about an old
+  // date gets a note about the move, then every guest (all are on the one day now).
+  const oldDate =
+    /\b31(st)?\b|october|\boct\b|ಅಕ್ಟೋಬರ್/i.test(question) ||
+    (/november|\bnov\b|ನವೆಂಬರ್/i.test(question) && /(^|\D)1(st)?(\D|$)/.test(question));
+  const guests = guestProfiles;
+  const singleDate = guests.length > 0 && guests.every((g) => g.eventDate === guests[0].eventDate);
   const shown = chiefOnly ? guests.filter((g) => /chief/i.test(g.eventRole)) : guests;
   const others = chiefOnly ? guestProfiles.filter((g) => !/chief/i.test(g.eventRole)) : [];
 
@@ -169,7 +172,7 @@ function guestListReply(question: string, language: Language): GuestReply {
         ? 'B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಮುಖ್ಯ ಅತಿಥಿಗಳು:'
         : singleDate
           ? `${shown[0].eventDateKn}ರ ಅತಿಥಿಗಳು:`
-          : 'B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 ಎರಡು ದಿನಗಳ ಆಚರಣೆ — ನಮ್ಮ ಅತಿಥಿಗಳು:',
+          : 'B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 — ನಮ್ಮ ಅತಿಥಿಗಳು:',
       ...shown.map((g) => `• ${describe(g)}`),
       ...(others.length ? ['', `ಜೊತೆಗೆ: ${others.map(describe).join('; ')}.`] : []),
     ].join('\n');
@@ -179,10 +182,17 @@ function guestListReply(question: string, language: Language): GuestReply {
         ? 'The Chief Guests for B7G Kannada Rajyotsava 2026 are:'
         : singleDate
           ? `Our guest${shown.length > 1 ? 's' : ''} on ${shown[0].eventDate}:`
-          : 'B7G Kannada Rajyotsava 2026 is a two-day celebration. Our guests:',
+          : 'B7G Kannada Rajyotsava 2026 — our guests:',
       ...shown.map((g) => `• ${describe(g)}`),
       ...(others.length ? ['', `Also joining us: ${others.map(describe).join('; ')}.`] : []),
     ].join('\n');
+  }
+
+  if (oldDate && shown.length) {
+    answer =
+      (language === 'kn'
+        ? 'ಆಚರಣೆಯನ್ನು ನವೆಂಬರ್ 15, 2026 (ಭಾನುವಾರ)ಕ್ಕೆ ಮುಂದೂಡಲಾಗಿದೆ.\n\n'
+        : 'The celebration has moved to **Sunday, 15 November 2026**.\n\n') + answer;
   }
 
   return {

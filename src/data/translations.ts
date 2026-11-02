@@ -78,11 +78,11 @@ export const translations = {
     programs: { en: 'Programs', kn: 'ಕಾರ್ಯಕ್ರಮಗಳು' },
   },
   schedule: {
-    eyebrow: { en: 'Two days of celebration', kn: 'ಎರಡು ದಿನಗಳ ಸಂಭ್ರಮ' },
+    eyebrow: { en: 'One day of celebration', kn: 'ಒಂದು ದಿನದ ಸಂಭ್ರಮ' },
     title: { en: 'Rajyotsava Programmes', kn: 'ರಾಜ್ಯೋತ್ಸವ ಕಾರ್ಯಕ್ರಮಗಳು' },
     subtitle: {
-      en: 'The running order for 31 October and 1 November. Timings will be announced soon.',
-      kn: 'ಅಕ್ಟೋಬರ್ 31 ಮತ್ತು ನವೆಂಬರ್ 1ರ ಕಾರ್ಯಕ್ರಮಗಳ ಕ್ರಮ. ಸಮಯವನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಪ್ರಕಟಿಸಲಾಗುವುದು.',
+      en: 'The running order for Sunday, 15 November. Timings will be announced soon.',
+      kn: 'ನವೆಂಬರ್ 15, ಭಾನುವಾರದ ಕಾರ್ಯಕ್ರಮಗಳ ಕ್ರಮ. ಸಮಯವನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಪ್ರಕಟಿಸಲಾಗುವುದು.',
     },
     liveNow: { en: 'LIVE NOW', kn: 'ಈಗ ಲೈವ್' },
     upNext: { en: 'UP NEXT', kn: 'ಮುಂದಿನದು' },
@@ -90,22 +90,15 @@ export const translations = {
     allCategories: { en: 'All', kn: 'ಎಲ್ಲಾ' },
     noResults: { en: 'No programmes match your search on this day.', kn: 'ಈ ದಿನ ನಿಮ್ಮ ಹುಡುಕಾಟಕ್ಕೆ ಹೊಂದುವ ಕಾರ್ಯಕ್ರಮಗಳಿಲ್ಲ.' },
     timingsTba: { en: 'Timings to be announced', kn: 'ಸಮಯ ಶೀಘ್ರದಲ್ಲೇ ಪ್ರಕಟ' },
-    postersSubtitle: {
-      en: 'Prathibimba — Our Heritage. Our Story. The detailed running order will be shared closer to the event.',
-      kn: 'ಪ್ರತಿಬಿಂಬ — ನಮ್ಮ ಪರಂಪರೆ. ನಮ್ಮ ಕಥೆ. ವಿವರವಾದ ಕಾರ್ಯಕ್ರಮ ಪಟ್ಟಿಯನ್ನು ಕಾರ್ಯಕ್ರಮದ ಹತ್ತಿರ ಹಂಚಿಕೊಳ್ಳಲಾಗುವುದು.',
+    daySubtitle: {
+      en: 'Prathibimba — Our Heritage. Our Story. One day of celebration at Brigade 7 Gardens.',
+      kn: 'ಪ್ರತಿಬಿಂಬ — ನಮ್ಮ ಪರಂಪರೆ. ನಮ್ಮ ಕಥೆ. ಬ್ರಿಗೇಡ್ 7 ಗಾರ್ಡನ್ಸ್‌ನಲ್ಲಿ ಒಂದು ದಿನದ ಸಂಭ್ರಮ.',
     },
-    posterLanguage: { en: 'Poster language', kn: 'ಪೋಸ್ಟರ್ ಭಾಷೆ' },
-    tapToEnlarge: { en: 'tap to view full size', kn: 'ಪೂರ್ಣ ಗಾತ್ರದಲ್ಲಿ ನೋಡಲು ಸ್ಪರ್ಶಿಸಿ' },
-    viewFull: { en: 'View full', kn: 'ಪೂರ್ಣ ನೋಟ' },
-    santhePoster: { en: 'B7G Santhe · 1 November · afternoon', kn: 'B7G ಸಂತೆ · ನವೆಂಬರ್ 1 · ಮಧ್ಯಾಹ್ನ' },
-    posterDays: {
-      '2026-10-31': { en: '31 October · 5 PM – 10 PM', kn: 'ಅಕ್ಟೋಬರ್ 31 · ಸಂಜೆ 5 – ರಾತ್ರಿ 10' },
-      '2026-11-01': { en: '1 November · from 9 AM', kn: 'ನವೆಂಬರ್ 1 · ಬೆಳಿಗ್ಗೆ 9ರಿಂದ' },
-    } as Record<string, { en: string; kn: string }>,
+    eventDay: { en: 'Sunday', kn: 'ಭಾನುವಾರ' },
+    eventMonth: { en: 'November 2026', kn: 'ನವೆಂಬರ್ 2026' },
     items: { en: 'items', kn: 'ಕಾರ್ಯಕ್ರಮಗಳು' },
     days: {
-      '2026-10-31': { en: '31 October', kn: 'ಅಕ್ಟೋಬರ್ 31' },
-      '2026-11-01': { en: '1 November', kn: 'ನವೆಂಬರ್ 1' },
+      '2026-11-15': { en: '15 November', kn: 'ನವೆಂಬರ್ 15' },
     } as Record<string, { en: string; kn: string }>,
     sessions: {
       morning: { en: 'Morning', kn: 'ಬೆಳಿಗ್ಗೆ' },
@@ -141,8 +134,8 @@ export const translations = {
     revealing: { en: 'Revealing soon', kn: 'ಶೀಘ್ರದಲ್ಲೇ ಅನಾವರಣ' },
     partnerTitle: { en: 'Be a part of Namma Rajyotsava', kn: 'ನಮ್ಮ ರಾಜ್ಯೋತ್ಸವದ ಭಾಗವಾಗಿ' },
     partnerText: {
-      en: 'Celebrate Kannada with the B7G community on 31 October and 1 November. Businesses and well-wishers who would like to support the celebration are warmly welcome.',
-      kn: 'ಅಕ್ಟೋಬರ್ 31 ಮತ್ತು ನವೆಂಬರ್ 1ರಂದು B7G ಸಮುದಾಯದೊಂದಿಗೆ ಕನ್ನಡವನ್ನು ಸಂಭ್ರಮಿಸಿ. ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಲು ಬಯಸುವ ಉದ್ಯಮಗಳು ಮತ್ತು ಹಿತೈಷಿಗಳಿಗೆ ಆತ್ಮೀಯ ಸ್ವಾಗತ.',
+      en: 'Celebrate Kannada with the B7G community on Sunday, 15 November. Businesses and well-wishers who would like to support the celebration are warmly welcome.',
+      kn: 'ನವೆಂಬರ್ 15, ಭಾನುವಾರದಂದು B7G ಸಮುದಾಯದೊಂದಿಗೆ ಕನ್ನಡವನ್ನು ಸಂಭ್ರಮಿಸಿ. ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಲು ಬಯಸುವ ಉದ್ಯಮಗಳು ಮತ್ತು ಹಿತೈಷಿಗಳಿಗೆ ಆತ್ಮೀಯ ಸ್ವಾಗತ.',
     },
     partnerCta: { en: 'Support the celebration', kn: 'ಆಚರಣೆಗೆ ಬೆಂಬಲ ನೀಡಿ' },
   },
@@ -202,16 +195,12 @@ export const translations = {
       en: 'Wherever you are, however you are — forever, remain a Kannadiga.',
     },
     quoteAuthor: { en: 'Rashtrakavi Kuvempu', kn: 'ರಾಷ್ಟ್ರಕವಿ ಕುವೆಂಪು' },
-    message: {
-      en: 'Every contribution, big or small, helps bring Rajyotsava alive for every family in B7G. Be a part of it.',
-      kn: 'ದೊಡ್ಡದಿರಲಿ ಚಿಕ್ಕದಿರಲಿ, ನಿಮ್ಮ ಪ್ರತಿಯೊಂದು ಕೊಡುಗೆಯೂ B7Gಯ ಪ್ರತಿಯೊಂದು ಕುಟುಂಬಕ್ಕೆ ರಾಜ್ಯೋತ್ಸವದ ಸಂಭ್ರಮವನ್ನು ತರುತ್ತದೆ. ನೀವೂ ಭಾಗವಾಗಿ.',
-    },
-    mobileHint: {
-      en: 'On your phone? Long-press a QR code to save it, then open it from your UPI app.',
-      kn: 'ಫೋನ್‌ನಲ್ಲಿದ್ದೀರಾ? QR ಕೋಡ್ ಅನ್ನು ಒತ್ತಿ ಹಿಡಿದು ಉಳಿಸಿ, ನಂತರ ನಿಮ್ಮ UPI ಆ್ಯಪ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ.',
-    },
-    qrComingSoon: { en: 'QR code coming soon', kn: 'QR ಕೋಡ್ ಶೀಘ್ರದಲ್ಲೇ' },
-    comingSoon: { en: 'Phone number coming soon', kn: 'ದೂರವಾಣಿ ಸಂಖ್ಯೆ ಶೀಘ್ರದಲ್ಲೇ' },
+    contactLabel: { en: 'For contributions, please contact', kn: 'ಕೊಡುಗೆ ನೀಡಲು ದಯವಿಟ್ಟು ಸಂಪರ್ಕಿಸಿ' },
+    tapToCall: { en: 'Tap a number to call.', kn: 'ಕರೆ ಮಾಡಲು ಸಂಖ್ಯೆಯನ್ನು ಸ್ಪರ್ಶಿಸಿ.' },
+    clickToCopy: { en: 'Click a number to copy it.', kn: 'ಸಂಖ್ಯೆಯನ್ನು ನಕಲಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ.' },
+    copyNumber: { en: 'Copy number', kn: 'ಸಂಖ್ಯೆ ನಕಲಿಸಿ' },
+    copied: { en: 'Copied!', kn: 'ನಕಲಿಸಲಾಗಿದೆ!' },
+    payUpi: { en: 'Pay via UPI', kn: 'UPI ಮೂಲಕ ಪಾವತಿಸಿ' },
   },
   chat: {
     title: { en: 'B7G Siri', kn: 'B7G ಸಿರಿ' },
@@ -223,8 +212,8 @@ export const translations = {
       kn: 'ಆ ಮಾಹಿತಿ ನನ್ನ B7G ಕಾರ್ಯಕ್ರಮ ಜ್ಞಾನಭಂಡಾರದಲ್ಲಿ ಇನ್ನೂ ಇಲ್ಲ. ದಯವಿಟ್ಟು ಕಾರ್ಯಕ್ರಮ ಸಂಘಟಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.',
     },
     welcome: {
-      en: "❤️ Welcome to the B7G Kannada Rajyotsava 2026 AI Assistant! Namma Kannada, Namma Karnataka, Namma Hemme! I'm here to help you discover everything about our celebration — from our programmes and performances to our distinguished Chief Guests and the rich history and heritage of Karnataka. This year, we are privileged to welcome Shri Dharmendra Kumar Arenahalli and Shri Prakash Belawadi as our Chief Guests on 1 November, and Kannada actor Nagabhushana NS on 31 October. Ask me anything about the event, our guests, Kannada Rajyotsava, or Karnataka's history and culture!",
-      kn: '❤️ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 AI ಸಹಾಯಕಕ್ಕೆ ಸ್ವಾಗತ! ನಮ್ಮ ಕನ್ನಡ, ನಮ್ಮ ಕರ್ನಾಟಕ, ನಮ್ಮ ಹೆಮ್ಮೆ! ನಮ್ಮ ಕಾರ್ಯಕ್ರಮಗಳು, ಪ್ರದರ್ಶನಗಳು, ಗೌರವಾನ್ವಿತ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಮತ್ತು ಕರ್ನಾಟಕದ ಶ್ರೀಮಂತ ಇತಿಹಾಸ ಹಾಗೂ ಪರಂಪರೆಯ ಬಗ್ಗೆ ತಿಳಿಯಲು ನಾನು ಸಹಾಯ ಮಾಡುತ್ತೇನೆ. ಈ ವರ್ಷ ನವೆಂಬರ್ 1ರಂದು ಶ್ರೀ Dharmendra Kumar Arenahalli ಮತ್ತು ಶ್ರೀ ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರನ್ನು ಮುಖ್ಯ ಅತಿಥಿಗಳಾಗಿ, ಹಾಗೂ ಅಕ್ಟೋಬರ್ 31ರಂದು ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್. ಅವರನ್ನು ಸ್ವಾಗತಿಸುವ ಸೌಭಾಗ್ಯ ನಮ್ಮದು. ಕಾರ್ಯಕ್ರಮ, ಅತಿಥಿಗಳು, ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಅಥವಾ ಕರ್ನಾಟಕದ ಇತಿಹಾಸ ಮತ್ತು ಸಂಸ್ಕೃತಿಯ ಬಗ್ಗೆ ಏನು ಬೇಕಾದರೂ ಕೇಳಿ!',
+      en: "❤️ Welcome to the B7G Kannada Rajyotsava 2026 AI Assistant! Namma Kannada, Namma Karnataka, Namma Hemme! I'm here to help you discover everything about our celebration — from our programmes and performances to our distinguished Chief Guests and the rich history and heritage of Karnataka. Join us on Sunday, 15 November! This year, we are privileged to welcome Shri Dharmendra Kumar Arenahalli and Shri Prakash Belawadi as our Chief Guests, and Kannada actor Nagabhushana NS as our Special Guest. Ask me anything about the event, our guests, Kannada Rajyotsava, or Karnataka's history and culture!",
+      kn: '❤️ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 AI ಸಹಾಯಕಕ್ಕೆ ಸ್ವಾಗತ! ನಮ್ಮ ಕನ್ನಡ, ನಮ್ಮ ಕರ್ನಾಟಕ, ನಮ್ಮ ಹೆಮ್ಮೆ! ನಮ್ಮ ಕಾರ್ಯಕ್ರಮಗಳು, ಪ್ರದರ್ಶನಗಳು, ಗೌರವಾನ್ವಿತ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಮತ್ತು ಕರ್ನಾಟಕದ ಶ್ರೀಮಂತ ಇತಿಹಾಸ ಹಾಗೂ ಪರಂಪರೆಯ ಬಗ್ಗೆ ತಿಳಿಯಲು ನಾನು ಸಹಾಯ ಮಾಡುತ್ತೇನೆ. ನವೆಂಬರ್ 15, ಭಾನುವಾರದಂದು ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ! ಈ ವರ್ಷ ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ ಮತ್ತು ಶ್ರೀ ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರನ್ನು ಮುಖ್ಯ ಅತಿಥಿಗಳಾಗಿ, ಹಾಗೂ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್. ಅವರನ್ನು ವಿಶೇಷ ಅತಿಥಿಯಾಗಿ ಸ್ವಾಗತಿಸುವ ಸೌಭಾಗ್ಯ ನಮ್ಮದು. ಕಾರ್ಯಕ್ರಮ, ಅತಿಥಿಗಳು, ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಅಥವಾ ಕರ್ನಾಟಕದ ಇತಿಹಾಸ ಮತ್ತು ಸಂಸ್ಕೃತಿಯ ಬಗ್ಗೆ ಏನು ಬೇಕಾದರೂ ಕೇಳಿ!',
     },
     santheTitle: { en: 'Explore B7G Santhe', kn: 'B7G ಸಂತೆ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ' },
     santheSuggestions: [

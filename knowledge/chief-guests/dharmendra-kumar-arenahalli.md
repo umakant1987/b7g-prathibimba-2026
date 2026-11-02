@@ -18,9 +18,9 @@ tagline: Historian • Author • Civil Engineer • Digital Storyteller
 short: Historian and digital storyteller behind Mysoorina Kathegalu — Stories of Mysuru.
 event_role: Chief Guest
 event_role_kn: ಮುಖ್ಯ ಅತಿಥಿ
-event_date: 2026-11-01
-event_date_label: 1 November 2026
-event_date_kn: ನವೆಂಬರ್ 1, 2026
+event_date: 2026-11-15
+event_date_label: 15 November 2026
+event_date_kn: ನವೆಂಬರ್ 15, 2026
 aliases: dharmendra kumar arenahalli | dharmendra kumar | dharmendra arenahalli | dharmendra | arenahalli | dharmi sir | dharmi | historian dharmendra | dharmendra sir | ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ | ಧರ್ಮೇಂದ್ರ | ಧರ್ಮಿ
 topics: mysoorina kathegalu | mysoorina kathe | mysore stories | mysuru stories | stories of mysuru | ಮೈಸೂರಿನ ಕಥೆಗಳು
 known_for: Mysuru — born and raised in Mysuru, now based in Bengaluru | Mysoorina Kathegalu — "Stories of Mysuru" | Karnataka history — palaces, forts, temples, dynasties and forgotten stories | Kannada digital storytelling that makes history accessible | Heritage documentation
@@ -28,7 +28,7 @@ ask: Who is Dharmendra Kumar Arenahalli? | What is Mysoorina Kathegalu? | What b
 summary_kn: Dharmendra Kumar Arenahalli (ಧರ್ಮಿ ಸರ್) ಅವರು ಇತಿಹಾಸಕಾರ, ಲೇಖಕ, ಸಿವಿಲ್ ಎಂಜಿನಿಯರ್ ಮತ್ತು ಡಿಜಿಟಲ್ ಕಥೆಗಾರರು. ಮೈಸೂರಿನಲ್ಲಿ ಹುಟ್ಟಿ ಬೆಳೆದು ಈಗ ಬೆಂಗಳೂರಿನಲ್ಲಿ ನೆಲೆಸಿರುವ ಅವರು "ಮೈಸೂರಿನ ಕಥೆಗಳು" ಮೂಲಕ ಕರ್ನಾಟಕದ ಇತಿಹಾಸ, ಪರಂಪರೆ, ಜನರು ಮತ್ತು ಸ್ಥಳಗಳ ಕಥೆಗಳನ್ನು ಕನ್ನಡದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳುತ್ತಾರೆ.
 ---
 
-# Dharmendra Kumar Arenahalli — Chief Guest, 1 November 2026
+# Dharmendra Kumar Arenahalli — Chief Guest, 15 November 2026
 
 ## Summary
 
@@ -36,7 +36,7 @@ Dharmendra Kumar Arenahalli, also known as **Dharmi Sir**, is a historian, autho
 
 ## What is his role and connection to B7G Kannada Rajyotsava? When is he coming?
 
-Shri Dharmendra Kumar Arenahalli is a **Chief Guest** at B7G Kannada Rajyotsava 2026 and is coming on **1 November 2026**, alongside Shri Prakash Belawadi. The 1 November programme begins at 9 AM at Brigade 7 Gardens.
+Shri Dharmendra Kumar Arenahalli is a **Chief Guest** at B7G Kannada Rajyotsava 2026 and is coming on **Sunday, 15 November 2026**, alongside Shri Prakash Belawadi, at Brigade 7 Gardens. Which part of the day he attends has not been announced.
 
 ## What is Mysoorina Kathegalu?
 

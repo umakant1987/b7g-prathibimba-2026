@@ -1,14 +1,14 @@
-import { useState } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import { motion } from 'framer-motion';
-import { Check, Copy, Phone, QrCode } from 'lucide-react';
-import { contributeConfig, type ContributeQr } from '../data/contribute';
+import { Check, Copy, IndianRupee, Phone, UserRound } from 'lucide-react';
+import { contributeConfig, formatPhone, upiPayLink, type ContributeContact } from '../data/contribute';
 import { translations } from '../data/translations';
 import { useLanguage } from '../context/LanguageContext';
 
 export function Contribute() {
   const { t } = useLanguage();
   const c = translations.contribute;
-  const { qrCodes, phone, phoneLabel } = contributeConfig;
+  const touch = useIsTouchDevice();
 
   return (
     <section id="contribute" className="relative scroll-mt-20 py-24 sm:py-32 px-5 sm:px-8 bg-ink mandala-bg">
@@ -31,51 +31,32 @@ export function Contribute() {
           </figcaption>
         </motion.figure>
 
-        <p className="mt-8 text-cream/90 text-lg sm:text-xl max-w-xl mx-auto">{t(c.message)}</p>
+        <p className="mt-10 text-cream/90 text-lg sm:text-xl">{t(c.contactLabel)}</p>
 
-        {/* QR codes */}
-        <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-6 max-w-lg mx-auto">
-          {qrCodes.map((qr) => (
-            <QrCard key={qr.id} qr={qr} />
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 max-w-xl mx-auto">
+          {contributeConfig.contacts.map((contact) => (
+            <ContactCard key={contact.id} contact={contact} touch={touch} />
           ))}
         </div>
-        <p className="mt-4 text-xs text-cream/60 sm:hidden">{t(c.mobileHint)}</p>
-
-        {/* Phone */}
-        <div className="mt-10">
-          <p className="text-sm text-cream/70">{t(phoneLabel)}</p>
-          {phone ? (
-            <a
-              href={`tel:${phone.replace(/[^\d+]/g, '')}`}
-              className="mt-3 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-gold to-saffron text-ink font-semibold text-lg hover:brightness-110 transition"
-            >
-              <Phone size={18} />
-              {phone}
-            </a>
-          ) : (
-            <p className="mt-3 inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass text-cream/70 text-sm">
-              <Phone size={16} />
-              {t(c.comingSoon)}
-            </p>
-          )}
-        </div>
+        <p className="mt-4 text-xs text-cream/55">{t(touch ? c.tapToCall : c.clickToCopy)}</p>
       </div>
     </section>
   );
 }
 
-function QrCard({ qr }: { qr: ContributeQr }) {
+function ContactCard({ contact, touch }: { contact: ContributeContact; touch: boolean }) {
   const { t } = useLanguage();
   const c = translations.contribute;
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState<'phone' | 'upi' | null>(null);
+  const display = formatPhone(contact.phone);
 
-  const copyUpi = async () => {
+  const copy = async (text: string, what: 'phone' | 'upi') => {
     try {
-      await navigator.clipboard.writeText(qr.upiId);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1500);
+      await navigator.clipboard.writeText(text);
+      setCopied(what);
+      window.setTimeout(() => setCopied(null), 1600);
     } catch {
-      // Clipboard unavailable — the UPI ID is still visible to copy by hand.
+      // Clipboard unavailable: the number stays visible to copy by hand.
     }
   };
 
@@ -85,31 +66,70 @@ function QrCard({ qr }: { qr: ContributeQr }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="glass rounded-2xl p-3 sm:p-5 flex flex-col items-center"
+      className="glass rounded-2xl p-5 flex flex-col items-center"
     >
-      {/* Scanners need a light, high-contrast tile around the code */}
-      <div className="w-full aspect-square rounded-xl bg-white p-2 sm:p-3 flex items-center justify-center">
-        {qr.image ? (
-          <img src={qr.image} alt={t(qr.label)} className="w-full h-full object-contain" loading="lazy" />
+      <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-gold/15 text-gold">
+        <UserRound size={22} />
+      </span>
+      <p className="mt-2 font-kannada text-xl font-bold text-cream">{t(contact.name)}</p>
+
+      {/* Phones: tap to call. Desktop: click to copy (tel: links do nothing useful there). */}
+      <a
+        href={`tel:${contact.phone}`}
+        onClick={(e) => {
+          if (!touch) {
+            e.preventDefault();
+            void copy(display, 'phone');
+          }
+        }}
+        className="mt-3 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-gold to-saffron text-ink font-semibold text-lg tabular-nums hover:brightness-110 transition"
+        aria-label={`${t(contact.name)}: ${display}`}
+      >
+        {copied === 'phone' ? <Check size={18} /> : <Phone size={18} />}
+        {copied === 'phone' ? t(c.copied) : display}
+      </a>
+      <button
+        type="button"
+        onClick={() => copy(display, 'phone')}
+        className="mt-2 inline-flex items-center gap-1.5 text-xs text-gold hover:text-gold-light"
+      >
+        <Copy size={13} />
+        {t(c.copyNumber)}
+      </button>
+
+      {/* Only with a confirmed UPI ID: phones open their UPI app chooser; desktops can copy the ID. */}
+      {contact.upiId &&
+        (touch ? (
+          <a
+            href={upiPayLink(contact, contributeConfig.upiNote)}
+            className="mt-3 inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-gold/50 text-sm font-semibold text-gold hover:bg-gold/10"
+          >
+            <IndianRupee size={15} />
+            {t(c.payUpi)}
+          </a>
         ) : (
-          <div className="flex flex-col items-center justify-center gap-2 w-full h-full rounded-lg border-2 border-dashed border-ink/25 text-ink/60">
-            <QrCode size={40} />
-            <span className="text-xs font-medium px-2">{t(c.qrComingSoon)}</span>
-          </div>
-        )}
-      </div>
-      <p className="mt-3 text-sm font-semibold text-cream">{t(qr.label)}</p>
-      {qr.upiId && (
-        <button
-          type="button"
-          onClick={copyUpi}
-          className="mt-1 inline-flex items-center gap-1.5 text-xs text-gold hover:text-gold-light break-all"
-          aria-label={`Copy UPI ID ${qr.upiId}`}
-        >
-          {qr.upiId}
-          {copied ? <Check size={13} /> : <Copy size={13} />}
-        </button>
-      )}
+          <button
+            type="button"
+            onClick={() => copy(contact.upiId, 'upi')}
+            className="mt-3 inline-flex items-center gap-1.5 text-xs text-cream/75 hover:text-cream break-all"
+          >
+            UPI: {contact.upiId}
+            {copied === 'upi' ? <Check size={13} /> : <Copy size={13} />}
+          </button>
+        ))}
     </motion.div>
+  );
+}
+
+/** Phones and tablets (coarse pointer), where tel: and upi: links open the dialler / UPI apps. */
+function useIsTouchDevice(): boolean {
+  return useSyncExternalStore(
+    (onChange) => {
+      const mql = window.matchMedia('(pointer: coarse)');
+      mql.addEventListener('change', onChange);
+      return () => mql.removeEventListener('change', onChange);
+    },
+    () => window.matchMedia('(pointer: coarse)').matches,
+    () => false,
   );
 }

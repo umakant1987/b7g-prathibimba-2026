@@ -80,9 +80,10 @@ describe('B7G RAG — required questions', () => {
     assert.deepEqual([...top].sort(), [DKA, PB].sort(), `top people were ${top}`);
   });
 
-  test('2. "Who is the guest on October 31?" → Nagabhushana NS', async () => {
-    const { entities } = await ask('Who is the guest on October 31?');
-    assert.equal(people(entities)[0], NB);
+  test('2. "Who are the guests on 15 November?" → all three guests', async () => {
+    const { entities, prompt } = await ask('Who are the guests on 15 November?');
+    assert.deepEqual([...people(entities).slice(0, 3)].sort(), [DKA, NB, PB].sort());
+    assert.match(prompt, /15 November 2026/);
   });
 
   test('3. "Who is the hero of Ikkat?" → Nagabhushana NS', async () => {
@@ -111,8 +112,8 @@ describe('B7G RAG — required questions', () => {
     assert.match(prompt, /ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರು/, 'the Kannada summary should be in the context');
   });
 
-  test('7. "Who are the guests on November 1?" → Prakash Belawadi + Dharmendra Kumar Arenahalli', async () => {
-    const { entities } = await ask('Who are the guests on November 1?');
+  test('7. "Who are the Chief Guests on November 15?" → Prakash Belawadi + Dharmendra Kumar Arenahalli', async () => {
+    const { entities } = await ask('Who are the Chief Guests on November 15?');
     const top = people(entities).slice(0, 2);
     assert.deepEqual([...top].sort(), [DKA, PB].sort(), `top people were ${top}`);
   });
@@ -318,11 +319,17 @@ describe('B7G RAG — detailed programme not yet released', () => {
     return { result, prompt: model.prompts.length > calls ? model.prompts.at(-1)! : '' };
   }
 
-  test('schedule questions get the poster highlights and "coming soon", not the running order', async () => {
-    const { prompt } = await context('What is happening on 31st October?');
+  test('schedule questions get the 15 November schedule, not the running order', async () => {
+    const { prompt } = await context('What is happening on 15 November?');
     assert.doesNotMatch(prompt, /^Category: programme$/m);
     assert.doesNotMatch(prompt, /SriRanga Group|Tanya PV|Danzo/);
-    assert.match(prompt, /Prathibimba|released closer to the event/);
+    assert.match(prompt, /15 November 2026/);
+    assert.match(prompt, /Santhe/);
+  });
+
+  test('old dates: "Is the celebration on 1 November?" → it has moved to 15 November', async () => {
+    const { prompt } = await context('Is the celebration on 1 November?');
+    assert.match(prompt, /rescheduled|moved to 15 November/);
   });
 
   test('performer questions do not reveal unreleased performers', async () => {
@@ -337,11 +344,12 @@ describe('B7G RAG — detailed programme not yet released', () => {
     assert.doesNotMatch(prompt, /Speech by Mr\. Dharmi|item 4 of 8/);
   });
 
-  test('poster facts are available: dates, start times and highlights', async () => {
+  test('the 15 November schedule is available: morning Santhe; evening culture, sand art, jamming', async () => {
     const { prompt } = await context('What are the highlights of Prathibimba?');
-    assert.match(prompt, /5 PM to 10 PM|5 PM – 10 PM/);
-    assert.match(prompt, /9 AM/);
-    assert.match(prompt, /Raghavendra Hegde/);
+    assert.match(prompt, /15 November 2026/);
+    assert.match(prompt, /B7G Santhe/);
+    assert.match(prompt, /sand art/i);
+    assert.match(prompt, /jamming/i);
   });
 });
 
@@ -386,11 +394,11 @@ describe('B7G RAG — B7G Santhe (Taste of Karnataka)', () => {
     }
   });
 
-  test('"When is Santhe?" and "What is happening on 1 November afternoon?" give 1 November, afternoon', async () => {
-    for (const question of ['When is Santhe?', 'What is happening on 1 November afternoon?']) {
+  test('"When is Santhe?" and "What is happening on 15 November morning?" give 15 November, morning', async () => {
+    for (const question of ['When is Santhe?', 'What is happening on 15 November morning?']) {
       const { prompt } = await ask(question);
       assert.match(prompt, /B7G Santhe/, question);
-      assert.match(prompt, /Event date: 2026-11-01\nSession: afternoon/, question);
+      assert.match(prompt, /Event date: 2026-11-15\nSession: morning/, question);
     }
   });
 

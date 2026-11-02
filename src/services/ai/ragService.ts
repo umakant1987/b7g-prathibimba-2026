@@ -51,19 +51,19 @@ const NO_TIMINGS: Record<Language, string> = {
 
 const SCHEDULE_SOURCE: ChatSource = { label: 'B7G Programme', type: 'schedule' };
 
-/** From the programme posters (knowledge/programme-highlights.md). */
+/** The 15 November schedule (knowledge/programme-highlights.json). */
 const PROGRAMME_COMING_SOON: Record<Language, string> = {
   en: [
-    'The detailed programme will be released closer to the event. Here are the highlights from the posters:',
-    '• **31 October, 5 PM – 10 PM** — performances by B7G residents (singing, dance, drama, dance drama) and live sand art by Mr. Raghavendra Hegde, with Kannada film actor Nagabhushana NS.',
-    '• **1 November, from 9 AM** — Chief Guests Prakash Belawadi and Dharmendra Kumar (Dharmi), B7G Santhe food stalls, and evening highlights Hulivesha (Huli Kunita) and a live band.',
-    'See the posters in the Programmes section.',
+    'The celebration is on **Sunday, 15 November 2026** at Brigade 7 Gardens:',
+    '• **Morning** — B7G Santhe, our community market.',
+    '• **Evening** — Cultural programmes, a sand art performance and a jamming session.',
+    'Exact timings will be announced soon. See the Programmes section.',
   ].join('\n'),
   kn: [
-    'ವಿವರವಾದ ಕಾರ್ಯಕ್ರಮ ಪಟ್ಟಿಯನ್ನು ಕಾರ್ಯಕ್ರಮದ ಹತ್ತಿರ ಪ್ರಕಟಿಸಲಾಗುವುದು. ಪೋಸ್ಟರ್‌ಗಳ ಮುಖ್ಯಾಂಶಗಳು:',
-    '• **ಅಕ್ಟೋಬರ್ 31, ಸಂಜೆ 5 – ರಾತ್ರಿ 10** — B7G ನಿವಾಸಿಗಳಿಂದ ಗಾಯನ, ನೃತ್ಯ, ನಾಟಕ, ನೃತ್ಯ ರೂಪಕ; ಶ್ರೀ ರಾಘವೇಂದ್ರ ಹೆಗಡೆ ಅವರಿಂದ ಲೈವ್ ಮರಳು ಕಲೆ; ಕನ್ನಡ ಚಲನಚಿತ್ರ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್.',
-    '• **ನವೆಂಬರ್ 1, ಬೆಳಿಗ್ಗೆ 9ರಿಂದ** — ಮುಖ್ಯ ಅತಿಥಿಗಳು ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಮತ್ತು ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ (ಧರ್ಮಿ); B7G ಸಂತೆ ಆಹಾರ ಮಳಿಗೆಗಳು; ಸಂಜೆ ಹುಲಿವೇಷ (ಹುಲಿ ಕುಣಿತ) ಮತ್ತು ಲೈವ್ ಬ್ಯಾಂಡ್.',
-    'ಪೋಸ್ಟರ್‌ಗಳನ್ನು ಕಾರ್ಯಕ್ರಮಗಳು ವಿಭಾಗದಲ್ಲಿ ನೋಡಿ.',
+    'ಕಾರ್ಯಕ್ರಮ **ನವೆಂಬರ್ 15, 2026 ಭಾನುವಾರ** ಬ್ರಿಗೇಡ್ 7 ಗಾರ್ಡನ್ಸ್‌ನಲ್ಲಿ:',
+    '• **ಬೆಳಿಗ್ಗೆ** — B7G ಸಂತೆ, ನಮ್ಮ ಸಮುದಾಯದ ಸಂತೆ.',
+    '• **ಸಂಜೆ** — ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು, ಮರಳು ಕಲೆ ಪ್ರದರ್ಶನ ಮತ್ತು ಜಾಮಿಂಗ್ ಸೆಷನ್.',
+    'ನಿಖರ ಸಮಯವನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಪ್ರಕಟಿಸಲಾಗುವುದು. ಕಾರ್ಯಕ್ರಮಗಳು ವಿಭಾಗವನ್ನು ನೋಡಿ.',
   ].join('\n'),
 };
 

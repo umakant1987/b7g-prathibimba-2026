@@ -18,9 +18,9 @@ tagline: Kannada Actor • Cinema Personality
 short: Kannada actor known for playing Vasu in the comedy film Ikkat.
 event_role: Special Guest
 event_role_kn: ವಿಶೇಷ ಅತಿಥಿ
-event_date: 2026-10-31
-event_date_label: 31 October 2026
-event_date_kn: ಅಕ್ಟೋಬರ್ 31, 2026
+event_date: 2026-11-15
+event_date_label: 15 November 2026
+event_date_kn: ನವೆಂಬರ್ 15, 2026
 aliases: nagabhushana ns | ns nagabhushana | nagabhushana | naga bhushana | nagabhushan | naga bhushan | nagbhushan | nagabhushana sir | actor nagabhushana | nagabhushana actor | ನಾಗಭೂಷಣ ಎನ್ ಎಸ್ | ನಾಗಭೂಷಣ
 topics: ikkat | ಇಕ್ಕಟ್
 known_for: Playing Vasu, the lead, in the Kannada comedy *Ikkat* (2021) | Natural comic timing and expressive acting | Relatable, contemporary Bengaluru characters | The new generation of Kannada cinema
@@ -28,7 +28,7 @@ ask: Who is Nagabhushana? | What movies has Nagabhushana acted in? | What is Nag
 summary_kn: ನಾಗಭೂಷಣ ಎನ್.ಎಸ್. ಅವರು ತಮ್ಮ ಸಹಜ ಹಾಸ್ಯ ಮತ್ತು ಆಪ್ತ ಅಭಿನಯಕ್ಕೆ ಹೆಸರಾದ ಕನ್ನಡ ನಟ. 2021ರ ಕನ್ನಡ ಹಾಸ್ಯ ಚಿತ್ರ "ಇಕ್ಕಟ್"ನಲ್ಲಿ ಭೂಮಿ ಶೆಟ್ಟಿ ಅವರ ಜೊತೆ ವಾಸು ಪಾತ್ರದಲ್ಲಿ ನಟಿಸಿದ್ದಾರೆ.
 ---
 
-# Nagabhushana NS — Special Guest, 31 October 2026
+# Nagabhushana NS — Special Guest, 15 November 2026
 
 ## Summary
 
@@ -36,7 +36,7 @@ Nagabhushana NS is a Kannada actor known for his natural comic timing and relata
 
 ## What is his role at B7G Kannada Rajyotsava? Is he a Chief Guest? When is he coming?
 
-Nagabhushana NS is the **Special Guest** for the B7G Kannada Rajyotsava programme on **31 October 2026**. He is not a Chief Guest for 1 November — the 1 November Chief Guests are Prakash Belawadi and Dharmendra Kumar Arenahalli. The 31 October evening runs from 5 PM to 10 PM at Brigade 7 Gardens; the time he appears hasn't been published yet.
+Nagabhushana NS is the **Special Guest** for B7G Kannada Rajyotsava 2026 on **Sunday, 15 November 2026**, at Brigade 7 Gardens. He is not a Chief Guest — the Chief Guests are Prakash Belawadi and Dharmendra Kumar Arenahalli. The time he appears hasn't been published yet.
 
 ## What is he known for?
 
@@ -87,7 +87,7 @@ Some questions residents could ask Nagabhushana at the event:
 
 ## Stage introduction (short introduction for the emcee)
 
-"Friends, please give a big B7G welcome to our Special Guest for 31 October — Kannada actor Nagabhushana NS! Many of you know him as Vasu, the hero of the Kannada comedy *Ikkat*, and from films like *Badava Rascal* and *Gubbi Mele Brahmastra*. Known for his natural comic timing and relatable characters, he represents the new generation of Kannada cinema. Please welcome Nagabhushana!"
+"Friends, please give a big B7G welcome to our Special Guest — Kannada actor Nagabhushana NS! Many of you know him as Vasu, the hero of the Kannada comedy *Ikkat*, and from films like *Badava Rascal* and *Gubbi Mele Brahmastra*. Known for his natural comic timing and relatable characters, he represents the new generation of Kannada cinema. Please welcome Nagabhushana!"
 
 ## Is Nagendra the hero of Ikkat?
 
@@ -97,5 +97,5 @@ If you mean the hero of *Ikkat*, you're referring to **Nagabhushana NS**. He is 
 
 - Use only the information in this file. Do not assume his birth date, education, family, personal life, political views, quotes or any awards and films not listed here.
 - If asked something not covered here, say: "I have limited information about Nagabhushana in my current B7G knowledge base. I can share the information available here, but I don't want to guess or provide unverified details."
-- Do not describe him as a Chief Guest for 1 November.
+- Do not describe him as a Chief Guest.
 - Never speak as him.

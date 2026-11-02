@@ -20,4 +20,4 @@ export const SHOW_PROGRAMME_DETAILS = import.meta.env.VITE_SHOW_PROGRAMME_DETAIL
  */
 export const SHOW_CONTRIBUTE = import.meta.env.VITE_SHOW_CONTRIBUTE === 'true';
 
-export const EVENT_DATE = '2026-11-01';
+export const EVENT_DATE = '2026-11-15';

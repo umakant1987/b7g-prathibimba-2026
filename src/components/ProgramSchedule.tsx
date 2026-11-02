@@ -7,27 +7,27 @@ import { useSchedule } from '../hooks/useSchedule';
 import { hasTimings } from '../services/schedule';
 import type { ProgramCategory } from '../types';
 import { ProgramCard } from './ProgramCard';
-import { ProgrammePosters } from './ProgrammePosters';
+import { EventDaySchedule } from './EventDaySchedule';
 import { SectionHeader } from './SectionHeader';
 
 const CATEGORIES: (ProgramCategory | 'all')[] = ['all', 'ceremony', 'music', 'dance', 'drama', 'kids', 'talks', 'more'];
 
 /**
  * Programmes section. Until the detailed programme is released (VITE_SHOW_PROGRAMME_DETAILS),
- * it shows the programme posters; the detailed view below is kept intact for release.
+ * it shows the one-day schedule (Morning / Evening); the detailed view below is kept intact for release.
  */
 export function ProgramSchedule() {
-  return SHOW_PROGRAMME_DETAILS ? <DetailedProgramme /> : <PosterProgramme />;
+  return SHOW_PROGRAMME_DETAILS ? <DetailedProgramme /> : <DayProgramme />;
 }
 
-function PosterProgramme() {
+function DayProgramme() {
   const { t } = useLanguage();
   const s = translations.schedule;
   return (
     <section id="schedule" className="relative py-24 sm:py-32 px-5 sm:px-8 bg-ink-light mandala-bg mandala-alt">
       <div className="max-w-5xl mx-auto">
-        <SectionHeader title={s.title} subtitle={s.postersSubtitle} eyebrow={t(s.eyebrow)} />
-        <ProgrammePosters />
+        <SectionHeader title={s.title} subtitle={s.daySubtitle} eyebrow={t(s.eyebrow)} />
+        <EventDaySchedule />
       </div>
     </section>
   );

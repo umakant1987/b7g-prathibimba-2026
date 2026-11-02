@@ -18,9 +18,9 @@ tagline: Actor • Filmmaker • Theatre Personality • Journalist • Educator
 short: Bengaluru-based actor, filmmaker, theatre personality, journalist and educator.
 event_role: Chief Guest
 event_role_kn: ಮುಖ್ಯ ಅತಿಥಿ
-event_date: 2026-11-01
-event_date_label: 1 November 2026
-event_date_kn: ನವೆಂಬರ್ 1, 2026
+event_date: 2026-11-15
+event_date_label: 15 November 2026
+event_date_kn: ನವೆಂಬರ್ 15, 2026
 aliases: prakash belawadi | prakash belavadi | prakash belwadi | prakash belvadi | belawadi | belavadi | belwadi | prakash | prakash sir | belawadi sir | actor prakash | prakash actor | ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ | ಬೆಳವಾಡಿ | ಪ್ರಕಾಶ್
 topics:
 known_for: Theatre — Kannada and English stage | Cinema — Kannada, Hindi and English films | Filmmaking — directed the National Award-winning *Stumble* | Journalism | Cultural education and mentoring
@@ -28,7 +28,7 @@ ask: Who is Prakash Belawadi? | What movies has Prakash Belawadi acted in? | Wha
 summary_kn: ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರು ಬೆಂಗಳೂರು ಮೂಲದ ನಟ, ಚಲನಚಿತ್ರ ನಿರ್ದೇಶಕ, ರಂಗಭೂಮಿ ವ್ಯಕ್ತಿತ್ವ, ಪತ್ರಕರ್ತ ಮತ್ತು ಶಿಕ್ಷಕರು. ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್ ರಂಗಭೂಮಿ ಹಾಗೂ ಭಾರತೀಯ ಚಿತ್ರರಂಗಕ್ಕೆ ಅವರ ಕೊಡುಗೆ ಮಹತ್ವದ್ದು. ಅವರು ನಿರ್ದೇಶಿಸಿದ "ಸ್ಟಂಬಲ್" ಚಿತ್ರಕ್ಕೆ ಅತ್ಯುತ್ತಮ ಇಂಗ್ಲಿಷ್ ಚಿತ್ರಕ್ಕಾಗಿ ರಾಷ್ಟ್ರೀಯ ಚಲನಚಿತ್ರ ಪ್ರಶಸ್ತಿ ಲಭಿಸಿದೆ.
 ---
 
-# Prakash Belawadi — Chief Guest, 1 November 2026
+# Prakash Belawadi — Chief Guest, 15 November 2026
 
 ## Summary
 
@@ -36,7 +36,7 @@ Prakash Belawadi is a Bengaluru-based actor, filmmaker, theatre personality, jou
 
 ## What is his role and connection to B7G Kannada Rajyotsava? When is he coming?
 
-Shri Prakash Belawadi is a **Chief Guest** at B7G Kannada Rajyotsava 2026 and is coming on **1 November 2026**, alongside Shri Dharmendra Kumar Arenahalli. The 1 November programme begins at 9 AM at Brigade 7 Gardens.
+Shri Prakash Belawadi is a **Chief Guest** at B7G Kannada Rajyotsava 2026 and is coming on **Sunday, 15 November 2026**, alongside Shri Dharmendra Kumar Arenahalli, at Brigade 7 Gardens. Which part of the day he attends has not been announced.
 
 ## What movies and films has he acted in?
 

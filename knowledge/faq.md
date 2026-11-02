@@ -5,19 +5,23 @@ status: confirmed
 category: faq
 event: B7G Kannada Rajyotsava 2026
 language: en
-version: 1
-updated_at: 2026-10-06
+version: 2
+updated_at: 2026-11-02
 ---
 
 # Frequently Asked Questions
 
 ## When is B7G Kannada Rajyotsava 2026?
 
-On 31 October and 1 November 2026, at Brigade 7 Gardens (B7G), Bengaluru.
+On **Sunday, 15 November 2026**, at Brigade 7 Gardens (B7G), Bengaluru. The whole celebration happens on this one day.
 
-## When does the event start?
+## Is the event on 31 October or 1 November?
 
-The 31 October evening programme runs from 5 PM to 10 PM, and the 1 November programme begins at 9 AM — both at Brigade 7 Gardens.
+No. The celebration was earlier planned for 31 October and 1 November, but it has been rescheduled to a single day: Sunday, 15 November 2026.
+
+## When does the event start? What is the schedule?
+
+On 15 November 2026, the morning features B7G Santhe, and the evening features cultural programmes, a sand art performance and a jamming session, all at Brigade 7 Gardens. Exact timings have not been announced yet.
 
 ## Is the event free to attend?
 
@@ -29,17 +33,17 @@ Not at all. The celebration is inclusive and welcoming to residents and families
 
 ## Who are the Chief Guests?
 
-The Chief Guests for B7G Kannada Rajyotsava 2026 on November 1 are Shri Prakash Belawadi and Shri Dharmendra Kumar Arenahalli.
+The Chief Guests for B7G Kannada Rajyotsava 2026 (15 November) are Shri Prakash Belawadi and Shri Dharmendra Kumar Arenahalli.
 
 Prakash Belawadi is an accomplished actor, filmmaker, theatre personality, journalist and educator.
 
 Dharmendra Kumar Arenahalli is a historian, author and digital storyteller best known for Mysoorina Kathegalu, through which he shares stories of Karnataka's history and heritage in Kannada.
 
-On 31 October, Kannada actor Nagabhushana NS joins the celebrations as a special guest.
+Kannada actor Nagabhushana NS joins the celebrations as the Special Guest.
 
-## Who are the guests across the two days?
+## Who are all the guests?
 
-B7G Kannada Rajyotsava 2026 features different distinguished guests across the celebrations. Nagabhushana NS is associated with the 31 October programme, while Prakash Belawadi and Dharmendra Kumar Arenahalli are the Chief Guests for the 1 November celebration.
+B7G Kannada Rajyotsava 2026 on 15 November welcomes Chief Guests Prakash Belawadi and Dharmendra Kumar Arenahalli, and Special Guest Nagabhushana NS.
 
 ## Who is Nagabhushana?
 
@@ -51,11 +55,11 @@ Yes. Nagabhushana plays the lead character Vasu in Ikkat, opposite Bhoomi Shetty
 
 ## Is Nagendra the hero of Ikkat?
 
-If you mean the hero of Ikkat, you're referring to Nagabhushana NS. He plays the lead character Vasu, opposite Bhoomi Shetty, and is the special guest at B7G Kannada Rajyotsava on 31 October 2026.
+If you mean the hero of Ikkat, you're referring to Nagabhushana NS. He plays the lead character Vasu, opposite Bhoomi Shetty, and is the Special Guest at B7G Kannada Rajyotsava on 15 November 2026.
 
 ## When is Nagabhushana coming to B7G?
 
-Nagabhushana is scheduled to be part of the B7G Kannada Rajyotsava celebrations on 31 October 2026.
+Nagabhushana is scheduled to be part of the B7G Kannada Rajyotsava celebration on Sunday, 15 November 2026.
 
 ## Why were these Chief Guests chosen?
 
