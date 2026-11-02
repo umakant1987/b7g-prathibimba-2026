@@ -26,7 +26,6 @@ const KNOWLEDGE_DIR = path.resolve(import.meta.dirname, '../../knowledge');
 const CHUNKING = { maxTokens: 600, overlapTokens: 80 };
 const RETRIEVAL = { topK: 8, contextChunks: 5, similarityThreshold: 0.3, keywordMinCoverage: 0.5, maxChunksPerDocument: 3, hiddenCategories: ['programme_teaser'] };
 
-const PB = 'Prakash Belawadi';
 const DKA = 'Dharmendra Kumar Arenahalli';
 const NB = 'Nagabhushana NS';
 
@@ -56,7 +55,7 @@ function contextEntities(prompt: string): string[] {
   return [...prompt.matchAll(/^Entity: (.+)$/gm)].map((m) => m[1]);
 }
 
-const people = (entities: string[]) => entities.filter((e) => [PB, DKA, NB].includes(e));
+const people = (entities: string[]) => entities.filter((e) => [DKA, NB].includes(e));
 
 describe('B7G RAG — required questions', () => {
   let service: RagService;
@@ -73,16 +72,15 @@ describe('B7G RAG — required questions', () => {
     return { result, prompt, entities: contextEntities(prompt) };
   }
 
-  test('1. "Who are the Chief Guests?" → Prakash Belawadi + Dharmendra Kumar Arenahalli', async () => {
+  test('1. "Who are the Chief Guests?" → Dharmendra Kumar Arenahalli', async () => {
     const { result, entities } = await ask('Who are the Chief Guests?');
     assert.equal(result.grounded, true);
-    const top = people(entities).slice(0, 2);
-    assert.deepEqual([...top].sort(), [DKA, PB].sort(), `top people were ${top}`);
+    assert.equal(people(entities)[0], DKA, `top people were ${people(entities)}`);
   });
 
-  test('2. "Who are the guests on 15 November?" → all three guests', async () => {
+  test('2. "Who are the guests on 15 November?" → Dharmendra Kumar Arenahalli + Nagabhushana NS', async () => {
     const { entities, prompt } = await ask('Who are the guests on 15 November?');
-    assert.deepEqual([...people(entities).slice(0, 3)].sort(), [DKA, NB, PB].sort());
+    assert.deepEqual([...people(entities).slice(0, 2)].sort(), [DKA, NB].sort());
     assert.match(prompt, /15 November 2026/);
   });
 
@@ -92,10 +90,15 @@ describe('B7G RAG — required questions', () => {
     assert.match(prompt, /Vasu/);
   });
 
-  test('4. "Who is Prakash Belawadi?" → Prakash Belawadi biography', async () => {
-    const { entities, prompt } = await ask('Who is Prakash Belawadi?');
-    assert.equal(entities[0], PB);
-    assert.match(prompt, /Title: Prakash Belawadi — Summary/);
+  test('4. "Who is Dharmendra Kumar Arenahalli?" → his biography', async () => {
+    const { entities, prompt } = await ask('Who is Dharmendra Kumar Arenahalli?');
+    assert.equal(entities[0], DKA);
+    assert.match(prompt, /Title: Dharmendra Kumar Arenahalli — Summary/);
+  });
+
+  test('4b. "Who is Prakash Belawadi?" → the note that he is no longer attending', async () => {
+    const { prompt } = await ask('Who is Prakash Belawadi?');
+    assert.match(prompt, /will not be attending/);
   });
 
   test('5. "What is Mysoorina Kathegalu?" → Dharmendra Kumar Arenahalli', async () => {
@@ -104,18 +107,17 @@ describe('B7G RAG — required questions', () => {
     assert.match(prompt, /Stories of Mysuru/);
   });
 
-  test('6. "ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಯಾರು?" → Kannada answer about Prakash Belawadi', async () => {
-    const { result, entities, prompt } = await ask('ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಯಾರು?');
+  test('6. "ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಯಾರು?" → Kannada answer about Dharmendra Kumar Arenahalli', async () => {
+    const { result, entities, prompt } = await ask('ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಯಾರು?');
     assert.equal(result.language, 'kn');
-    assert.equal(entities[0], PB);
+    assert.equal(entities[0], DKA);
     assert.match(prompt, /answer in Kannada/);
-    assert.match(prompt, /ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರು/, 'the Kannada summary should be in the context');
+    assert.match(prompt, /ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ \(Dharmendra Kumar Arenahalli, ಧರ್ಮಿ ಸರ್\) ಅವರು/, 'the Kannada summary should be in the context');
   });
 
-  test('7. "Who are the Chief Guests on November 15?" → Prakash Belawadi + Dharmendra Kumar Arenahalli', async () => {
+  test('7. "Who are the Chief Guests on November 15?" → Dharmendra Kumar Arenahalli', async () => {
     const { entities } = await ask('Who are the Chief Guests on November 15?');
-    const top = people(entities).slice(0, 2);
-    assert.deepEqual([...top].sort(), [DKA, PB].sort(), `top people were ${top}`);
+    assert.equal(people(entities)[0], DKA, `top people were ${people(entities)}`);
   });
 
   test('8. Unrelated question → "I don\'t have that information…" without calling the model', async () => {
@@ -155,15 +157,15 @@ describe('B7G RAG — conversation, language and dates', () => {
   });
 
   test('standalone questions are not rewritten', async () => {
-    const history: ConversationTurn[] = [{ role: 'assistant', content: 'Prakash Belawadi is a Chief Guest.' }];
+    const history: ConversationTurn[] = [{ role: 'assistant', content: 'Dharmendra Kumar Arenahalli is the Chief Guest.' }];
     const result = await service.query({ question: 'Who is Nagabhushana?', history });
     assert.equal(result.rewrittenQuestion, 'Who is Nagabhushana?');
   });
 
-  test('mixed-language "Prakash Belawadi ಯಾರು?" → Kannada, about Prakash Belawadi', async () => {
-    const result = await service.query({ question: 'Prakash Belawadi ಯಾರು?' });
+  test('mixed-language "Dharmendra Kumar Arenahalli ಯಾರು?" → Kannada, about Dharmendra Kumar Arenahalli', async () => {
+    const result = await service.query({ question: 'Dharmendra Kumar Arenahalli ಯಾರು?' });
     assert.equal(result.language, 'kn');
-    assert.equal(contextEntities(model.prompts.at(-1)!)[0], PB);
+    assert.equal(contextEntities(model.prompts.at(-1)!)[0], DKA);
   });
 
   test('date parsing: English, abbreviations, ordinals, Kannada', () => {

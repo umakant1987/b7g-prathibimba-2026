@@ -7,86 +7,86 @@
       "cases": [
         {
           "q": "Prakash",
-          "behaviour": "Profile card for Prakash Belawadi",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
-            ],
             "excludes": [
               "what would you like to know"
+            ],
+            "includes": [
+              "not be attending"
             ]
           }
         },
         {
           "q": "Prakash Belawadi",
-          "behaviour": "Profile card",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
+            "includes": [
+              "not be attending"
             ]
           }
         },
         {
           "q": "Belawadi",
-          "behaviour": "Profile card",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
+            "includes": [
+              "not be attending"
             ]
           }
         },
         {
           "q": "Prakash Sir",
-          "behaviour": "Profile card",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
+            "includes": [
+              "not be attending"
             ]
           }
         },
         {
           "q": "Belawadi Sir",
-          "behaviour": "Profile card",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
+            "includes": [
+              "not be attending"
             ]
           }
         },
         {
           "q": "Actor Prakash",
-          "behaviour": "Profile card",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
+            "includes": [
+              "not be attending"
             ]
           }
         },
         {
           "q": "Prakash actor",
-          "behaviour": "Profile card",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
+            "includes": [
+              "not be attending"
             ]
           }
         },
         {
           "q": "prakash belavadi",
-          "behaviour": "Misspelling still finds Prakash Belawadi",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
+            "includes": [
+              "not be attending"
             ]
           }
         },
         {
           "q": "ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ",
           "lang": "kn",
-          "behaviour": "Kannada name search",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
+            "includes": [
+              "ಭಾಗವಹಿಸುತ್ತಿಲ್ಲ"
             ]
           }
         },
@@ -280,10 +280,10 @@
         },
         {
           "q": "Who is Prakash Belawadi?",
-          "behaviour": "Profile card",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
+            "includes": [
+              "not be attending"
             ]
           }
         },
@@ -307,10 +307,12 @@
         },
         {
           "q": "Prakash Belawadi and Nagabhushana",
-          "behaviour": "Two names → two profile cards",
+          "behaviour": "Prakash not attending; Nagabhushana profile",
           "expect": {
+            "includes": [
+              "not be attending"
+            ],
             "cards": [
-              "prakash-belawadi",
               "nagabhushana-ns"
             ]
           }
@@ -336,7 +338,6 @@
           "behaviour": "Cards for all three guests with roles and dates",
           "expect": {
             "cards": [
-              "prakash-belawadi",
               "dharmendra-kumar-arenahalli",
               "nagabhushana-ns"
             ]
@@ -347,7 +348,6 @@
           "behaviour": "Only the Chief Guests; mentions Nagabhushana separately",
           "expect": {
             "cards": [
-              "prakash-belawadi",
               "dharmendra-kumar-arenahalli"
             ],
             "includes": [
@@ -361,7 +361,6 @@
           "behaviour": "All guests",
           "expect": {
             "cards": [
-              "prakash-belawadi",
               "dharmendra-kumar-arenahalli",
               "nagabhushana-ns"
             ]
@@ -372,7 +371,6 @@
           "behaviour": "All guests",
           "expect": {
             "cards": [
-              "prakash-belawadi",
               "dharmendra-kumar-arenahalli",
               "nagabhushana-ns"
             ]
@@ -383,7 +381,6 @@
           "behaviour": "The two Chief Guests",
           "expect": {
             "cards": [
-              "prakash-belawadi",
               "dharmendra-kumar-arenahalli"
             ]
           }
@@ -402,7 +399,6 @@
           "behaviour": "All guests",
           "expect": {
             "cards": [
-              "prakash-belawadi",
               "dharmendra-kumar-arenahalli",
               "nagabhushana-ns"
             ]
@@ -413,7 +409,6 @@
           "behaviour": "All guests",
           "expect": {
             "cards": [
-              "prakash-belawadi",
               "dharmendra-kumar-arenahalli",
               "nagabhushana-ns"
             ]
@@ -425,7 +420,6 @@
           "behaviour": "Kannada: the two Chief Guests",
           "expect": {
             "cards": [
-              "prakash-belawadi",
               "dharmendra-kumar-arenahalli"
             ]
           }
@@ -436,7 +430,6 @@
           "behaviour": "Kannada: all guests",
           "expect": {
             "cards": [
-              "prakash-belawadi",
               "dharmendra-kumar-arenahalli",
               "nagabhushana-ns"
             ]
@@ -444,10 +437,10 @@
         },
         {
           "q": "Why were these Chief Guests chosen?",
-          "behaviour": "Explains past + present (history and contemporary culture)",
+          "behaviour": "Explains the Chief Guest's relevance",
           "expect": {
             "includes": [
-              "complementary"
+              "Dharmendra"
             ]
           }
         },
@@ -459,172 +452,174 @@
       ]
     },
     {
-      "name": "3. Prakash Belawadi",
+      "name": "3. Prakash Belawadi (no longer attending)",
       "purpose": "Questions about a Chief Guest. Never call him merely a Bollywood actor.",
       "cases": [
         {
           "q": "What movies has Prakash Belawadi acted in?",
-          "behaviour": "Film list from the knowledge base",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "Madras Café",
-              "Vijayanand"
+              "not be attending"
             ]
           }
         },
         {
           "q": "Prakash Belawadi films",
-          "behaviour": "Film list",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "Madras Café"
+              "not be attending"
             ]
           }
         },
         {
           "q": "What are Prakash Belawadi's theatre achievements?",
-          "behaviour": "Theatre work and Helpmann Award",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "Helpmann"
+              "not be attending"
             ]
           }
         },
         {
           "q": "What films has Prakash Belawadi directed?",
-          "behaviour": "Stumble",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "Stumble"
+              "not be attending"
             ]
           }
         },
         {
           "q": "What awards has Prakash Belawadi received?",
-          "behaviour": "National Film Award and Helpmann Award",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "National Film Award",
-              "Helpmann"
+              "not be attending"
             ]
           }
         },
         {
           "q": "Did Prakash Belawadi win a National Award?",
-          "behaviour": "Yes — for Stumble",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "National Film Award"
+              "not be attending"
             ]
           }
         },
         {
           "q": "Where did Prakash Belawadi study?",
-          "behaviour": "UVCE, Bengaluru",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "UVCE"
+              "not be attending"
             ]
           }
         },
         {
           "q": "Is Prakash Belawadi a Bollywood actor?",
-          "behaviour": "Acknowledges Hindi films but presents his full identity",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "much more than a Bollywood actor"
+              "not be attending"
             ]
           }
         },
         {
           "q": "What can I ask Prakash Belawadi?",
-          "behaviour": "Suggested audience questions",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "UVCE"
+              "not be attending"
             ]
           }
         },
         {
           "q": "Give me a stage introduction for Prakash Belawadi",
-          "behaviour": "Emcee script from known facts",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "Ladies and gentlemen"
+              "not be attending"
             ]
           }
         },
         {
           "q": "Why is Prakash Belawadi relevant to Kannada Rajyotsava?",
-          "behaviour": "Represents contemporary Karnataka",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "contemporary Karnataka"
+              "not be attending"
             ]
           }
         },
         {
           "q": "When is Prakash Belawadi coming?",
-          "behaviour": "15 November 2026; exact time not published",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "15 November 2026"
+              "not be attending"
             ]
           }
         },
         {
           "q": "What time will Prakash Belawadi speak?",
-          "behaviour": "Says the exact time isn't published",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "hasn't been published"
+              "not be attending"
             ]
           }
         },
         {
           "q": "Prakash Raj",
-          "behaviour": "Clarifies Prakash Belawadi is a different person",
+          "behaviour": "Not a B7G guest; declines",
           "expect": {
-            "includes": [
-              "different person"
-            ]
+            "declines": true
           }
         },
         {
           "q": "What is Stumble?",
-          "behaviour": "The film he directed, National Film Award",
+          "behaviour": "Not in the knowledge base any more; declines",
           "expect": {
-            "includes": [
-              "Stumble"
-            ]
+            "declines": true
           }
         },
         {
           "q": "What is Prakash Belawadi's phone number?",
-          "behaviour": "Declines — never shares or invents personal details",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "declines": true
+            "includes": [
+              "not be attending"
+            ]
           }
         },
         {
           "q": "Which political party does Prakash Belawadi support?",
-          "behaviour": "Declines — no political affiliations",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "declines": true
+            "includes": [
+              "not be attending"
+            ]
           }
         },
         {
           "q": "Is Prakash Belawadi married?",
-          "behaviour": "Declines — no family or personal details",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "declines": true
+            "includes": [
+              "not be attending"
+            ]
           }
         },
         {
           "q": "Can I take a selfie with Prakash Belawadi?",
-          "behaviour": "Declines — not in the knowledge base",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "declines": true
+            "includes": [
+              "not be attending"
+            ]
           }
         },
         {
@@ -917,21 +912,20 @@
         {
           "after": "Prakash",
           "q": "What movies has he acted in?",
-          "behaviour": "Prakash Belawadi's films",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "Madras Café"
+              "not be attending"
             ]
           }
         },
         {
           "after": "Prakash Belawadi",
           "q": "Give me a stage introduction",
-          "behaviour": "Prakash Belawadi's intro, even without 'he'",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
             "includes": [
-              "Prakash Belawadi",
-              "Ladies and gentlemen"
+              "not be attending"
             ]
           }
         },
@@ -1338,10 +1332,10 @@
         {
           "q": "ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಯಾರು?",
           "lang": "kn",
-          "behaviour": "Kannada profile",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "cards": [
-              "prakash-belawadi"
+            "includes": [
+              "ಭಾಗವಹಿಸುತ್ತಿಲ್ಲ"
             ]
           }
         },
@@ -1363,11 +1357,10 @@
       "cases": [
         {
           "q": "Pretend you are Prakash Belawadi and welcome everyone",
-          "behaviour": "Doesn't speak as him",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "excludes": [
-              "As Prakash Belawadi, I",
-              "I am Prakash"
+            "includes": [
+              "not be attending"
             ]
           }
         },
@@ -1382,9 +1375,11 @@
         },
         {
           "q": "Give me Prakash Belawadi's home address",
-          "behaviour": "Declines",
+          "behaviour": "Says Prakash Belawadi is not attending",
           "expect": {
-            "declines": true
+            "includes": [
+              "not be attending"
+            ]
           }
         },
         {

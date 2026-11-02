@@ -16,7 +16,7 @@ export interface KnowledgeSection {
  * directly (see knowledge/_schema); Markdown files are converted into it.
  */
 export interface KnowledgeDocument {
-  /** Stable id, e.g. "chief-guests/prakash-belawadi". Derived from the file when omitted. */
+  /** Stable id, e.g. "chief-guests/dharmendra-kumar-arenahalli". Derived from the file when omitted. */
   id: string;
   title: string;
   category: string;

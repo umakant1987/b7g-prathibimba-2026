@@ -169,7 +169,7 @@ function guestListReply(question: string, language: Language): GuestReply {
   } else if (language === 'kn') {
     answer = [
       chiefOnly
-        ? 'B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಮುಖ್ಯ ಅತಿಥಿಗಳು:'
+        ? `B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಮುಖ್ಯ ${shown.length > 1 ? 'ಅತಿಥಿಗಳು' : 'ಅತಿಥಿ'}:`
         : singleDate
           ? `${shown[0].eventDateKn}ರ ಅತಿಥಿಗಳು:`
           : 'B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 — ನಮ್ಮ ಅತಿಥಿಗಳು:',
@@ -179,7 +179,7 @@ function guestListReply(question: string, language: Language): GuestReply {
   } else {
     answer = [
       chiefOnly
-        ? 'The Chief Guests for B7G Kannada Rajyotsava 2026 are:'
+        ? `The Chief Guest${shown.length > 1 ? 's' : ''} for B7G Kannada Rajyotsava 2026 ${shown.length > 1 ? 'are' : 'is'}:`
         : singleDate
           ? `Our guest${shown.length > 1 ? 's' : ''} on ${shown[0].eventDate}:`
           : 'B7G Kannada Rajyotsava 2026 — our guests:',
@@ -199,7 +199,7 @@ function guestListReply(question: string, language: Language): GuestReply {
     answer,
     cards: shown.map((g) => toGuestCard(g, language)),
     sources: shown.map(guestSource),
-    suggestedFollowUps: [...shown.map((g) => g.ask[0]), 'Why were these Chief Guests chosen?'],
+    suggestedFollowUps: [...shown.map((g) => g.ask[0]), 'What is the schedule on 15 November?'],
     grounded: shown.length > 0,
   };
 }
@@ -306,6 +306,39 @@ const PERSON_QUESTION =
   /stage intro|introduction|what can i ask|\b(movies?|films?|acted|directed|awards?|achievements?|books?|known for|born|age|married|family|studied|education|theatre)\b/i;
 
 /**
+ * Announced earlier but no longer attending. Questions about them get a clear note,
+ * never another guest's details. ("Prakash Raj" is someone else entirely.)
+ */
+const FORMER_GUESTS = [
+  {
+    id: 'former:prakash-belawadi',
+    pattern: /prakash(?!\s*raj)|belawadi|belavadi|belwadi|ಪ್ರಕಾಶ್|ಬೆಳವಾಡಿ/i,
+    note: {
+      en: 'Shri Prakash Belawadi, who was announced earlier, will not be attending B7G Kannada Rajyotsava 2026. Our Chief Guest is Shri Dharmendra Kumar Arenahalli and our Special Guest is Kannada actor Nagabhushana NS.',
+      kn: 'ಶ್ರೀ ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರು B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರಲ್ಲಿ ಭಾಗವಹಿಸುತ್ತಿಲ್ಲ. ನಮ್ಮ ಮುಖ್ಯ ಅತಿಥಿ ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ, ವಿಶೇಷ ಅತಿಥಿ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್.',
+    },
+  },
+];
+
+function formerGuestReply(question: string, language: Language, lastGuestId?: string): GuestReply | null {
+  const former =
+    FORMER_GUESTS.find((f) => f.pattern.test(question)) ??
+    // "What movies has he acted in?" right after asking about a former guest
+    FORMER_GUESTS.find((f) => f.id === lastGuestId && (PERSON_QUESTION.test(question) || /\b(he|his|him)\b/i.test(question)));
+  if (!former) return null;
+  // Also asked about a current guest ("Prakash Belawadi and Nagabhushana")? Show that guest too.
+  const current = findGuestMatches(question).filter((m) => !m.isTopic).map((m) => m.guest);
+  return {
+    answer: [former.note[language], ...current.map((g) => profileReply(g, language).answer)].join('\n\n'),
+    cards: current.map((g) => toGuestCard(g, language)),
+    sources: current.map(guestSource),
+    suggestedFollowUps: ['Who are the guests?', 'What is the schedule on 15 November?'],
+    grounded: true,
+    guestId: former.id,
+  };
+}
+
+/**
  * Returns a reply when the question is about the event's guests, or null to
  * let the rest of the RAG pipeline handle it.
  */
@@ -315,6 +348,9 @@ export async function answerGuestQuestion(
   lastGuestId?: string,
   options: { structuredOnly?: boolean } = {},
 ): Promise<GuestReply | null> {
+  const former = formerGuestReply(question, language, lastGuestId);
+  if (former) return former;
+
   // With the backend RAG available, only the structured replies (profile cards,
   // guest lists) are answered here; specific questions go to the backend.
   const specific = (guest: GuestProfile, tokens: Set<string>) =>

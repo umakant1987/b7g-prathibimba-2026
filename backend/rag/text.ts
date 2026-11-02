@@ -21,9 +21,13 @@ const STOPWORDS = new Set([
   'ಯಾರು', 'ಏನು', 'ಎಂದರೇನು', 'ಬಗ್ಗೆ', 'ಹೇಳಿ', 'ತಿಳಿಸಿ', 'ಯಾವಾಗ', 'ಎಲ್ಲಿ', 'ಹೇಗೆ', 'ಅವರು', 'ಅವರ', 'ಇದು', 'ಆ', 'ಈ',
 ]);
 
-/** Lower-cases and folds Unicode variants so "Café"/"cafe" and Kannada forms compare consistently. */
+/**
+ * Lower-cases and folds Unicode variants so "Café"/"cafe" and Kannada forms compare consistently.
+ * Zero-width joiners are dropped: "ರಾಜ್‌ಕುಮಾರ್" must stay one word, not "ರಾಜ್" + "ಕುಮಾರ್"
+ * (which would match "ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್").
+ */
 export function normalize(text: string): string {
-  return text.normalize('NFKC').toLowerCase();
+  return text.normalize('NFKC').replace(/[‌‍]/g, '').toLowerCase();
 }
 
 /** Naive English plural folding ("movies"→"movie", "awards"→"award", "studied"→"study"). */

@@ -82,7 +82,7 @@ export class HybridRetriever {
 
     const ranked: RetrievedChunk[] = [];
     // Coverage is measured on what's being asked, not on the entity's name: every one of
-    // Prakash Belawadi's sections contains his name, but only one is about his awards.
+    // Dharmendra Kumar Arenahalli's sections contain his name, but only one is about his awards.
     const coverageTerms = query.topicTerms.length > 0 ? query.topicTerms : query.terms;
 
     for (const { hit, similarity } of merged.values()) {

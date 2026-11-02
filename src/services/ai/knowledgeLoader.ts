@@ -15,7 +15,7 @@ const rawFiles = import.meta.glob('/knowledge/**/*.md', {
 
 export interface KnowledgeChunk {
   id: string;
-  /** Path under /knowledge, e.g. "chief-guests/prakash-belawadi.md". */
+  /** Path under /knowledge, e.g. "chief-guests/dharmendra-kumar-arenahalli.md". */
   file: string;
   /** Frontmatter `title` of the file. */
   title: string;
@@ -27,13 +27,13 @@ export interface KnowledgeChunk {
 }
 
 export interface GuestProfile {
-  /** File name without extension, e.g. "prakash-belawadi". */
+  /** File name without extension, e.g. "dharmendra-kumar-arenahalli". */
   id: string;
   file: string;
   name: string;
   honorific: string;
   emoji: string;
-  /** Path under /public, e.g. "/guests/prakash-belawadi.jpg". Empty shows an initials avatar. */
+  /** Path under /public, e.g. "/guests/dharmendra-kumar-arenahalli.jpg". Empty shows an initials avatar. */
   photo: string;
   tagline: string;
   short: string;

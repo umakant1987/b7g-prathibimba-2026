@@ -77,7 +77,7 @@ function buildChunk(
   return { ...chunk, content_hash: sha256(embeddingText), metadata_hash: sha256(stableStringify(rest)) };
 }
 
-/** e.g. "Prakash Belawadi — Chief Guest — B7G Kannada Rajyotsava 2026 — 2026-11-01 — Section: What awards has he received?" */
+/** e.g. "Dharmendra Kumar Arenahalli — Chief Guest — B7G Kannada Rajyotsava 2026 — 2026-11-15 — Section: What awards has he received?" */
 function contextHeader(doc: KnowledgeDocument, section: KnowledgeSection, eventDate: string | null): string {
   const parts = [doc.entity_name ?? doc.title, doc.category.replace(/_/g, ' ')];
   if (doc.event) parts.push(doc.event);

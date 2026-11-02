@@ -13,8 +13,8 @@ export const faqs: FAQ[] = [
     id: 'faq-001',
     question: { en: 'When does the event start?', kn: 'ಕಾರ್ಯಕ್ರಮ ಯಾವಾಗ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ?' },
     answer: {
-      en: 'The celebration is on Sunday, 15 November 2026 at Brigade 7 Gardens: B7G Santhe in the morning, and cultural programmes, a sand art performance and a jamming session in the evening. Exact timings will be announced soon.',
-      kn: 'ಕಾರ್ಯಕ್ರಮ ನವೆಂಬರ್ 15, 2026 ಭಾನುವಾರದಂದು ಬ್ರಿಗೇಡ್ 7 ಗಾರ್ಡನ್ಸ್‌ನಲ್ಲಿ: ಬೆಳಿಗ್ಗೆ B7G ಸಂತೆ, ಸಂಜೆ ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು, ಮರಳು ಕಲೆ ಪ್ರದರ್ಶನ ಮತ್ತು ಜಾಮಿಂಗ್ ಸೆಷನ್. ನಿಖರ ಸಮಯವನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಪ್ರಕಟಿಸಲಾಗುವುದು.',
+      en: 'The celebration is on Sunday, 15 November 2026 at Brigade 7 Gardens. Morning: guest talk from 10 to 11 AM, then the inauguration of B7G Santhe (open until the evening). Evening: from 5:30 PM, cultural programmes, followed by sand art by Mr. Raghavendra Hegde and a jamming session.',
+      kn: 'ಕಾರ್ಯಕ್ರಮ ನವೆಂಬರ್ 15, 2026 ಭಾನುವಾರದಂದು ಬ್ರಿಗೇಡ್ 7 ಗಾರ್ಡನ್ಸ್‌ನಲ್ಲಿ. ಬೆಳಿಗ್ಗೆ 10ರಿಂದ 11ರವರೆಗೆ ಅತಿಥಿಗಳ ಮಾತು, ನಂತರ B7G ಸಂತೆ ಉದ್ಘಾಟನೆ (ಸಂಜೆಯವರೆಗೂ ತೆರೆದಿರುತ್ತದೆ). ಸಂಜೆ 5:30ರಿಂದ ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು, ನಂತರ ಶ್ರೀ ರಾಘವೇಂದ್ರ ಹೆಗಡೆ ಅವರಿಂದ ಮರಳು ಕಲೆ ಮತ್ತು ಜಾಮಿಂಗ್ ಸೆಷನ್.',
     },
   },
   {
@@ -41,8 +41,8 @@ export const faqs: FAQ[] = [
     id: 'faq-004',
     question: { en: 'Who are the Chief Guests?', kn: 'ಮುಖ್ಯ ಅತಿಥಿಗಳು ಯಾರು?' },
     answer: {
-      en: 'The Chief Guests for B7G Kannada Rajyotsava 2026 (15 November) are Shri Prakash Belawadi and Shri Dharmendra Kumar Arenahalli.',
-      kn: 'ನವೆಂಬರ್ 15ರಂದು ನಡೆಯುವ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಶ್ರೀ ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಮತ್ತು ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ.',
+      en: 'The Chief Guest for B7G Kannada Rajyotsava 2026 (15 November) is Shri Dharmendra Kumar Arenahalli, and the Special Guest is Kannada actor Nagabhushana NS.',
+      kn: 'ನವೆಂಬರ್ 15ರಂದು ನಡೆಯುವ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಮುಖ್ಯ ಅತಿಥಿ ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ, ವಿಶೇಷ ಅತಿಥಿ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್.',
     },
   },
   {

@@ -16,14 +16,14 @@ import type { ConversationTurn } from '../rag/types.ts';
 const KANNADA = /[ಀ-೿]/;
 
 const CASES: { question: string; check: (answer: string) => boolean; expect: string; history?: ConversationTurn[] }[] = [
-  { question: 'Who are the Chief Guests?', expect: 'Prakash Belawadi + Dharmendra Kumar Arenahalli', check: (a) => /Belawadi/.test(a) && /Dharmendra/.test(a) },
-  { question: 'Who are the guests on 15 November?', expect: 'all three guests', check: (a) => /Nagabhushana/.test(a) && /Belawadi/.test(a) && /Dharmendra/.test(a) },
+  { question: 'Who are the Chief Guests?', expect: 'Dharmendra Kumar Arenahalli', check: (a) => /Dharmendra/.test(a) },
+  { question: 'Who are the guests on 15 November?', expect: 'Dharmendra Kumar Arenahalli + Nagabhushana NS', check: (a) => /Nagabhushana/.test(a) && /Dharmendra/.test(a) },
   { question: 'Is the celebration on 1 November?', expect: 'moved to 15 November', check: (a) => /15 November|November 15/.test(a) },
   { question: 'Who is the hero of Ikkat?', expect: 'Nagabhushana NS', check: (a) => /Nagabhushana/.test(a) },
-  { question: 'Who is Prakash Belawadi?', expect: 'Prakash Belawadi biography', check: (a) => /theatre|actor|filmmaker/i.test(a) },
+  { question: 'Who is Prakash Belawadi?', expect: 'no longer attending', check: (a) => /not (be )?attending|no longer|not attending/i.test(a) },
   { question: 'What is Mysoorina Kathegalu?', expect: 'Dharmendra Kumar Arenahalli', check: (a) => /Dharmendra/.test(a) },
-  { question: 'ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಯಾರು?', expect: 'Kannada answer about Prakash Belawadi', check: (a) => KANNADA.test(a) },
-  { question: 'Who are the Chief Guests on November 15?', expect: 'Prakash Belawadi + Dharmendra Kumar Arenahalli', check: (a) => /Belawadi/.test(a) && /Dharmendra/.test(a) },
+  { question: 'ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಯಾರು?', expect: 'Kannada answer about Dharmendra Kumar Arenahalli', check: (a) => KANNADA.test(a) },
+  { question: 'Who are the Chief Guests on November 15?', expect: 'Dharmendra Kumar Arenahalli', check: (a) => /Dharmendra/.test(a) },
   // Cultural programme
   { question: 'What is happening on 31st October?', expect: 'the 31 October programme', check: (a) => /SriRanga/.test(a) && /Tanya PV/.test(a) && /B7G Boys/.test(a) },
   { question: 'What programs are there on November 1?', expect: 'morning / afternoon / evening sections', check: (a) => /morning/i.test(a) && /afternoon/i.test(a) && /evening/i.test(a) && /B7G Sante/.test(a) },

@@ -212,8 +212,8 @@ export const translations = {
       kn: 'ಆ ಮಾಹಿತಿ ನನ್ನ B7G ಕಾರ್ಯಕ್ರಮ ಜ್ಞಾನಭಂಡಾರದಲ್ಲಿ ಇನ್ನೂ ಇಲ್ಲ. ದಯವಿಟ್ಟು ಕಾರ್ಯಕ್ರಮ ಸಂಘಟಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.',
     },
     welcome: {
-      en: "❤️ Welcome to the B7G Kannada Rajyotsava 2026 AI Assistant! Namma Kannada, Namma Karnataka, Namma Hemme! I'm here to help you discover everything about our celebration — from our programmes and performances to our distinguished Chief Guests and the rich history and heritage of Karnataka. Join us on Sunday, 15 November! This year, we are privileged to welcome Shri Dharmendra Kumar Arenahalli and Shri Prakash Belawadi as our Chief Guests, and Kannada actor Nagabhushana NS as our Special Guest. Ask me anything about the event, our guests, Kannada Rajyotsava, or Karnataka's history and culture!",
-      kn: '❤️ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 AI ಸಹಾಯಕಕ್ಕೆ ಸ್ವಾಗತ! ನಮ್ಮ ಕನ್ನಡ, ನಮ್ಮ ಕರ್ನಾಟಕ, ನಮ್ಮ ಹೆಮ್ಮೆ! ನಮ್ಮ ಕಾರ್ಯಕ್ರಮಗಳು, ಪ್ರದರ್ಶನಗಳು, ಗೌರವಾನ್ವಿತ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಮತ್ತು ಕರ್ನಾಟಕದ ಶ್ರೀಮಂತ ಇತಿಹಾಸ ಹಾಗೂ ಪರಂಪರೆಯ ಬಗ್ಗೆ ತಿಳಿಯಲು ನಾನು ಸಹಾಯ ಮಾಡುತ್ತೇನೆ. ನವೆಂಬರ್ 15, ಭಾನುವಾರದಂದು ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ! ಈ ವರ್ಷ ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ ಮತ್ತು ಶ್ರೀ ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರನ್ನು ಮುಖ್ಯ ಅತಿಥಿಗಳಾಗಿ, ಹಾಗೂ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್. ಅವರನ್ನು ವಿಶೇಷ ಅತಿಥಿಯಾಗಿ ಸ್ವಾಗತಿಸುವ ಸೌಭಾಗ್ಯ ನಮ್ಮದು. ಕಾರ್ಯಕ್ರಮ, ಅತಿಥಿಗಳು, ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಅಥವಾ ಕರ್ನಾಟಕದ ಇತಿಹಾಸ ಮತ್ತು ಸಂಸ್ಕೃತಿಯ ಬಗ್ಗೆ ಏನು ಬೇಕಾದರೂ ಕೇಳಿ!',
+      en: "❤️ Welcome to the B7G Kannada Rajyotsava 2026 AI Assistant! Namma Kannada, Namma Karnataka, Namma Hemme! I'm here to help you discover everything about our celebration — from our programmes and performances to our distinguished Chief Guests and the rich history and heritage of Karnataka. Join us on Sunday, 15 November! This year, we are privileged to welcome Shri Dharmendra Kumar Arenahalli as our Chief Guest and Kannada actor Nagabhushana NS as our Special Guest. Ask me anything about the event, our guests, Kannada Rajyotsava, or Karnataka's history and culture!",
+      kn: '❤️ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 AI ಸಹಾಯಕಕ್ಕೆ ಸ್ವಾಗತ! ನಮ್ಮ ಕನ್ನಡ, ನಮ್ಮ ಕರ್ನಾಟಕ, ನಮ್ಮ ಹೆಮ್ಮೆ! ನಮ್ಮ ಕಾರ್ಯಕ್ರಮಗಳು, ಪ್ರದರ್ಶನಗಳು, ಗೌರವಾನ್ವಿತ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಮತ್ತು ಕರ್ನಾಟಕದ ಶ್ರೀಮಂತ ಇತಿಹಾಸ ಹಾಗೂ ಪರಂಪರೆಯ ಬಗ್ಗೆ ತಿಳಿಯಲು ನಾನು ಸಹಾಯ ಮಾಡುತ್ತೇನೆ. ನವೆಂಬರ್ 15, ಭಾನುವಾರದಂದು ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ! ಈ ವರ್ಷ ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ ಅವರನ್ನು ಮುಖ್ಯ ಅತಿಥಿಯಾಗಿ, ಹಾಗೂ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್. ಅವರನ್ನು ವಿಶೇಷ ಅತಿಥಿಯಾಗಿ ಸ್ವಾಗತಿಸುವ ಸೌಭಾಗ್ಯ ನಮ್ಮದು. ಕಾರ್ಯಕ್ರಮ, ಅತಿಥಿಗಳು, ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಅಥವಾ ಕರ್ನಾಟಕದ ಇತಿಹಾಸ ಮತ್ತು ಸಂಸ್ಕೃತಿಯ ಬಗ್ಗೆ ಏನು ಬೇಕಾದರೂ ಕೇಳಿ!',
     },
     santheTitle: { en: 'Explore B7G Santhe', kn: 'B7G ಸಂತೆ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ' },
     santheSuggestions: [
@@ -224,7 +224,6 @@ export const translations = {
     ],
     suggestions: [
       { en: 'Who is Dharmendra Kumar?', kn: 'ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಯಾರು?' },
-      { en: 'Who is Prakash Belawadi?', kn: 'ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಯಾರು?' },
       { en: 'Who is Nagabhushana?', kn: 'ನಾಗಭೂಷಣ ಯಾರು?' },
       { en: 'Who are the Chief Guests?', kn: 'ಮುಖ್ಯ ಅತಿಥಿಗಳು ಯಾರು?' },
       { en: 'What is Mysoorina Kathegalu?', kn: 'ಮೈಸೂರಿನ ಕಥೆಗಳು ಎಂದರೇನು?' },

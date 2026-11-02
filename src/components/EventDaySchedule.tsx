@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
-import { Drama, Guitar, Hourglass, Moon, Store, Sun, type LucideIcon } from 'lucide-react';
+import { Drama, Guitar, Hourglass, Mic, Moon, Store, Sun, type LucideIcon } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { daySchedule, EVENT_DAY, type ScheduleIcon, type ScheduleSession } from '../data/eventSchedule';
 import { translations } from '../data/translations';
 
 const ITEM_ICONS: Record<ScheduleIcon, LucideIcon> = {
+  talk: Mic,
   santhe: Store,
   culture: Drama,
   'sand-art': Hourglass,
@@ -41,8 +42,6 @@ export function EventDaySchedule() {
           <SessionCard key={session.id} session={session} index={index} />
         ))}
       </div>
-
-      <p className="mt-6 text-center text-sm text-cream/60">{t(s.timingsTba)}</p>
     </div>
   );
 }

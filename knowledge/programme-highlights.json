@@ -14,24 +14,24 @@
       "language": "en",
       "event": "B7G Kannada Rajyotsava 2026",
       "source": "B7G Kannada Rajyotsava 2026 organisers (rescheduled programme)",
-      "version": 2,
-      "updated_at": "2026-11-02",
+      "version": 3,
+      "updated_at": "2026-11-03",
       "sections": [
         {
           "heading": "What is Prathibimba?",
           "content": "The B7G Kannada Rajyotsava 2026 celebration is titled Prathibimba — Our Heritage. Our Story. It takes place on one day, Sunday 15 November 2026, at Brigade 7 Gardens. Everyone is welcome. The schedule is in the Programmes section of the website."
         },
         {
-          "heading": "15 November 2026 — morning: B7G Santhe",
+          "heading": "15 November 2026 — morning: guest talk and B7G Santhe",
           "event_date": "2026-11-15",
           "session": "morning",
-          "content": "The morning of 15 November 2026 features B7G Santhe, the community market where B7G residents run stalls: food and beverages, handmade and creative products, shopping and lifestyle, games and activities, and more. Exact timings have not been announced."
+          "content": "The morning of 15 November 2026:\n- 10:00 – 11:00 AM: Guest talk\n- After the guest talk: Inauguration of B7G Santhe, the community market where B7G residents run stalls (food and beverages, handmade and creative products, shopping and lifestyle, games and activities, and more). Santhe stays open until the evening."
         },
         {
           "heading": "15 November 2026 — evening: cultural programmes, sand art and jamming",
           "event_date": "2026-11-15",
           "session": "evening",
-          "content": "The evening of 15 November 2026 features:\n- Cultural programmes\n- A sand art performance\n- A jamming session\nExact timings have not been announced."
+          "content": "The evening of 15 November 2026 starts at 5:30 PM:\n- From 5:30 PM: Cultural programmes\n- Then: Sand art performance by Mr. Raghavendra Hegde, a renowned sand artist\n- Then: Jamming session to close the evening"
         }
       ]
     }

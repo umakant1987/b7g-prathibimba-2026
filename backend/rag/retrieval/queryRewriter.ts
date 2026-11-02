@@ -22,7 +22,7 @@ const PERSON_ONLY = /stage intro|introduction|what can i ask|\b(movies?|films?|a
  * Lightweight query rewriting for follow-up questions. Standalone questions
  * (they already name an entity, or don't refer back) are left untouched. A
  * follow-up gets the entity from the most recent turn that mentioned one:
- *   "Tell me more about him" → "Tell me more about Prakash Belawadi"
+ *   "Tell me more about him" → "Tell me more about Dharmendra Kumar Arenahalli"
  * When that turn mentioned several entities, an LLM rewriter (if supplied)
  * decides; otherwise the first one mentioned is used.
  */

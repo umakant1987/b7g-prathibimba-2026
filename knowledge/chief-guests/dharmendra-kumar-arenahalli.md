@@ -25,7 +25,7 @@ aliases: dharmendra kumar arenahalli | dharmendra kumar | dharmendra arenahalli 
 topics: mysoorina kathegalu | mysoorina kathe | mysore stories | mysuru stories | stories of mysuru | ಮೈಸೂರಿನ ಕಥೆಗಳು
 known_for: Mysuru — born and raised in Mysuru, now based in Bengaluru | Mysoorina Kathegalu — "Stories of Mysuru" | Karnataka history — palaces, forts, temples, dynasties and forgotten stories | Kannada digital storytelling that makes history accessible | Heritage documentation
 ask: Who is Dharmendra Kumar Arenahalli? | What is Mysoorina Kathegalu? | What books has Dharmendra Kumar Arenahalli written? | What kind of history does Dharmendra Kumar Arenahalli document? | What can I ask Dharmendra Kumar Arenahalli? | Why is Dharmendra Kumar Arenahalli relevant to Kannada Rajyotsava?
-summary_kn: Dharmendra Kumar Arenahalli (ಧರ್ಮಿ ಸರ್) ಅವರು ಇತಿಹಾಸಕಾರ, ಲೇಖಕ, ಸಿವಿಲ್ ಎಂಜಿನಿಯರ್ ಮತ್ತು ಡಿಜಿಟಲ್ ಕಥೆಗಾರರು. ಮೈಸೂರಿನಲ್ಲಿ ಹುಟ್ಟಿ ಬೆಳೆದು ಈಗ ಬೆಂಗಳೂರಿನಲ್ಲಿ ನೆಲೆಸಿರುವ ಅವರು "ಮೈಸೂರಿನ ಕಥೆಗಳು" ಮೂಲಕ ಕರ್ನಾಟಕದ ಇತಿಹಾಸ, ಪರಂಪರೆ, ಜನರು ಮತ್ತು ಸ್ಥಳಗಳ ಕಥೆಗಳನ್ನು ಕನ್ನಡದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳುತ್ತಾರೆ.
+summary_kn: ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ (Dharmendra Kumar Arenahalli, ಧರ್ಮಿ ಸರ್) ಅವರು ಇತಿಹಾಸಕಾರ, ಲೇಖಕ, ಸಿವಿಲ್ ಎಂಜಿನಿಯರ್ ಮತ್ತು ಡಿಜಿಟಲ್ ಕಥೆಗಾರರು. ಮೈಸೂರಿನಲ್ಲಿ ಹುಟ್ಟಿ ಬೆಳೆದು ಈಗ ಬೆಂಗಳೂರಿನಲ್ಲಿ ನೆಲೆಸಿರುವ ಅವರು "ಮೈಸೂರಿನ ಕಥೆಗಳು" ಮೂಲಕ ಕರ್ನಾಟಕದ ಇತಿಹಾಸ, ಪರಂಪರೆ, ಜನರು ಮತ್ತು ಸ್ಥಳಗಳ ಕಥೆಗಳನ್ನು ಕನ್ನಡದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳುತ್ತಾರೆ.
 ---
 
 # Dharmendra Kumar Arenahalli — Chief Guest, 15 November 2026
@@ -36,7 +36,7 @@ Dharmendra Kumar Arenahalli, also known as **Dharmi Sir**, is a historian, autho
 
 ## What is his role and connection to B7G Kannada Rajyotsava? When is he coming?
 
-Shri Dharmendra Kumar Arenahalli is a **Chief Guest** at B7G Kannada Rajyotsava 2026 and is coming on **Sunday, 15 November 2026**, alongside Shri Prakash Belawadi, at Brigade 7 Gardens. Which part of the day he attends has not been announced.
+Shri Dharmendra Kumar Arenahalli is a **Chief Guest** at B7G Kannada Rajyotsava 2026 and is coming on **Sunday, 15 November 2026** at Brigade 7 Gardens. The day opens with a guest talk from 10 to 11 AM.
 
 ## What is Mysoorina Kathegalu?
 
@@ -65,7 +65,7 @@ Dharmendra Kumar Arenahalli is a civil engineer by profession and spent many yea
 
 ## Why is he relevant to Kannada Rajyotsava?
 
-Dharmendra Kumar Arenahalli represents **historical Karnataka** — history, heritage, Kannada storytelling, Mysuru and Karnataka's cultural memory. Alongside Prakash Belawadi, who represents contemporary theatre and cinema, he reflects the connection between Karnataka's past and present.
+Dharmendra Kumar Arenahalli represents **historical Karnataka** — history, heritage, Kannada storytelling, Mysuru and Karnataka's cultural memory.
 
 ## What can I ask him?
 

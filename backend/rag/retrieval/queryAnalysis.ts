@@ -48,7 +48,7 @@ export interface QueryAnalysis {
   terms: string[];
   /** Terms that aren't part of a detected entity's name — what is actually being asked about. */
   topicTerms: string[];
-  /** Names an entity and asks nothing more specific ("Who is Prakash Belawadi?") → wants a profile. */
+  /** Names an entity and asks nothing more specific ("Who is Dharmendra Kumar Arenahalli?") → wants a profile. */
   wantsProfile: boolean;
   /** Asks about a group of people without naming one ("Who are the Chief Guests?"). */
   wantsPeopleList: boolean;
@@ -62,7 +62,7 @@ export interface QueryAnalysis {
   wantsOverview: boolean;
 }
 
-/** Any Kannada script → answer in Kannada (covers mixed questions like "Prakash Belawadi ಯಾರು?"). */
+/** Any Kannada script → answer in Kannada (covers mixed questions like "Dharmendra Kumar Arenahalli ಯಾರು?"). */
 export function detectLanguage(text: string): 'en' | 'kn' {
   return KANNADA.test(text) ? 'kn' : 'en';
 }
