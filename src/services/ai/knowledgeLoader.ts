@@ -129,8 +129,9 @@ function toGuest(file: string, meta: Record<string, string>, body: string): Gues
     nameKn: meta.name_kn || meta.name || meta.title || file,
     taglineKn: meta.tagline_kn || meta.tagline || '',
     short: meta.short ?? '',
-    eventRole: meta.event_role ?? 'Guest',
-    eventRoleKn: meta.event_role_kn || meta.event_role || 'ಅತಿಥಿ',
+    // With a session (Morning / Evening) the role reads "Morning Chief Guest" / "ಬೆಳಿಗ್ಗೆಯ ಮುಖ್ಯ ಅತಿಥಿ".
+    eventRole: [meta.event_session, meta.event_role ?? 'Guest'].filter(Boolean).join(' '),
+    eventRoleKn: [meta.event_session_kn ? `${meta.event_session_kn}ಯ` : '', meta.event_role_kn || meta.event_role || 'ಅತಿಥಿ'].filter(Boolean).join(' '),
     // event_date is ISO (YYYY-MM-DD) for the backend RAG; event_date_label is the display form.
     eventDate: meta.event_date_label || meta.event_date || '',
     eventDateKn: meta.event_date_kn || meta.event_date_label || meta.event_date || '',

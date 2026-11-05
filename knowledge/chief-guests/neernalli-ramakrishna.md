@@ -23,6 +23,8 @@ event_role_kn: ಮುಖ್ಯ ಅತಿಥಿ
 event_date: 2026-11-15
 event_date_label: 15 November 2026
 event_date_kn: ನವೆಂಬರ್ 15, 2026
+event_session: Morning
+event_session_kn: ಬೆಳಿಗ್ಗೆ
 aliases: neernalli ramakrishna | neeranalli ramakrishna | neernalli ramkrishna | neernalli | neeranalli | ramakrishna | ramkrishna | rama krishna | actor ramakrishna | ramakrishna actor | ramakrishna sir | ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ | ನೀರನಳ್ಳಿ ರಾಮಕೃಷ್ಣ | ನೀರ್ನಳ್ಳಿ | ರಾಮಕೃಷ್ಣ
 topics: babruvahana | puttanna kanagal | ranganayaki | maanasa sarovara | amrutha ghalige | padavarahalli pandavaru | poikkal kudhirai | ಬಬ್ರುವಾಹನ | ಪುಟ್ಟಣ್ಣ ಕಣಗಾಲ್ | ರಂಗನಾಯಕಿ | ಮಾನಸ ಸರೋವರ | ಅಮೃತ ಘಳಿಗೆ
 known_for: Lord Krishna in Babruvahana, alongside Dr. Rajkumar | Puttanna Kanagal classics — Ranganayaki, Maanasa Sarovara, Amrutha Ghalige, Padavarahalli Pandavaru | More than 200 films across Kannada and other South Indian cinema | Yakshagana and theatre roots | Arecanut farming in his native Neernalli near Sirsi
@@ -38,7 +40,7 @@ Neernalli Ramakrishna (ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ) is 
 
 ## What is his role and connection to B7G Kannada Rajyotsava? When is he coming?
 
-Shri Neernalli Ramakrishna is a **Chief Guest** at B7G Kannada Rajyotsava 2026, alongside Shri Dharmendra Kumar Arenahalli, and is coming on **Sunday, 15 November 2026** at Brigade 7 Gardens. The day opens with a guest talk from 10 to 11 AM.
+Shri Neernalli Ramakrishna is a **Chief Guest** at B7G Kannada Rajyotsava 2026, alongside Shri Dharmendra Kumar Arenahalli, for the **morning** programme on **Sunday, 15 November 2026** at Brigade 7 Gardens: the guest talk from 10 to 11 AM, followed by the inauguration of B7G Santhe.
 
 ## Where is he from? Early life
 
@@ -123,7 +125,7 @@ Some questions residents could ask Neernalli Ramakrishna at the event:
 
 ## ಕನ್ನಡದಲ್ಲಿ: ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ
 
-- **ಯಾರು:** ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ ಅವರು ಹಿರಿಯ ಕನ್ನಡ ಚಲನಚಿತ್ರ ನಟರು; B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ (ನವೆಂಬರ್ 15, ಭಾನುವಾರ) **ಮುಖ್ಯ ಅತಿಥಿ**.
+- **ಯಾರು:** ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ ಅವರು ಹಿರಿಯ ಕನ್ನಡ ಚಲನಚಿತ್ರ ನಟರು; B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ (ನವೆಂಬರ್ 15, ಭಾನುವಾರ) ಬೆಳಿಗ್ಗೆಯ ಕಾರ್ಯಕ್ರಮದ **ಮುಖ್ಯ ಅತಿಥಿ**.
 - **ಊರು:** ಉತ್ತರ ಕನ್ನಡ ಜಿಲ್ಲೆಯ ಶಿರಸಿ ಬಳಿಯ ನೀರ್ನಳ್ಳಿ. ಹೊಸತೋಟ ಮಂಜುನಾಥ ಭಾಗವತರ ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ ಯಕ್ಷಗಾನ ಕಲಿತರು.
 - **ಚಿತ್ರರಂಗ ಪ್ರವೇಶ:** "ಬಬ್ರುವಾಹನ" ಚಿತ್ರದಲ್ಲಿ ಡಾ. ರಾಜ್‌ಕುಮಾರ್ ಅವರೊಂದಿಗೆ ಶ್ರೀಕೃಷ್ಣನ ಪಾತ್ರ.
 - **ಪುಟ್ಟಣ್ಣ ಕಣಗಾಲ್ ಚಿತ್ರಗಳು:** ರಂಗನಾಯಕಿ, ಮಾನಸ ಸರೋವರ, ಅಮೃತ ಘಳಿಗೆ, ಪಡುವಾರಹಳ್ಳಿ ಪಾಂಡವರು.

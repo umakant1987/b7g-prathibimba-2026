@@ -23,6 +23,8 @@ event_role_kn: ಮುಖ್ಯ ಅತಿಥಿ
 event_date: 2026-11-15
 event_date_label: 15 November 2026
 event_date_kn: ನವೆಂಬರ್ 15, 2026
+event_session: Morning
+event_session_kn: ಬೆಳಿಗ್ಗೆ
 aliases: dharmendra kumar arenahalli | dharmendra kumar | dharmendra arenahalli | dharmendra | arenahalli | dharmi sir | dharmi | historian dharmendra | dharmendra sir | ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ | ಧರ್ಮೇಂದ್ರ | ಧರ್ಮಿ
 topics: mysoorina kathegalu | mysoorina kathe | mysore stories | mysuru stories | stories of mysuru | ಮೈಸೂರಿನ ಕಥೆಗಳು
 known_for: Mysuru — born and raised in Mysuru, now based in Bengaluru | Mysoorina Kathegalu — "Stories of Mysuru" | Karnataka history — palaces, forts, temples, dynasties and forgotten stories | Kannada digital storytelling that makes history accessible | Heritage documentation
@@ -38,7 +40,7 @@ Dharmendra Kumar Arenahalli, also known as **Dharmi Sir**, is a historian, autho
 
 ## What is his role and connection to B7G Kannada Rajyotsava? When is he coming?
 
-Shri Dharmendra Kumar Arenahalli is a **Chief Guest** at B7G Kannada Rajyotsava 2026, alongside Shri Neernalli Ramakrishna, and is coming on **Sunday, 15 November 2026** at Brigade 7 Gardens. The day opens with a guest talk from 10 to 11 AM.
+Shri Dharmendra Kumar Arenahalli is a **Chief Guest** at B7G Kannada Rajyotsava 2026, alongside Shri Neernalli Ramakrishna, for the **morning** programme on **Sunday, 15 November 2026** at Brigade 7 Gardens: the guest talk from 10 to 11 AM, followed by the inauguration of B7G Santhe.
 
 ## What is Mysoorina Kathegalu?
 

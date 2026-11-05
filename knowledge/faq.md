@@ -37,15 +37,13 @@ Not at all. The celebration is inclusive and welcoming to residents and families
 
 ## Who are the Chief Guests?
 
-The Chief Guests for B7G Kannada Rajyotsava 2026 (15 November) are Shri Dharmendra Kumar Arenahalli and Shri Neernalli Ramakrishna.
+B7G Kannada Rajyotsava 2026 (15 November) has three Chief Guests: Shri Dharmendra Kumar Arenahalli and Shri Neernalli Ramakrishna for the morning programme, and Kannada actor Nagabhushana NS for the evening programme.
 
 Dharmendra Kumar Arenahalli is a historian, author and digital storyteller best known for Mysoorina Kathegalu, through which he shares stories of Karnataka's history and heritage in Kannada.
 
-Kannada actor Nagabhushana NS joins the celebrations as the Special Guest.
-
 ## Who are all the guests?
 
-B7G Kannada Rajyotsava 2026 on 15 November welcomes Chief Guests Dharmendra Kumar Arenahalli and Neernalli Ramakrishna, and Special Guest Nagabhushana NS.
+B7G Kannada Rajyotsava 2026 on 15 November welcomes morning Chief Guests Dharmendra Kumar Arenahalli and Neernalli Ramakrishna, and evening Chief Guest Nagabhushana NS.
 
 ## Is Prakash Belawadi coming? (Prakash Belavadi, ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ)
 
@@ -61,15 +59,15 @@ Yes. Nagabhushana plays the lead character Vasu in Ikkat, opposite Bhoomi Shetty
 
 ## Is Nagendra the hero of Ikkat?
 
-If you mean the hero of Ikkat, you're referring to Nagabhushana NS. He plays the lead character Vasu, opposite Bhoomi Shetty, and is the Special Guest at B7G Kannada Rajyotsava on 15 November 2026.
+If you mean the hero of Ikkat, you're referring to Nagabhushana NS. He plays the lead character Vasu, opposite Bhoomi Shetty, and is the evening Chief Guest at B7G Kannada Rajyotsava on 15 November 2026.
 
 ## When is Nagabhushana coming to B7G?
 
-Nagabhushana is scheduled to be part of the B7G Kannada Rajyotsava celebration on Sunday, 15 November 2026.
+Nagabhushana is the evening Chief Guest of the B7G Kannada Rajyotsava celebration on Sunday, 15 November 2026; the evening programme starts at 5:30 PM.
 
 ## Why are the Chief Guests relevant to Kannada Rajyotsava?
 
-Dharmendra Kumar Arenahalli represents Karnataka's history, heritage and Kannada historical storytelling, through his work on Mysoorina Kathegalu. Neernalli Ramakrishna, a veteran of more than 200 films and of classic Kannada cinema with Puttanna Kanagal and Dr. Rajkumar, represents Kannada cinema's rich legacy, with roots in Yakshagana and theatre. Together with Special Guest Nagabhushana NS, a face of the new generation of Kannada cinema, the guests reflect the connection between Karnataka's past and present.
+Dharmendra Kumar Arenahalli represents Karnataka's history, heritage and Kannada historical storytelling, through his work on Mysoorina Kathegalu. Neernalli Ramakrishna, a veteran of more than 200 films and of classic Kannada cinema with Puttanna Kanagal and Dr. Rajkumar, represents Kannada cinema's rich legacy, with roots in Yakshagana and theatre. Together with evening Chief Guest Nagabhushana NS, a face of the new generation of Kannada cinema, the guests reflect the connection between Karnataka's past and present.
 
 ## What is Mysoorina Kathegalu?
 

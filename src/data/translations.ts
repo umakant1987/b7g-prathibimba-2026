@@ -80,7 +80,7 @@ export const translations = {
   guests: {
     eyebrow: { en: 'Sunday, 15 November 2026', kn: 'ನವೆಂಬರ್ 15, 2026 ಭಾನುವಾರ' },
     title: { en: 'Chief Guests', kn: 'ಮುಖ್ಯ ಅತಿಥಿಗಳು' },
-    subtitle: { en: 'Distinguished guests joining our Kannada Rajyotsava celebration.', kn: 'ನಮ್ಮ ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಸಂಭ್ರಮಕ್ಕೆ ಜೊತೆಯಾಗುತ್ತಿರುವ ಗಣ್ಯ ಅತಿಥಿಗಳು.' },
+    subtitle: { en: 'Distinguished guests joining our celebration, morning and evening.', kn: 'ಬೆಳಿಗ್ಗೆ ಮತ್ತು ಸಂಜೆಯ ಸಂಭ್ರಮಕ್ಕೆ ಜೊತೆಯಾಗುತ್ತಿರುವ ಗಣ್ಯ ಅತಿಥಿಗಳು.' },
     viewBio: { en: 'Tap to read bio', kn: 'ಪರಿಚಯ ಓದಲು ಸ್ಪರ್ಶಿಸಿ' },
     knownFor: { en: 'Known for', kn: 'ಪ್ರಸಿದ್ಧಿ' },
     close: { en: 'Close', kn: 'ಮುಚ್ಚಿ' },
@@ -227,8 +227,8 @@ export const translations = {
       kn: 'ಆ ಮಾಹಿತಿ ನನ್ನ B7G ಕಾರ್ಯಕ್ರಮ ಜ್ಞಾನಭಂಡಾರದಲ್ಲಿ ಇನ್ನೂ ಇಲ್ಲ. ದಯವಿಟ್ಟು ಕಾರ್ಯಕ್ರಮ ಸಂಘಟಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.',
     },
     welcome: {
-      en: "❤️ Welcome to the B7G Kannada Rajyotsava 2026 AI Assistant! Namma Kannada, Namma Karnataka, Namma Hemme! I'm here to help you discover everything about our celebration — from our programmes and performances to our distinguished Chief Guests and the rich history and heritage of Karnataka. Join us on Sunday, 15 November! This year, we are privileged to welcome Shri Dharmendra Kumar Arenahalli and veteran Kannada actor Shri Neernalli Ramakrishna as our Chief Guests, and Kannada actor Nagabhushana NS as our Special Guest. Ask me anything about the event, our guests, Kannada Rajyotsava, or Karnataka's history and culture!",
-      kn: '❤️ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 AI ಸಹಾಯಕಕ್ಕೆ ಸ್ವಾಗತ! ನಮ್ಮ ಕನ್ನಡ, ನಮ್ಮ ಕರ್ನಾಟಕ, ನಮ್ಮ ಹೆಮ್ಮೆ! ನಮ್ಮ ಕಾರ್ಯಕ್ರಮಗಳು, ಪ್ರದರ್ಶನಗಳು, ಗೌರವಾನ್ವಿತ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಮತ್ತು ಕರ್ನಾಟಕದ ಶ್ರೀಮಂತ ಇತಿಹಾಸ ಹಾಗೂ ಪರಂಪರೆಯ ಬಗ್ಗೆ ತಿಳಿಯಲು ನಾನು ಸಹಾಯ ಮಾಡುತ್ತೇನೆ. ನವೆಂಬರ್ 15, ಭಾನುವಾರದಂದು ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ! ಈ ವರ್ಷ ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ ಮತ್ತು ಹಿರಿಯ ಕನ್ನಡ ನಟ ಶ್ರೀ ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ ಅವರನ್ನು ಮುಖ್ಯ ಅತಿಥಿಗಳಾಗಿ, ಹಾಗೂ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್. ಅವರನ್ನು ವಿಶೇಷ ಅತಿಥಿಯಾಗಿ ಸ್ವಾಗತಿಸುವ ಸೌಭಾಗ್ಯ ನಮ್ಮದು. ಕಾರ್ಯಕ್ರಮ, ಅತಿಥಿಗಳು, ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಅಥವಾ ಕರ್ನಾಟಕದ ಇತಿಹಾಸ ಮತ್ತು ಸಂಸ್ಕೃತಿಯ ಬಗ್ಗೆ ಏನು ಬೇಕಾದರೂ ಕೇಳಿ!',
+      en: "❤️ Welcome to the B7G Kannada Rajyotsava 2026 AI Assistant! Namma Kannada, Namma Karnataka, Namma Hemme! I'm here to help you discover everything about our celebration — from our programmes and performances to our distinguished Chief Guests and the rich history and heritage of Karnataka. Join us on Sunday, 15 November! This year, we are privileged to welcome Shri Dharmendra Kumar Arenahalli and veteran Kannada actor Shri Neernalli Ramakrishna as our morning Chief Guests, and Kannada actor Nagabhushana NS as our evening Chief Guest. Ask me anything about the event, our guests, Kannada Rajyotsava, or Karnataka's history and culture!",
+      kn: '❤️ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 AI ಸಹಾಯಕಕ್ಕೆ ಸ್ವಾಗತ! ನಮ್ಮ ಕನ್ನಡ, ನಮ್ಮ ಕರ್ನಾಟಕ, ನಮ್ಮ ಹೆಮ್ಮೆ! ನಮ್ಮ ಕಾರ್ಯಕ್ರಮಗಳು, ಪ್ರದರ್ಶನಗಳು, ಗೌರವಾನ್ವಿತ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಮತ್ತು ಕರ್ನಾಟಕದ ಶ್ರೀಮಂತ ಇತಿಹಾಸ ಹಾಗೂ ಪರಂಪರೆಯ ಬಗ್ಗೆ ತಿಳಿಯಲು ನಾನು ಸಹಾಯ ಮಾಡುತ್ತೇನೆ. ನವೆಂಬರ್ 15, ಭಾನುವಾರದಂದು ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ! ಈ ವರ್ಷ ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ ಮತ್ತು ಹಿರಿಯ ಕನ್ನಡ ನಟ ಶ್ರೀ ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ ಅವರನ್ನು ಬೆಳಿಗ್ಗೆಯ ಮುಖ್ಯ ಅತಿಥಿಗಳಾಗಿ, ಹಾಗೂ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್. ಅವರನ್ನು ಸಂಜೆಯ ಮುಖ್ಯ ಅತಿಥಿಯಾಗಿ ಸ್ವಾಗತಿಸುವ ಸೌಭಾಗ್ಯ ನಮ್ಮದು. ಕಾರ್ಯಕ್ರಮ, ಅತಿಥಿಗಳು, ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಅಥವಾ ಕರ್ನಾಟಕದ ಇತಿಹಾಸ ಮತ್ತು ಸಂಸ್ಕೃತಿಯ ಬಗ್ಗೆ ಏನು ಬೇಕಾದರೂ ಕೇಳಿ!',
     },
     santheTitle: { en: 'Explore B7G Santhe', kn: 'B7G ಸಂತೆ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ' },
     santheSuggestions: [

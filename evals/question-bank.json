@@ -350,11 +350,12 @@
           "expect": {
             "cards": [
               "dharmendra-kumar-arenahalli",
+              "nagabhushana-ns",
               "neernalli-ramakrishna"
             ],
             "includes": [
               "Nagabhushana",
-              "Special Guest"
+              "Chief Guest"
             ]
           }
         },
@@ -386,6 +387,7 @@
           "expect": {
             "cards": [
               "dharmendra-kumar-arenahalli",
+              "nagabhushana-ns",
               "neernalli-ramakrishna"
             ]
           }
@@ -428,6 +430,7 @@
           "expect": {
             "cards": [
               "dharmendra-kumar-arenahalli",
+              "nagabhushana-ns",
               "neernalli-ramakrishna"
             ]
           }
@@ -833,10 +836,10 @@
         },
         {
           "q": "Is Nagabhushana a Chief Guest?",
-          "behaviour": "No — Special Guest (15 November)",
+          "behaviour": "Yes — evening Chief Guest (15 November)",
           "expect": {
             "includes": [
-              "not a Chief Guest"
+              "evening"
             ]
           }
         },
@@ -854,13 +857,13 @@
           "behaviour": "Emcee script",
           "expect": {
             "includes": [
-              "Special Guest"
+              "Chief Guest"
             ]
           }
         },
         {
           "q": "What is Nagabhushana's connection to B7G Kannada Rajyotsava?",
-          "behaviour": "Special Guest, 15 November",
+          "behaviour": "evening Chief Guest, 15 November",
           "expect": {
             "includes": [
               "15 November"

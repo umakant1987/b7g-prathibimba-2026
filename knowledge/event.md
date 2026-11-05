@@ -8,7 +8,7 @@ entity_name: B7G Kannada Rajyotsava 2026
 event: B7G Kannada Rajyotsava 2026
 aliases: b7g kannada rajyotsava | b7g rajyotsava
 language: en
-version: 4
+version: 5
 updated_at: 2026-11-05
 ---
 
@@ -39,15 +39,15 @@ Yes, it was rescheduled. The celebration was earlier planned for 31 October and 
 
 | Guest | Role |
 |---|---|
-| Shri Dharmendra Kumar Arenahalli | Chief Guest |
-| Shri Neernalli Ramakrishna — veteran Kannada actor | Chief Guest |
-| Nagabhushana NS — Kannada actor, hero of *Ikkat* | Special Guest |
+| Shri Dharmendra Kumar Arenahalli | Morning Chief Guest |
+| Shri Neernalli Ramakrishna — veteran Kannada actor | Morning Chief Guest |
+| Nagabhushana NS — Kannada actor, hero of *Ikkat* | Evening Chief Guest |
 
-All three are guests of the celebration on 15 November 2026. The day opens with a guest talk from 10 to 11 AM.
+All three are Chief Guests of the celebration on 15 November 2026. Dharmendra Kumar Arenahalli and Neernalli Ramakrishna are the morning Chief Guests (guest talk 10 to 11 AM, then the B7G Santhe inauguration); Nagabhushana NS is the evening Chief Guest (programmes from 5:30 PM).
 
 ## Is Prakash Belawadi coming? (Prakash Belavadi, ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ)
 
-No. Shri Prakash Belawadi, who was announced earlier, will not be attending B7G Kannada Rajyotsava 2026. ಶ್ರೀ ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರು B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರಲ್ಲಿ ಭಾಗವಹಿಸುತ್ತಿಲ್ಲ. The Chief Guests are Shri Dharmendra Kumar Arenahalli and Shri Neernalli Ramakrishna, and the Special Guest is Nagabhushana NS. Do not list Prakash Belawadi as a guest.
+No. Shri Prakash Belawadi, who was announced earlier, will not be attending B7G Kannada Rajyotsava 2026. ಶ್ರೀ ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರು B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರಲ್ಲಿ ಭಾಗವಹಿಸುತ್ತಿಲ್ಲ. The Chief Guests are Shri Dharmendra Kumar Arenahalli and Shri Neernalli Ramakrishna (morning) and Nagabhushana NS (evening). Do not list Prakash Belawadi as a guest.
 
 ## What the event celebrates
 
@@ -82,7 +82,7 @@ Use this when a visitor first interacts with the assistant:
 >
 > I'm here to help you discover everything about our celebration — from our exciting programmes and performances to our distinguished Chief Guests and the rich history and heritage of Karnataka.
 >
-> Join us on **Sunday, 15 November 2026**! This year, we are privileged to welcome **Shri Dharmendra Kumar Arenahalli** and veteran Kannada actor **Shri Neernalli Ramakrishna** as our Chief Guests, and Kannada actor **Nagabhushana NS** as our Special Guest.
+> Join us on **Sunday, 15 November 2026**! This year, we are privileged to welcome **Shri Dharmendra Kumar Arenahalli** and veteran Kannada actor **Shri Neernalli Ramakrishna** as our morning Chief Guests, and Kannada actor **Nagabhushana NS** as our evening Chief Guest.
 >
 > Ask me anything about the event, our guests, Kannada Rajyotsava, or Karnataka's fascinating history and culture!
 

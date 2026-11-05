@@ -20,9 +20,9 @@ export function ChiefGuests() {
 
   return (
     <section id="guests" className="relative scroll-mt-20 py-24 sm:py-32 px-5 sm:px-8 bg-ink mandala-bg">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <SectionHeader title={s.title} subtitle={s.subtitle} eyebrow={t(s.eyebrow)} />
-        <div className="mt-14 flex flex-wrap justify-center gap-8 sm:gap-10">
+        <div className="mt-14 flex flex-wrap justify-center gap-6 lg:gap-8">
           {chiefGuests.map((guest, index) => (
             <GuestCard key={guest.id} guest={guest} index={index} onOpen={() => setOpen(guest)} />
           ))}
@@ -61,7 +61,7 @@ function GuestCard({ guest, index, onOpen }: { guest: GuestProfile; index: numbe
       </p>
       <p className={`mt-1 text-sm text-cream/70 ${kn ? 'font-kannada' : ''}`}>{kn ? guest.taglineKn : guest.tagline}</p>
       <span className="mt-3 inline-block rounded-full bg-gradient-to-r from-gold to-saffron px-3.5 py-1 font-kannada text-sm font-bold text-ink">
-        {kn ? `${guest.eventRoleKn} · ${guest.eventDateKn}` : `${guest.eventRole} · ${guest.eventDate}`}
+        {kn ? guest.eventRoleKn : guest.eventRole}
       </span>
       <span className="mt-4 flex items-center justify-center gap-1.5 text-xs font-semibold text-gold group-hover:text-gold-light">
         <Sparkles size={13} />
@@ -143,7 +143,7 @@ function GuestBio({ guest, onClose }: { guest: GuestProfile; onClose: () => void
             <p className="text-sm font-semibold uppercase tracking-wider text-gold">{t(s.knownFor)}</p>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-cream/80 marker:text-gold">
               {guest.knownFor.slice(0, 4).map((item) => (
-                <li key={item}>{item}</li>
+                <li key={item}>{item.split('*').join('')}</li>
               ))}
             </ul>
           </div>

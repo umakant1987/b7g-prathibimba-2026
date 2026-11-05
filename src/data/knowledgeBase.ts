@@ -41,16 +41,16 @@ export const faqs: FAQ[] = [
     id: 'faq-004',
     question: { en: 'Who are the Chief Guests?', kn: 'ಮುಖ್ಯ ಅತಿಥಿಗಳು ಯಾರು?' },
     answer: {
-      en: 'The Chief Guests for B7G Kannada Rajyotsava 2026 (15 November) are Shri Dharmendra Kumar Arenahalli and veteran Kannada actor Shri Neernalli Ramakrishna, and the Special Guest is Kannada actor Nagabhushana NS.',
-      kn: 'ನವೆಂಬರ್ 15ರಂದು ನಡೆಯುವ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ ಮತ್ತು ಹಿರಿಯ ನಟ ಶ್ರೀ ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ, ವಿಶೇಷ ಅತಿಥಿ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್.',
+      en: 'The Chief Guests for B7G Kannada Rajyotsava 2026 (15 November) are Shri Dharmendra Kumar Arenahalli and veteran Kannada actor Shri Neernalli Ramakrishna (morning), and Kannada actor Nagabhushana NS (evening).',
+      kn: 'ನವೆಂಬರ್ 15ರಂದು ನಡೆಯುವ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಬೆಳಿಗ್ಗೆಯ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ ಮತ್ತು ಹಿರಿಯ ನಟ ಶ್ರೀ ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ, ಸಂಜೆಯ ಮುಖ್ಯ ಅತಿಥಿ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್.',
     },
   },
   {
     id: 'faq-007',
     question: { en: 'Who is Nagabhushana?', kn: 'ನಾಗಭೂಷಣ ಯಾರು?' },
     answer: {
-      en: 'Nagabhushana NS is a Kannada actor known for playing Vasu in the 2021 comedy film Ikkat. He is the Special Guest on 15 November 2026.',
-      kn: 'ನಾಗಭೂಷಣ ಎನ್.ಎಸ್. ಅವರು ತಮ್ಮ ಸಹಜ ಹಾಸ್ಯ ಮತ್ತು ಆಪ್ತ ಅಭಿನಯಕ್ಕೆ ಹೆಸರಾದ ಕನ್ನಡ ನಟ. 2021ರ ಕನ್ನಡ ಹಾಸ್ಯ ಚಿತ್ರ "ಇಕ್ಕಟ್"ನಲ್ಲಿ ಭೂಮಿ ಶೆಟ್ಟಿ ಅವರ ಜೊತೆ ವಾಸು ಪಾತ್ರದಲ್ಲಿ ನಟಿಸಿದ್ದಾರೆ. ಅವರು ನವೆಂಬರ್ 15, 2026ರ ವಿಶೇಷ ಅತಿಥಿ.',
+      en: 'Nagabhushana NS is a Kannada actor known for playing Vasu in the 2021 comedy film Ikkat. He is the evening Chief Guest on 15 November 2026.',
+      kn: 'ನಾಗಭೂಷಣ ಎನ್.ಎಸ್. ಅವರು ತಮ್ಮ ಸಹಜ ಹಾಸ್ಯ ಮತ್ತು ಆಪ್ತ ಅಭಿನಯಕ್ಕೆ ಹೆಸರಾದ ಕನ್ನಡ ನಟ. 2021ರ ಕನ್ನಡ ಹಾಸ್ಯ ಚಿತ್ರ "ಇಕ್ಕಟ್"ನಲ್ಲಿ ಭೂಮಿ ಶೆಟ್ಟಿ ಅವರ ಜೊತೆ ವಾಸು ಪಾತ್ರದಲ್ಲಿ ನಟಿಸಿದ್ದಾರೆ. ಅವರು ನವೆಂಬರ್ 15, 2026ರ ಸಂಜೆಯ ಮುಖ್ಯ ಅತಿಥಿ.',
     },
   },
   {

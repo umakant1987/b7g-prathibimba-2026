@@ -35,8 +35,8 @@ export const daySchedule: ScheduleSession[] = [
         title: { en: 'Guest Talk', kn: 'ಅತಿಥಿಗಳ ಮಾತು' },
         time: { en: '10:00 – 11:00 AM', kn: 'ಬೆಳಿಗ್ಗೆ 10:00 – 11:00' },
         description: {
-          en: 'The day opens with our guests.',
-          kn: 'ನಮ್ಮ ಅತಿಥಿಗಳೊಂದಿಗೆ ದಿನದ ಆರಂಭ.',
+          en: 'With Chief Guests Dharmendra Kumar Arenahalli and Neernalli Ramakrishna.',
+          kn: 'ಮುಖ್ಯ ಅತಿಥಿಗಳಾದ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ ಮತ್ತು ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ ಅವರೊಂದಿಗೆ.',
         },
       },
       {
@@ -61,8 +61,8 @@ export const daySchedule: ScheduleSession[] = [
         title: { en: 'Cultural Programmes', kn: 'ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು' },
         time: { en: 'From 5:30 PM', kn: 'ಸಂಜೆ 5:30ರಿಂದ' },
         description: {
-          en: 'Performances celebrating Kannada language and culture.',
-          kn: 'ಕನ್ನಡ ಭಾಷೆ ಮತ್ತು ಸಂಸ್ಕೃತಿಯನ್ನು ಸಂಭ್ರಮಿಸುವ ಪ್ರದರ್ಶನಗಳು.',
+          en: 'Performances celebrating Kannada language and culture, with Chief Guest Nagabhushana NS.',
+          kn: 'ಮುಖ್ಯ ಅತಿಥಿ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್. ಅವರೊಂದಿಗೆ ಕನ್ನಡ ಭಾಷೆ ಮತ್ತು ಸಂಸ್ಕೃತಿಯನ್ನು ಸಂಭ್ರಮಿಸುವ ಪ್ರದರ್ಶನಗಳು.',
         },
       },
       {
