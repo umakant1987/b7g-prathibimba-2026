@@ -1,4 +1,5 @@
 import { AIChatAssistant } from '../components/AIChatAssistant';
+import { ChiefGuests } from '../components/ChiefGuests';
 import { CommunityLove } from '../components/CommunityLove';
 import { Footer } from '../components/Footer';
 import { Gallery } from '../components/Gallery';
@@ -22,6 +23,7 @@ export function Home() {
         <KarnatakaContributions />
         <CommunityLove />
         <ImpactCounters />
+        <ChiefGuests />
         <ProgramSchedule />
         <Gallery />
         <Sponsors />

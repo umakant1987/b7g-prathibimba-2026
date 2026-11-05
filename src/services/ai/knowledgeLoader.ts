@@ -36,6 +36,9 @@ export interface GuestProfile {
   /** Path under /public, e.g. "/guests/dharmendra-kumar-arenahalli.jpg". Empty shows an initials avatar. */
   photo: string;
   tagline: string;
+  /** Kannada display name and tagline (fall back to the English ones). */
+  nameKn: string;
+  taglineKn: string;
   short: string;
   eventRole: string;
   eventRoleKn: string;
@@ -50,6 +53,8 @@ export interface GuestProfile {
   /** "You can ask me" follow-up questions. */
   ask: string[];
   summaryKn: string;
+  /** The "## Summary" section, as light markdown — the short bio. */
+  summary: string;
 }
 
 /**
@@ -110,7 +115,8 @@ function chunkFile(file: string, meta: Record<string, string>, body: string): Kn
   return chunks;
 }
 
-function toGuest(file: string, meta: Record<string, string>): GuestProfile {
+function toGuest(file: string, meta: Record<string, string>, body: string): GuestProfile {
+  const summary = body.match(/^##\s+Summary\s*\r?\n([\s\S]*?)(?=\r?\n##\s|$)/m)?.[1] ?? '';
   const lower = (items: string[]) => items.map((item) => item.toLowerCase());
   return {
     id: file.replace(/^.*\//, '').replace(/\.md$/, ''),
@@ -120,6 +126,8 @@ function toGuest(file: string, meta: Record<string, string>): GuestProfile {
     emoji: meta.emoji ?? '⭐',
     photo: meta.photo ?? '',
     tagline: meta.tagline ?? '',
+    nameKn: meta.name_kn || meta.name || meta.title || file,
+    taglineKn: meta.tagline_kn || meta.tagline || '',
     short: meta.short ?? '',
     eventRole: meta.event_role ?? 'Guest',
     eventRoleKn: meta.event_role_kn || meta.event_role || 'ಅತಿಥಿ',
@@ -132,6 +140,7 @@ function toGuest(file: string, meta: Record<string, string>): GuestProfile {
     knownFor: splitList(meta.known_for),
     ask: splitList(meta.ask),
     summaryKn: meta.summary_kn ?? '',
+    summary: toLightMarkdown(summary),
   };
 }
 
@@ -145,5 +154,5 @@ export const knowledgeChunks: KnowledgeChunk[] = parsedFiles.flatMap(({ file, me
 
 export const guestProfiles: GuestProfile[] = parsedFiles
   .filter(({ meta }) => meta.type === 'guest')
-  .map(({ file, meta }) => toGuest(file, meta))
+  .map(({ file, meta, body }) => toGuest(file, meta, body))
   .sort((a, b) => a.order - b.order);

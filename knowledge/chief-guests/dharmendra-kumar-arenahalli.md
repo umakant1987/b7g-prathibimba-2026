@@ -13,8 +13,10 @@ order: 1
 name: Dharmendra Kumar Arenahalli
 honorific: Shri
 emoji: 📚
-photo:
+photo: /gallery/Dharmendra-Kumar-img.jpg
 tagline: Historian • Author • Civil Engineer • Digital Storyteller
+name_kn: ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ
+tagline_kn: ಇತಿಹಾಸಕಾರ • ಲೇಖಕ • ಡಿಜಿಟಲ್ ಕಥೆಗಾರ
 short: Historian and digital storyteller behind Mysoorina Kathegalu — Stories of Mysuru.
 event_role: Chief Guest
 event_role_kn: ಮುಖ್ಯ ಅತಿಥಿ

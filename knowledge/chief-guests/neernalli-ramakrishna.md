@@ -13,8 +13,10 @@ order: 2
 name: Neernalli Ramakrishna
 honorific: Shri
 emoji: 🎭
-photo:
+photo: /gallery/ramkrishna.jpg
 tagline: Veteran Kannada Actor • Yakshagana & Theatre Artist
+name_kn: ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ
+tagline_kn: ಹಿರಿಯ ಕನ್ನಡ ನಟ • ಯಕ್ಷಗಾನ ಮತ್ತು ರಂಗಭೂಮಿ ಕಲಾವಿದ
 short: Veteran Kannada actor of 200+ films, from Lord Krishna in Babruvahana to Puttanna Kanagal classics.
 event_role: Chief Guest
 event_role_kn: ಮುಖ್ಯ ಅತಿಥಿ

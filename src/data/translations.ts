@@ -77,6 +77,14 @@ export const translations = {
     families: { en: 'Families Participating', kn: 'ಭಾಗವಹಿಸುವ ಕುಟುಂಬಗಳು' },
     programs: { en: 'Programs', kn: 'ಕಾರ್ಯಕ್ರಮಗಳು' },
   },
+  guests: {
+    eyebrow: { en: 'Sunday, 15 November 2026', kn: 'ನವೆಂಬರ್ 15, 2026 ಭಾನುವಾರ' },
+    title: { en: 'Chief Guests', kn: 'ಮುಖ್ಯ ಅತಿಥಿಗಳು' },
+    subtitle: { en: 'Distinguished guests joining our Kannada Rajyotsava celebration.', kn: 'ನಮ್ಮ ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ ಸಂಭ್ರಮಕ್ಕೆ ಜೊತೆಯಾಗುತ್ತಿರುವ ಗಣ್ಯ ಅತಿಥಿಗಳು.' },
+    viewBio: { en: 'Tap to read bio', kn: 'ಪರಿಚಯ ಓದಲು ಸ್ಪರ್ಶಿಸಿ' },
+    knownFor: { en: 'Known for', kn: 'ಪ್ರಸಿದ್ಧಿ' },
+    close: { en: 'Close', kn: 'ಮುಚ್ಚಿ' },
+  },
   schedule: {
     eyebrow: { en: 'One day of celebration', kn: 'ಒಂದು ದಿನದ ಸಂಭ್ರಮ' },
     title: { en: 'Rajyotsava Programmes', kn: 'ರಾಜ್ಯೋತ್ಸವ ಕಾರ್ಯಕ್ರಮಗಳು' },
