@@ -314,8 +314,8 @@ const FORMER_GUESTS = [
     id: 'former:prakash-belawadi',
     pattern: /prakash(?!\s*raj)|belawadi|belavadi|belwadi|ಪ್ರಕಾಶ್|ಬೆಳವಾಡಿ/i,
     note: {
-      en: 'Shri Prakash Belawadi, who was announced earlier, will not be attending B7G Kannada Rajyotsava 2026. Our Chief Guest is Shri Dharmendra Kumar Arenahalli and our Special Guest is Kannada actor Nagabhushana NS.',
-      kn: 'ಶ್ರೀ ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರು B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರಲ್ಲಿ ಭಾಗವಹಿಸುತ್ತಿಲ್ಲ. ನಮ್ಮ ಮುಖ್ಯ ಅತಿಥಿ ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ, ವಿಶೇಷ ಅತಿಥಿ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್.',
+      en: 'Shri Prakash Belawadi, who was announced earlier, will not be attending B7G Kannada Rajyotsava 2026. Our Chief Guests are Shri Dharmendra Kumar Arenahalli and Shri Neernalli Ramakrishna, and our Special Guest is Kannada actor Nagabhushana NS.',
+      kn: 'ಶ್ರೀ ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ ಅವರು B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರಲ್ಲಿ ಭಾಗವಹಿಸುತ್ತಿಲ್ಲ. ನಮ್ಮ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ ಮತ್ತು ಶ್ರೀ ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ, ವಿಶೇಷ ಅತಿಥಿ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್.',
     },
   },
 ];

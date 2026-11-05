@@ -339,7 +339,8 @@
           "expect": {
             "cards": [
               "dharmendra-kumar-arenahalli",
-              "nagabhushana-ns"
+              "nagabhushana-ns",
+              "neernalli-ramakrishna"
             ]
           }
         },
@@ -348,7 +349,8 @@
           "behaviour": "Only the Chief Guests; mentions Nagabhushana separately",
           "expect": {
             "cards": [
-              "dharmendra-kumar-arenahalli"
+              "dharmendra-kumar-arenahalli",
+              "neernalli-ramakrishna"
             ],
             "includes": [
               "Nagabhushana",
@@ -362,7 +364,8 @@
           "expect": {
             "cards": [
               "dharmendra-kumar-arenahalli",
-              "nagabhushana-ns"
+              "nagabhushana-ns",
+              "neernalli-ramakrishna"
             ]
           }
         },
@@ -372,7 +375,8 @@
           "expect": {
             "cards": [
               "dharmendra-kumar-arenahalli",
-              "nagabhushana-ns"
+              "nagabhushana-ns",
+              "neernalli-ramakrishna"
             ]
           }
         },
@@ -381,7 +385,8 @@
           "behaviour": "The two Chief Guests",
           "expect": {
             "cards": [
-              "dharmendra-kumar-arenahalli"
+              "dharmendra-kumar-arenahalli",
+              "neernalli-ramakrishna"
             ]
           }
         },
@@ -400,7 +405,8 @@
           "expect": {
             "cards": [
               "dharmendra-kumar-arenahalli",
-              "nagabhushana-ns"
+              "nagabhushana-ns",
+              "neernalli-ramakrishna"
             ]
           }
         },
@@ -410,7 +416,8 @@
           "expect": {
             "cards": [
               "dharmendra-kumar-arenahalli",
-              "nagabhushana-ns"
+              "nagabhushana-ns",
+              "neernalli-ramakrishna"
             ]
           }
         },
@@ -420,7 +427,8 @@
           "behaviour": "Kannada: the two Chief Guests",
           "expect": {
             "cards": [
-              "dharmendra-kumar-arenahalli"
+              "dharmendra-kumar-arenahalli",
+              "neernalli-ramakrishna"
             ]
           }
         },
@@ -431,7 +439,8 @@
           "expect": {
             "cards": [
               "dharmendra-kumar-arenahalli",
-              "nagabhushana-ns"
+              "nagabhushana-ns",
+              "neernalli-ramakrishna"
             ]
           }
         },
@@ -1420,6 +1429,58 @@
           "q": "Suggest questions for a Q&A with the Chief Guests",
           "mode": "llm",
           "behaviour": "Draws on each guest's 'What can I ask him?' section"
+        }
+      ]
+    },
+    {
+      "name": "3b. Neernalli Ramakrishna (Chief Guest)",
+      "purpose": "Veteran Kannada actor added as a Chief Guest. Use only facts in his file; birth date and full filmography are not confirmed.",
+      "cases": [
+        {
+          "q": "Who is Neernalli Ramakrishna?",
+          "behaviour": "Profile card: veteran Kannada actor, Chief Guest",
+          "expect": {
+            "cards": [
+              "neernalli-ramakrishna"
+            ]
+          }
+        },
+        {
+          "q": "Ramakrishna",
+          "behaviour": "Name-only search → his profile",
+          "expect": {
+            "cards": [
+              "neernalli-ramakrishna"
+            ]
+          }
+        },
+        {
+          "q": "ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ",
+          "lang": "kn",
+          "behaviour": "Kannada name search → his profile",
+          "expect": {
+            "cards": [
+              "neernalli-ramakrishna"
+            ]
+          }
+        },
+        {
+          "q": "What was Neernalli Ramakrishna's first film?",
+          "behaviour": "Babruvahana, as Lord Krishna",
+          "expect": {
+            "includes": [
+              "Babruvahana"
+            ]
+          }
+        },
+        {
+          "q": "Which Puttanna Kanagal films did Neernalli Ramakrishna act in?",
+          "behaviour": "Ranganayaki, Maanasa Sarovara, Amrutha Ghalige, Padavarahalli Pandavaru",
+          "expect": {
+            "includes": [
+              "Ranganayaki"
+            ]
+          }
         }
       ]
     }

@@ -96,6 +96,15 @@ describe('B7G RAG — required questions', () => {
     assert.match(prompt, /Title: Dharmendra Kumar Arenahalli — Summary/);
   });
 
+  test('4a. "Who is Neernalli Ramakrishna?" / "ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ ಯಾರು?" → his profile', async () => {
+    const en = await ask('Who is Neernalli Ramakrishna?');
+    assert.equal(en.entities[0], 'Neernalli Ramakrishna');
+    assert.match(en.prompt, /Babruvahana/);
+    const kn = await ask('ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ ಯಾರು?');
+    assert.equal(kn.result.language, 'kn');
+    assert.equal(kn.entities[0], 'Neernalli Ramakrishna');
+  });
+
   test('4b. "Who is Prakash Belawadi?" → the note that he is no longer attending', async () => {
     const { prompt } = await ask('Who is Prakash Belawadi?');
     assert.match(prompt, /will not be attending/);

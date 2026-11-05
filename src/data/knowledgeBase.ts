@@ -41,8 +41,8 @@ export const faqs: FAQ[] = [
     id: 'faq-004',
     question: { en: 'Who are the Chief Guests?', kn: 'ಮುಖ್ಯ ಅತಿಥಿಗಳು ಯಾರು?' },
     answer: {
-      en: 'The Chief Guest for B7G Kannada Rajyotsava 2026 (15 November) is Shri Dharmendra Kumar Arenahalli, and the Special Guest is Kannada actor Nagabhushana NS.',
-      kn: 'ನವೆಂಬರ್ 15ರಂದು ನಡೆಯುವ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಮುಖ್ಯ ಅತಿಥಿ ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ, ವಿಶೇಷ ಅತಿಥಿ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್.',
+      en: 'The Chief Guests for B7G Kannada Rajyotsava 2026 (15 November) are Shri Dharmendra Kumar Arenahalli and veteran Kannada actor Shri Neernalli Ramakrishna, and the Special Guest is Kannada actor Nagabhushana NS.',
+      kn: 'ನವೆಂಬರ್ 15ರಂದು ನಡೆಯುವ B7G ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026ರ ಮುಖ್ಯ ಅತಿಥಿಗಳು ಶ್ರೀ ಧರ್ಮೇಂದ್ರ ಕುಮಾರ್ ಅರೆನಹಳ್ಳಿ ಮತ್ತು ಹಿರಿಯ ನಟ ಶ್ರೀ ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ, ವಿಶೇಷ ಅತಿಥಿ ಕನ್ನಡ ನಟ ನಾಗಭೂಷಣ ಎನ್.ಎಸ್.',
     },
   },
   {

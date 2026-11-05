@@ -32,4 +32,14 @@ export const sponsors: Sponsor[] = [
     name: 'Pranathi Enterprises',
     logo: '/sponsor-logos/pranathi-name.jpg',
   },
+  {
+    id: 'the-champions-sports-club',
+    name: 'The Champions Sports Club',
+    logo: '/sponsor-logos/champions-logo.png',
+  },
+  {
+    id: 'rh-enterprises',
+    name: 'RH Enterprises',
+    logo: '/sponsor-logos/rh-enterprises-logo.png',
+  },
 ];

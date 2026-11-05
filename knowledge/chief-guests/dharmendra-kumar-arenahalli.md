@@ -36,7 +36,7 @@ Dharmendra Kumar Arenahalli, also known as **Dharmi Sir**, is a historian, autho
 
 ## What is his role and connection to B7G Kannada Rajyotsava? When is he coming?
 
-Shri Dharmendra Kumar Arenahalli is a **Chief Guest** at B7G Kannada Rajyotsava 2026 and is coming on **Sunday, 15 November 2026** at Brigade 7 Gardens. The day opens with a guest talk from 10 to 11 AM.
+Shri Dharmendra Kumar Arenahalli is a **Chief Guest** at B7G Kannada Rajyotsava 2026, alongside Shri Neernalli Ramakrishna, and is coming on **Sunday, 15 November 2026** at Brigade 7 Gardens. The day opens with a guest talk from 10 to 11 AM.
 
 ## What is Mysoorina Kathegalu?
 
