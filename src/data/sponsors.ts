@@ -42,4 +42,15 @@ export const sponsors: Sponsor[] = [
     name: 'RH Enterprises',
     logo: '/sponsor-logos/rh-enterprises-logo.png',
   },
+  {
+    id: 'brics',
+    name: 'BRICS',
+    logo: '/sponsor-logos/brics-logo.png',
+  },
+  {
+    id: 'vision-optics',
+    name: 'Vision Optics',
+    // Placeholder logo designed for the site until Vision Optics shares theirs.
+    logo: '/sponsor-logos/vision-optics-logo.png',
+  },
 ];
