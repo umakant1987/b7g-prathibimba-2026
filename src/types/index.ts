@@ -31,7 +31,7 @@ export interface Program {
 
 export interface Sponsor {
   id: string;
-  /** Short name shown on the card, e.g. "B7G AOA". */
+  /** Short name shown on the card, e.g. "7WOW Ventures". */
   name: string;
   /** Full organisation name, shown under the short name. */
   fullName?: string;

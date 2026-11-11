@@ -1159,7 +1159,7 @@
     },
     {
       "name": "9. Sponsors and previous events",
-      "purpose": "Confirmed sponsors: B7G AOA and 7WOW Ventures. Previous events come from the 2025 gallery.",
+      "purpose": "Confirmed sponsors (8), e.g. 7WOW Ventures and Fundskart. Previous events come from the 2025 gallery.",
       "cases": [
         {
           "q": "Who are the sponsors?",
@@ -1172,10 +1172,10 @@
         },
         {
           "q": "Who is the title sponsor?",
-          "behaviour": "Names B7G AOA",
+          "behaviour": "Names the sponsors",
           "expect": {
             "includes": [
-              "B7G AOA"
+              "Fundskart"
             ]
           }
         },

@@ -8,11 +8,6 @@ import type { Sponsor } from '../types';
  */
 export const sponsors: Sponsor[] = [
   {
-    id: 'b7g-aoa',
-    name: 'B7G AOA',
-    logo: '/sponsor-logos/b7glogo-transparent.png',
-  },
-  {
     id: '7wow-ventures',
     name: '7WOW Ventures',
     logo: '/sponsor-logos/7wowlogo.jpeg',
