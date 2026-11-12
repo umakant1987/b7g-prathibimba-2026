@@ -213,105 +213,65 @@ describe('B7G RAG — cultural programme', () => {
   /** Titles of the context sources, in rank order. */
   const titles = (prompt: string) => [...prompt.matchAll(/^Title: (.+)$/gm)].map((m) => m[1]);
 
-  test('every performance record carries date, session, running order and type', async () => {
+  test('every programme item is on 15 November with session, running order, type and times', async () => {
     const { documents } = await loadKnowledge(KNOWLEDGE_DIR);
     const items = documents.filter((d) => d.subcategory === 'performance');
-    assert.equal(items.length, 29);
+    assert.equal(items.length, 21);
     for (const item of items) {
-      assert.ok(item.event_date && item.metadata.session && typeof item.metadata.sequence === 'number', item.title);
+      assert.equal(item.event_date, '2026-11-15', item.title);
+      assert.ok(item.metadata.session && typeof item.metadata.sequence === 'number', item.title);
+      assert.match(String(item.metadata.start_time), /^\d\d:\d\d$/, item.title);
+      assert.match(String(item.metadata.end_time), /^\d\d:\d\d$/, item.title);
     }
-    assert.ok(items.some((i) => i.title === 'Soul Strech Yoga – Yoga Performance'), 'official spelling kept');
+    assert.equal(items.filter((i) => i.metadata.session === 'morning').length, 7);
+    assert.equal(items.filter((i) => i.metadata.session === 'evening').length, 14);
   });
 
-  test('"What is happening on 31st October?" → the 31 October programme', async () => {
-    const { prompt } = await ask('What is happening on 31st October?');
-    assert.match(titles(prompt)[0], /31 October 2026 Evening Programme/);
-  });
-
-  test('"Who is performing on 31st?" → "31st" is read as 31 October', async () => {
-    const { prompt, result } = await ask('Who is performing on 31st?');
-    assert.match(result.rewrittenQuestion ?? '', /31st/);
-    assert.match(titles(prompt)[0], /31 October 2026/);
-  });
-
-  test('"What programs are there on November 1?" → morning, afternoon and evening sessions', async () => {
-    const { prompt } = await ask('What programs are there on November 1?');
+  test('"What is happening on 15 November?" → the morning and evening sessions', async () => {
+    const { prompt } = await ask('What is happening on 15 November?');
     const t = titles(prompt).join('\n');
-    for (const session of ['Morning', 'Afternoon', 'Evening']) assert.match(t, new RegExp(`1 November 2026 ${session} Programme`));
+    assert.match(t, /Morning Session/);
+    assert.match(t, /Evening Session/);
   });
 
-  test('"What about November 1 evening?" → only the 1 November evening programme leads', async () => {
-    const { prompt } = await ask('What about November 1 evening?');
-    assert.match(titles(prompt)[0], /1 November 2026 Evening Programme/);
+  test('"What is happening in the evening?" → one programme day, so no clarification', async () => {
+    const { prompt, called } = await ask('What is happening in the evening?');
+    assert.ok(called);
+    assert.match(prompt, /Evening Session/);
+    assert.match(prompt, /4:40 PM/);
   });
 
-  test('"Who is performing violin?" → Tanya PV', async () => {
+  test('"Who is performing violin?" → Tanya PV at 5:50 PM', async () => {
     const { prompt } = await ask('Who is performing violin?');
     assert.match(titles(prompt)[0], /Tanya PV/);
+    assert.match(prompt, /5:50 PM to 6:00 PM/);
   });
 
-  test('"When is Huli Dance?" → 1 November evening', async () => {
-    const { prompt } = await ask('When is Huli Dance?');
-    assert.match(titles(prompt)[0], /Huli Dance/);
-    assert.match(prompt, /Event date: 2026-11-01\nSession: evening/);
+  test('"What time is the sand art?" → 7:05 – 8:00 PM by Mr. Raghavendra Hegde', async () => {
+    const { prompt } = await ask('What time is the sand art?');
+    assert.match(prompt, /7:05 PM to 8:00 PM/);
+    assert.match(prompt, /Raghavendra Hegde/);
   });
 
-  test('"What is there in the afternoon?" → B7G Sante (only one afternoon, so no clarification)', async () => {
-    const { prompt, called } = await ask('What is there in the afternoon?');
-    assert.ok(called);
-    assert.match(prompt, /B7G Sante/);
+  test('"When is the Santhe inauguration?" → 10:45 AM, one Santhe entity', async () => {
+    const { prompt } = await ask('When is the Santhe inauguration?');
+    assert.match(prompt, /10:45 AM/);
+    assert.match(prompt, /Entity: B7G Santhe/);
   });
 
-  test('"What happens after B7G Sante?" / "Who is performing before Jamming?" → running-order neighbours', async () => {
-    assert.match((await ask('What happens after B7G Sante?')).prompt, /before Soul Strech Yoga/);
-    assert.match((await ask('Who is performing before Jamming?')).prompt, /after Huli Dance/);
+  test('"When is Samvada?" → 9:30 – 10:30 AM with the Chief Guests', async () => {
+    const { prompt } = await ask('When is Samvada with the chief guests?');
+    assert.match(prompt, /9:30 AM to 10:30 AM/);
   });
 
-  test('"What time is Tanya PV performing?" → context says the time is not published', async () => {
-    const { prompt } = await ask('What time is Tanya PV performing?');
-    assert.match(prompt, /Tanya PV[\s\S]*exact time has not been published/);
+  test('"What happens after Rhythm of B7G?" / "What is before Jamming?" → running-order neighbours', async () => {
+    assert.match((await ask('What happens after Rhythm of B7G?')).prompt, /before Sand Art/);
+    assert.match((await ask('What is before Jamming?')).prompt, /after Sand Art/);
   });
 
-  test('"What is happening in the evening?" with no day → short clarification, no guessing', async () => {
-    const { result, called } = await ask('What is happening in the evening?');
-    assert.equal(called, false);
-    assert.match(result.answer, /31 October 2026 or 1 November 2026/);
-  });
-
-  test('follow-up: after talking about 31 October, "the evening" means 31 October', async () => {
-    const history: ConversationTurn[] = [
-      { role: 'user', content: 'Who is performing on October 31?' },
-      { role: 'assistant', content: 'On 31 October: SriRanga Group, Tanya PV, Danzo Chinnara Balaga and more.' },
-    ];
-    const { prompt, result } = await ask('What is happening in the evening?', history);
-    assert.match(result.rewrittenQuestion ?? '', /31 October 2026/);
-    assert.match(titles(prompt)[0], /31 October 2026 Evening Programme/);
-  });
-
-  test('follow-up: "What about November 1?" switches day instead of sticking to the last performer', async () => {
-    const history: ConversationTurn[] = [
-      { role: 'user', content: 'Who is doing the violin?' },
-      { role: 'assistant', content: 'Tanya PV will perform violin on 31 October 2026.' },
-    ];
-    const { prompt, result } = await ask('What about November 1?', history);
-    assert.doesNotMatch(result.rewrittenQuestion ?? '', /Tanya/);
-    assert.match(titles(prompt).join('\n'), /1 November 2026 (Morning|Afternoon|Evening) Programme/);
-  });
-
-  test('answering the clarification ("1 November") keeps the session asked about', async () => {
-    const history: ConversationTurn[] = [
-      { role: 'user', content: 'What is happening in the evening?' },
-      { role: 'assistant', content: "There's an evening programme on more than one day — do you mean 31 October 2026 or 1 November 2026?" },
-    ];
-    const { prompt, result } = await ask('1 November', history);
-    assert.match(result.rewrittenQuestion ?? '', /evening programme/);
-    assert.match(titles(prompt)[0], /1 November 2026 Evening Programme/);
-  });
-
-  test('"Mr. Dharmi" in the programme resolves to Dharmendra Kumar Arenahalli', async () => {
-    const { prompt } = await ask('When is Mr. Dharmi speaking?');
-    assert.match(prompt, /Entity: Dharmendra Kumar Arenahalli/);
-    assert.match(prompt, /Speech by Mr\. Dharmi/);
+  test('old date: "What is happening on 31st October?" → the move to 15 November', async () => {
+    const { prompt } = await ask('What is happening on 31st October?');
+    assert.match(prompt, /rescheduled|15 November 2026/);
   });
 });
 

@@ -7,7 +7,7 @@ import { useSchedule } from '../hooks/useSchedule';
 import { hasTimings } from '../services/schedule';
 import type { ProgramCategory } from '../types';
 import { ProgramCard } from './ProgramCard';
-import { EventDaySchedule } from './EventDaySchedule';
+import { EventDateBadge, EventDaySchedule } from './EventDaySchedule';
 import { SectionHeader } from './SectionHeader';
 
 const CATEGORIES: (ProgramCategory | 'all')[] = ['all', 'ceremony', 'music', 'dance', 'drama', 'kids', 'talks', 'more'];
@@ -60,7 +60,9 @@ function DetailedProgramme() {
       <div className="max-w-5xl mx-auto">
         <SectionHeader title={s.title} subtitle={s.subtitle} eyebrow={t(s.eyebrow)} />
 
-        {/* Day switcher */}
+        {/* One programme day: the date badge. Several days: day tabs. */}
+        {programDates.length === 1 && <EventDateBadge />}
+        {programDates.length > 1 && (
         <div role="tablist" aria-label="Programme day" className="mt-10 flex justify-center gap-3">
           {programDates.map((date) => {
             const count = programs.filter((p) => p.date === date).length;
@@ -83,6 +85,7 @@ function DetailedProgramme() {
             );
           })}
         </div>
+        )}
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
           <div className="relative flex-1">

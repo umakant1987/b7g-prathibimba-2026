@@ -23,9 +23,21 @@ No. The celebration was earlier planned for 31 October and 1 November, but it ha
 
 On Sunday, 15 November 2026 at Brigade 7 Gardens:
 
-- **10:00 – 11:00 AM:** Guest talk
-- **After the guest talk:** Inauguration of B7G Santhe (the community market). Santhe stays open until the evening.
-- **From 5:30 PM:** Cultural programmes, followed by a sand art performance by Mr. Raghavendra Hegde, a renowned sand artist, and then a jamming session to close the evening.
+**Morning session (8:30 – 11:00 AM)**
+- 8:30 AM: Arrival of guests
+- 8:45 AM: Breakfast with the Chief Guests
+- 9:10 AM: Invocation song by Poornima and lamp lighting ceremony
+- 9:20 AM: Welcome address by the President
+- 9:30 – 10:30 AM: Samvada, an interaction with the Chief Guests, Shri Dharmendra Kumar Arenahalli and Shri Neernalli Ramakrishna
+- 10:30 AM: Chief Guests' interaction with the GSS team
+- 10:45 AM: Inauguration of B7G Santhe (the community market stays open until the evening)
+
+**Evening session · Cultural Programme (from 4:40 PM)**
+- 4:40 – 7:05 PM: Performances by B7G residents and groups — group song, kids dance, flute, group yoga, instrumental, singing, violin, dance dramas, a dance-cum-skit and Naada Geethe
+- 7:05 – 8:00 PM: Sand art by Mr. Raghavendra Hegde, a renowned sand artist
+- 8:45 – 10:30 PM: Jamming, the last item of the day
+
+Kannada actor Nagabhushana NS is the Chief Guest for the evening. The full running order with item-wise timings is in the Programmes section of the website.
 
 ## Is the event free to attend?
 
@@ -63,7 +75,7 @@ If you mean the hero of Ikkat, you're referring to Nagabhushana NS. He plays the
 
 ## When is Nagabhushana coming to B7G?
 
-Nagabhushana is the evening Chief Guest of the B7G Kannada Rajyotsava celebration on Sunday, 15 November 2026; the evening programme starts at 5:30 PM.
+Nagabhushana is the evening Chief Guest of the B7G Kannada Rajyotsava celebration on Sunday, 15 November 2026; the evening cultural programme starts at 4:40 PM.
 
 ## Why are the Chief Guests relevant to Kannada Rajyotsava?
 

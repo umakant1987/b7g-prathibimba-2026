@@ -13,7 +13,7 @@ updated_at: 2026-11-02
 
 ## When will the detailed programme, schedule and running order be released?
 
-The detailed programme for B7G Kannada Rajyotsava 2026 — the full running order, the list of performances and performers, and item timings — will be released closer to the event. The celebration is on Sunday, 15 November 2026: a guest talk from 10 to 11 AM, then the inauguration of B7G Santhe (open until the evening); from 5:30 PM, cultural programmes, followed by sand art by Mr. Raghavendra Hegde and a jamming session. This is shown in the Programmes section of the website.
+The detailed programme for B7G Kannada Rajyotsava 2026 — the full running order, the list of performances and performers, and item timings — will be released closer to the event. The celebration is on Sunday, 15 November 2026: a morning session from 8:30 AM with Samvada with the Chief Guests (9:30 – 10:30 AM) and the inauguration of B7G Santhe at 10:45 AM; from 4:40 PM, the cultural programme, followed by sand art by Mr. Raghavendra Hegde (7:05 – 8:00 PM) and jamming (8:45 – 10:30 PM). This is shown in the Programmes section of the website.
 
 ## How to talk about it
 

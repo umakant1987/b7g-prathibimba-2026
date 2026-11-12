@@ -55,14 +55,14 @@ const SCHEDULE_SOURCE: ChatSource = { label: 'B7G Programme', type: 'schedule' }
 const PROGRAMME_COMING_SOON: Record<Language, string> = {
   en: [
     'The celebration is on **Sunday, 15 November 2026** at Brigade 7 Gardens:',
-    '• **10 – 11 AM** — Guest talk, then the inauguration of B7G Santhe (open until the evening).',
-    '• **From 5:30 PM** — Cultural programmes, followed by sand art by Mr. Raghavendra Hegde and a jamming session.',
+    '• **8:30 – 11:00 AM** — Morning session: Samvada with the Chief Guests (9:30 – 10:30), then the inauguration of B7G Santhe at 10:45 (open until the evening).',
+    '• **From 4:40 PM** — Cultural programme; sand art by Mr. Raghavendra Hegde (7:05 – 8:00 PM); jamming (8:45 – 10:30 PM).',
     'See the Programmes section.',
   ].join('\n'),
   kn: [
     'ಕಾರ್ಯಕ್ರಮ **ನವೆಂಬರ್ 15, 2026 ಭಾನುವಾರ** ಬ್ರಿಗೇಡ್ 7 ಗಾರ್ಡನ್ಸ್‌ನಲ್ಲಿ:',
-    '• **ಬೆಳಿಗ್ಗೆ 10 – 11** — ಅತಿಥಿಗಳ ಮಾತು, ನಂತರ B7G ಸಂತೆ ಉದ್ಘಾಟನೆ (ಸಂಜೆಯವರೆಗೂ ತೆರೆದಿರುತ್ತದೆ).',
-    '• **ಸಂಜೆ 5:30ರಿಂದ** — ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು, ನಂತರ ಶ್ರೀ ರಾಘವೇಂದ್ರ ಹೆಗಡೆ ಅವರಿಂದ ಮರಳು ಕಲೆ ಮತ್ತು ಜಾಮಿಂಗ್ ಸೆಷನ್.',
+    '• **ಬೆಳಿಗ್ಗೆ 8:30 – 11:00** — ಬೆಳಗಿನ ಅವಧಿ: ಮುಖ್ಯ ಅತಿಥಿಗಳೊಂದಿಗೆ ಸಂವಾದ (9:30 – 10:30), 10:45ಕ್ಕೆ B7G ಸಂತೆ ಉದ್ಘಾಟನೆ.',
+    '• **ಸಂಜೆ 4:40ರಿಂದ** — ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮ; ಮರಳು ಕಲೆ (ಸಂಜೆ 7:05 – 8:00); ಜಾಮಿಂಗ್ (ರಾತ್ರಿ 8:45 – 10:30).',
     'ಕಾರ್ಯಕ್ರಮಗಳು ವಿಭಾಗವನ್ನು ನೋಡಿ.',
   ].join('\n'),
 };

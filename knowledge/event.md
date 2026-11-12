@@ -24,12 +24,21 @@ updated_at: 2026-11-05
 
 The whole celebration happens on one day, Sunday 15 November 2026, at Brigade 7 Gardens.
 
-**Morning**
-- **10:00 – 11:00 AM:** Guest talk
-- **After the guest talk:** Inauguration of B7G Santhe (the community market). Santhe stays open until the evening.
+**Morning session (8:30 – 11:00 AM)**
+- 8:30 AM: Arrival of guests
+- 8:45 AM: Breakfast with the Chief Guests
+- 9:10 AM: Invocation song by Poornima and lamp lighting ceremony
+- 9:20 AM: Welcome address by the President
+- 9:30 – 10:30 AM: Samvada, an interaction with the Chief Guests, Shri Dharmendra Kumar Arenahalli and Shri Neernalli Ramakrishna
+- 10:30 AM: Chief Guests' interaction with the GSS team
+- 10:45 AM: Inauguration of B7G Santhe (the community market stays open until the evening)
 
-**Evening**
-- **From 5:30 PM:** Cultural programmes, followed by a sand art performance by Mr. Raghavendra Hegde, a renowned sand artist, and then a jamming session to close the evening.
+**Evening session · Cultural Programme (from 4:40 PM)**
+- 4:40 – 7:05 PM: Performances by B7G residents and groups — group song, kids dance, flute, group yoga, instrumental, singing, violin, dance dramas, a dance-cum-skit and Naada Geethe
+- 7:05 – 8:00 PM: Sand art by Mr. Raghavendra Hegde, a renowned sand artist
+- 8:45 – 10:30 PM: Jamming, the last item of the day
+
+Kannada actor Nagabhushana NS is the Chief Guest for the evening. The full running order with item-wise timings is in the Programmes section of the website.
 
 ## Was the event moved? Is it on 31 October or 1 November?
 
@@ -43,7 +52,7 @@ Yes, it was rescheduled. The celebration was earlier planned for 31 October and 
 | Shri Neernalli Ramakrishna — veteran Kannada actor | Morning Chief Guest |
 | Nagabhushana NS — Kannada actor, hero of *Ikkat* | Evening Chief Guest |
 
-All three are Chief Guests of the celebration on 15 November 2026. Dharmendra Kumar Arenahalli and Neernalli Ramakrishna are the morning Chief Guests (guest talk 10 to 11 AM, then the B7G Santhe inauguration); Nagabhushana NS is the evening Chief Guest (programmes from 5:30 PM).
+All three are Chief Guests of the celebration on 15 November 2026. Dharmendra Kumar Arenahalli and Neernalli Ramakrishna are the morning Chief Guests (Samvada with the Chief Guests from 9:30 to 10:30 AM, then the B7G Santhe inauguration at 10:45 AM); Nagabhushana NS is the evening Chief Guest (cultural programme from 4:40 PM).
 
 ## Is Prakash Belawadi coming? (Prakash Belavadi, ಪ್ರಕಾಶ್ ಬೆಳವಾಡಿ)
 

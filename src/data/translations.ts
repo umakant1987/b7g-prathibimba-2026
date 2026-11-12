@@ -89,8 +89,8 @@ export const translations = {
     eyebrow: { en: 'One day of celebration', kn: 'ಒಂದು ದಿನದ ಸಂಭ್ರಮ' },
     title: { en: 'Rajyotsava Programmes', kn: 'ರಾಜ್ಯೋತ್ಸವ ಕಾರ್ಯಕ್ರಮಗಳು' },
     subtitle: {
-      en: 'The running order for Sunday, 15 November. Timings will be announced soon.',
-      kn: 'ನವೆಂಬರ್ 15, ಭಾನುವಾರದ ಕಾರ್ಯಕ್ರಮಗಳ ಕ್ರಮ. ಸಮಯವನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಪ್ರಕಟಿಸಲಾಗುವುದು.',
+      en: 'The full running order for Sunday, 15 November at Brigade 7 Gardens: morning session from 8:30 AM, cultural programme from 4:40 PM.',
+      kn: 'ನವೆಂಬರ್ 15, ಭಾನುವಾರ ಬ್ರಿಗೇಡ್ 7 ಗಾರ್ಡನ್ಸ್‌ನ ಸಂಪೂರ್ಣ ಕಾರ್ಯಕ್ರಮ ಪಟ್ಟಿ: ಬೆಳಿಗ್ಗೆ 8:30ರಿಂದ ಬೆಳಗಿನ ಅವಧಿ, ಸಂಜೆ 4:40ರಿಂದ ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮ.',
     },
     liveNow: { en: 'LIVE NOW', kn: 'ಈಗ ಲೈವ್' },
     upNext: { en: 'UP NEXT', kn: 'ಮುಂದಿನದು' },

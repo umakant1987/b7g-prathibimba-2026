@@ -17,25 +17,9 @@ const ITEM_ICONS: Record<ScheduleIcon, LucideIcon> = {
  * Shown until the detailed running order is released (VITE_SHOW_PROGRAMME_DETAILS).
  */
 export function EventDaySchedule() {
-  const { t, language } = useLanguage();
-  const s = translations.schedule;
-
   return (
     <div className="mt-12">
-      {/* Date badge */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="mx-auto flex w-fit items-center gap-4 rounded-3xl border border-gold/50 bg-maroon/50 px-6 py-4 shadow-[0_0_40px_rgba(232,184,75,0.18)]"
-      >
-        <span className="font-display text-5xl sm:text-6xl font-bold leading-none text-gradient-gold">{EVENT_DAY.dayOfMonth}</span>
-        <span className="text-left">
-          <span className={`block text-lg sm:text-xl font-bold text-cream ${language === 'kn' ? 'font-kannada' : ''}`}>{t(s.eventMonth)}</span>
-          <span className={`block text-sm sm:text-base font-semibold text-gold ${language === 'kn' ? 'font-kannada' : ''}`}>{t(s.eventDay)}</span>
-        </span>
-      </motion.div>
+      <EventDateBadge />
 
       <div className="mt-10 grid gap-6 md:grid-cols-2">
         {daySchedule.map((session, index) => (
@@ -43,6 +27,27 @@ export function EventDaySchedule() {
         ))}
       </div>
     </div>
+  );
+}
+
+/** "15 · November 2026 · Sunday" badge, also used above the detailed programme. */
+export function EventDateBadge() {
+  const { t, language } = useLanguage();
+  const s = translations.schedule;
+  return (
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="mt-10 mx-auto flex w-fit items-center gap-4 rounded-3xl border border-gold/50 bg-maroon/50 px-6 py-4 shadow-[0_0_40px_rgba(232,184,75,0.18)]"
+      >
+        <span className="font-display text-5xl sm:text-6xl font-bold leading-none text-gradient-gold">{EVENT_DAY.dayOfMonth}</span>
+        <span className="text-left">
+          <span className={`block text-lg sm:text-xl font-bold text-cream ${language === 'kn' ? 'font-kannada' : ''}`}>{t(s.eventMonth)}</span>
+          <span className={`block text-sm sm:text-base font-semibold text-gold ${language === 'kn' ? 'font-kannada' : ''}`}>{t(s.eventDay)}</span>
+        </span>
+      </motion.div>
   );
 }
 

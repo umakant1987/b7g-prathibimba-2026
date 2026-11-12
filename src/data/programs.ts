@@ -34,8 +34,8 @@ function categorize(type: string | null | undefined): ProgramCategory {
   if (/drama|skit/.test(t)) return 'drama';
   if (/dance/.test(t)) return 'dance';
   if (/sing|song|violin|flute|instrumental|jamming/.test(t)) return 'music';
-  if (/speech|recital/.test(t)) return 'talks';
-  if (/ceremony|invocation|flag|thanks/.test(t)) return 'ceremony';
+  if (/speech|recital|address|interaction|samvada/.test(t)) return 'talks';
+  if (/ceremony|invocation|flag|thanks|lamp|inauguration|arrival/.test(t)) return 'ceremony';
   return 'more';
 }
 

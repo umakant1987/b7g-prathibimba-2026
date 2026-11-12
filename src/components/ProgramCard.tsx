@@ -2,7 +2,15 @@ import { motion } from 'framer-motion';
 import { Clock } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../data/translations';
-import type { Program } from '../types';
+import type { Language, Program } from '../types';
+
+/** "16:40" → "4:40 PM" (English) / "ಸಂಜೆ 4:40" (Kannada). */
+export function formatClock(time: string, language: Language): string {
+  const [h, m] = time.split(':').map(Number);
+  const hm = `${((h + 11) % 12) + 1}:${String(m).padStart(2, '0')}`;
+  if (language === 'kn') return `${h < 12 ? 'ಬೆಳಿಗ್ಗೆ' : h < 16 ? 'ಮಧ್ಯಾಹ್ನ' : h < 20 ? 'ಸಂಜೆ' : 'ರಾತ್ರಿ'} ${hm}`;
+  return `${hm} ${h < 12 ? 'AM' : 'PM'}`;
+}
 
 interface ProgramCardProps {
   program: Program;
@@ -21,7 +29,7 @@ const CATEGORY_COLORS: Record<Program['category'], string> = {
 };
 
 export function ProgramCard({ program, isLive, isUpNext }: ProgramCardProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <motion.li
@@ -55,9 +63,9 @@ export function ProgramCard({ program, isLive, isUpNext }: ProgramCardProps) {
             {t(translations.schedule.categories[program.category])}
           </span>
           {program.startTime && program.endTime && (
-            <span className="inline-flex items-center gap-1.5 text-xs text-cream/60">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-light tabular-nums">
               <Clock size={13} />
-              {program.startTime} – {program.endTime}
+              {formatClock(program.startTime, language)} – {formatClock(program.endTime, language)}
             </span>
           )}
         </div>

@@ -40,7 +40,7 @@ Neernalli Ramakrishna (ನೀರ್ನಳ್ಳಿ ರಾಮಕೃಷ್ಣ) is 
 
 ## What is his role and connection to B7G Kannada Rajyotsava? When is he coming?
 
-Shri Neernalli Ramakrishna is a **Chief Guest** at B7G Kannada Rajyotsava 2026, alongside Shri Dharmendra Kumar Arenahalli, for the **morning** programme on **Sunday, 15 November 2026** at Brigade 7 Gardens: the guest talk from 10 to 11 AM, followed by the inauguration of B7G Santhe.
+Shri Neernalli Ramakrishna is a **Chief Guest** at B7G Kannada Rajyotsava 2026, alongside Shri Dharmendra Kumar Arenahalli, for the **morning** programme on **Sunday, 15 November 2026** at Brigade 7 Gardens: the morning starts with breakfast with the Chief Guests at 8:45 AM; the Chief Guests take part in Samvada, an interaction with residents, from 9:30 to 10:30 AM, then meet the GSS team and inaugurate B7G Santhe at 10:45 AM.
 
 ## Where is he from? Early life
 

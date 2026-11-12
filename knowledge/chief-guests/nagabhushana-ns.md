@@ -40,7 +40,7 @@ Nagabhushana NS is a Kannada actor known for his natural comic timing and relata
 
 ## What is his role at B7G Kannada Rajyotsava? Is he a Chief Guest? When is he coming?
 
-Nagabhushana NS is the **Chief Guest for the evening programme** of B7G Kannada Rajyotsava 2026 on **Sunday, 15 November 2026**, at Brigade 7 Gardens. The evening starts at 5:30 PM with cultural programmes, followed by sand art and a jamming session. The morning Chief Guests are Dharmendra Kumar Arenahalli and Neernalli Ramakrishna. (He was announced earlier as a Special Guest; he is now an evening Chief Guest.) The time he appears hasn't been published yet.
+Nagabhushana NS is the **Chief Guest for the evening programme** of B7G Kannada Rajyotsava 2026 on **Sunday, 15 November 2026**, at Brigade 7 Gardens. The evening cultural programme starts at 4:40 PM, followed by sand art (7:05 – 8:00 PM) and jamming (8:45 – 10:30 PM). The exact time he appears has not been published. The morning Chief Guests are Dharmendra Kumar Arenahalli and Neernalli Ramakrishna. (He was announced earlier as a Special Guest; he is now an evening Chief Guest.) The time he appears hasn't been published yet.
 
 ## What is he known for?
 
