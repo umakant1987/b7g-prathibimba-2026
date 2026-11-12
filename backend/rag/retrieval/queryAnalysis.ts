@@ -171,9 +171,20 @@ const GENERIC_SCHEDULE_TERMS = new Set([
   'happening', 'programme', 'program', 'schedule', 'performing', 'perform', 'performance', 'performer', 'lineup',
   'line', 'going', 'event', 'item', 'there', 'session', 'day', 'today', 'morning', 'afternoon', 'evening', 'night',
   'ಕಾರ್ಯಕ್ರಮ', 'ಬೆಳಿಗ್ಗೆ', 'ಬೆಳಗ್ಗೆ', 'ಮಧ್ಯಾಹ್ನ', 'ಸಂಜೆ', 'ರಾತ್ರಿ',
+  // When / what time / start — e.g. "ಸಂಜೆಯ ಕಾರ್ಯಕ್ರಮ ಎಷ್ಟು ಗಂಟೆಗೆ ಶುರು?"
+  'when', 'time', 'start', 'starts', 'begin', 'begins',
+  'ಎಷ್ಟು', 'ಗಂಟೆ', 'ಸಮಯ', 'ಶುರು', 'ಆರಂಭ', 'ಪ್ರಾರಂಭ', 'ಯಾವಾಗ', 'ಏನಿದೆ', 'ಏನು', 'ವೇಳಾಪಟ್ಟಿ',
 ]);
+
+/** Kannada words above as roots, so suffixed forms (ಸಂಜೆಯ, ಗಂಟೆಗೆ, ಕಾರ್ಯಕ್ರಮಗಳು) count too. */
+const GENERIC_KANNADA_ROOTS = [...GENERIC_SCHEDULE_TERMS].filter((t) => KANNADA.test(t));
 
 /** Generic schedule words, day numbers and month names. */
 export function isGenericScheduleTerm(term: string): boolean {
-  return GENERIC_SCHEDULE_TERMS.has(term) || /^\d{1,4}$/.test(term) || term in MONTHS;
+  return (
+    GENERIC_SCHEDULE_TERMS.has(term) ||
+    /^\d{1,4}$/.test(term) ||
+    term in MONTHS ||
+    (KANNADA.test(term) && GENERIC_KANNADA_ROOTS.some((root) => term.startsWith(root)))
+  );
 }

@@ -34,7 +34,11 @@
       "item_count": 7,
       "start_time": "08:30",
       "end_time": "11:00",
-      "content": "The morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026 runs from 8:30 AM to 11:00 AM and has 7 items, in this order:\n1. 8:30 AM – 8:45 AM: Arrival of Guests\n2. 8:45 AM – 9:00 AM: Breakfast with the Chief Guests\n3. 9:10 AM – 9:15 AM: Invocation Song by Poornima & Lamp Lighting Ceremony\n4. 9:20 AM – 9:25 AM: Welcome Address by the President\n5. 9:30 AM – 10:30 AM: Samvada (Interaction with the Chief Guests)\n6. 10:30 AM – 10:45 AM: Chief Guests Interaction with GSS Team\n7. 10:45 AM – 11:00 AM: Inauguration of B7G Sante"
+      "aliases": [
+        "ಬೆಳಗಿನ ಕಾರ್ಯಕ್ರಮ",
+        "ಬೆಳಿಗ್ಗೆಯ ಕಾರ್ಯಕ್ರಮ"
+      ],
+      "content": "The morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026 runs from 8:30 AM to 11:00 AM and has 7 items, in this order:\n1. 8:30 AM – 8:45 AM: Arrival of Guests\n2. 8:45 AM – 9:00 AM: Breakfast with the Chief Guests\n3. 9:10 AM – 9:15 AM: Invocation Song by Poornima & Lamp Lighting Ceremony\n4. 9:20 AM – 9:25 AM: Welcome Address by the President\n5. 9:30 AM – 10:30 AM: Samvada (Interaction with the Chief Guests)\n6. 10:30 AM – 10:45 AM: Chief Guests Interaction with GSS Team\n7. 10:45 AM – 11:00 AM: Inauguration of B7G Sante\n\nಕನ್ನಡದಲ್ಲಿ: ನವೆಂಬರ್ 15, 2026 (ಭಾನುವಾರ) ಬೆಳಗಿನ ಕಾರ್ಯಕ್ರಮ ಬೆಳಿಗ್ಗೆ 8:30ಕ್ಕೆ ಶುರುವಾಗಿ ಬೆಳಿಗ್ಗೆ 11:00ಕ್ಕೆ ಮುಗಿಯುತ್ತದೆ: ಬೆಳಿಗ್ಗೆ 8:30 ಅತಿಥಿಗಳ ಆಗಮನ; ಬೆಳಿಗ್ಗೆ 8:45 ಮುಖ್ಯ ಅತಿಥಿಗಳೊಂದಿಗೆ ಉಪಾಹಾರ; ಬೆಳಿಗ್ಗೆ 9:10 ಪ್ರಾರ್ಥನೆ; ಬೆಳಿಗ್ಗೆ 9:20 ಸ್ವಾಗತ ಭಾಷಣ; ಬೆಳಿಗ್ಗೆ 9:30 ಸಂವಾದ; ಬೆಳಿಗ್ಗೆ 10:30 ಜಿಎಸ್ಎಸ್ ತಂಡ; ಬೆಳಿಗ್ಗೆ 10:45 B7G ಸಂತೆ."
     },
     {
       "category": "programme",
@@ -52,7 +56,8 @@
       "aliases": [
         "Arrival of Guests",
         "guest arrival",
-        "arrival"
+        "arrival",
+        "ಅತಿಥಿಗಳ ಆಗಮನ"
       ],
       "event_date": "2026-11-15",
       "session": "morning",
@@ -62,7 +67,7 @@
       "programme_listing": "Arrival of Guests",
       "start_time": "08:30",
       "end_time": "08:45",
-      "content": "Arrival of Guests is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 8:30 AM to 8:45 AM (15 min). Official listing: \"Arrival of Guests\". It is item 1 of 7 in that session. It is the first item of the morning session and before Breakfast with the Chief Guests."
+      "content": "Arrival of Guests is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 8:30 AM to 8:45 AM (15 min). Official listing: \"Arrival of Guests\". It is item 1 of 7 in that session. It is the first item of the morning session and before Breakfast with the Chief Guests. ಕನ್ನಡದಲ್ಲಿ: ಅತಿಥಿಗಳ ಆಗಮನ — ಬೆಳಿಗ್ಗೆ 8:30 ರಿಂದ ಬೆಳಿಗ್ಗೆ 8:45."
     },
     {
       "category": "programme",
@@ -79,7 +84,9 @@
       "entity_name": "Breakfast with the Chief Guests",
       "aliases": [
         "Breakfast with the Chief Guests",
-        "breakfast"
+        "breakfast",
+        "ಮುಖ್ಯ ಅತಿಥಿಗಳೊಂದಿಗೆ ಉಪಾಹಾರ",
+        "ತಿಂಡಿ"
       ],
       "event_date": "2026-11-15",
       "session": "morning",
@@ -89,7 +96,7 @@
       "programme_listing": "Breakfast with the Chief Guests",
       "start_time": "08:45",
       "end_time": "09:00",
-      "content": "Breakfast with the Chief Guests is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 8:45 AM to 9:00 AM (15 min). Official listing: \"Breakfast with the Chief Guests\". It is item 2 of 7 in that session. It comes after Arrival of Guests and before Invocation Song by Poornima & Lamp Lighting Ceremony."
+      "content": "Breakfast with the Chief Guests is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 8:45 AM to 9:00 AM (15 min). Official listing: \"Breakfast with the Chief Guests\". It is item 2 of 7 in that session. It comes after Arrival of Guests and before Invocation Song by Poornima & Lamp Lighting Ceremony. ಕನ್ನಡದಲ್ಲಿ: ಮುಖ್ಯ ಅತಿಥಿಗಳೊಂದಿಗೆ ಉಪಾಹಾರ — ಬೆಳಿಗ್ಗೆ 8:45 ರಿಂದ ಬೆಳಿಗ್ಗೆ 9:00."
     },
     {
       "category": "programme",
@@ -112,7 +119,11 @@
         "lamp lighting",
         "lighting the lamp",
         "deepa",
-        "poornima"
+        "poornima",
+        "ಪ್ರಾರ್ಥನೆ",
+        "ದೀಪ ಬೆಳಗಿಸುವುದು",
+        "ಉದ್ಘಾಟನೆ",
+        "ಪೂರ್ಣಿಮಾ"
       ],
       "event_date": "2026-11-15",
       "session": "morning",
@@ -122,7 +133,7 @@
       "programme_listing": "Invocation Song by Poornima & Lamp Lighting Ceremony",
       "start_time": "09:10",
       "end_time": "09:15",
-      "content": "Invocation Song by Poornima & Lamp Lighting Ceremony is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 9:10 AM to 9:15 AM (5 min). Official listing: \"Invocation Song by Poornima & Lamp Lighting Ceremony\". It is item 3 of 7 in that session. It comes after Breakfast with the Chief Guests and before Welcome Address by the President."
+      "content": "Invocation Song by Poornima & Lamp Lighting Ceremony is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 9:10 AM to 9:15 AM (5 min). Official listing: \"Invocation Song by Poornima & Lamp Lighting Ceremony\". It is item 3 of 7 in that session. It comes after Breakfast with the Chief Guests and before Welcome Address by the President. ಕನ್ನಡದಲ್ಲಿ: ಪ್ರಾರ್ಥನೆ — ಬೆಳಿಗ್ಗೆ 9:10 ರಿಂದ ಬೆಳಿಗ್ಗೆ 9:15."
     },
     {
       "category": "programme",
@@ -141,7 +152,9 @@
         "Welcome Address by the President",
         "welcome address",
         "welcome speech",
-        "president"
+        "president",
+        "ಸ್ವಾಗತ ಭಾಷಣ",
+        "ಅಧ್ಯಕ್ಷರು"
       ],
       "event_date": "2026-11-15",
       "session": "morning",
@@ -151,7 +164,7 @@
       "programme_listing": "Welcome Address by the President",
       "start_time": "09:20",
       "end_time": "09:25",
-      "content": "Welcome Address by the President is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 9:20 AM to 9:25 AM (5 min). Official listing: \"Welcome Address by the President\". It is item 4 of 7 in that session. It comes after Invocation Song by Poornima & Lamp Lighting Ceremony and before Samvada (Interaction with the Chief Guests)."
+      "content": "Welcome Address by the President is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 9:20 AM to 9:25 AM (5 min). Official listing: \"Welcome Address by the President\". It is item 4 of 7 in that session. It comes after Invocation Song by Poornima & Lamp Lighting Ceremony and before Samvada (Interaction with the Chief Guests). ಕನ್ನಡದಲ್ಲಿ: ಸ್ವಾಗತ ಭಾಷಣ — ಬೆಳಿಗ್ಗೆ 9:20 ರಿಂದ ಬೆಳಿಗ್ಗೆ 9:25."
     },
     {
       "category": "programme",
@@ -173,7 +186,9 @@
         "ಸಂವಾದ",
         "interaction with the chief guests",
         "guest talk",
-        "chief guest talk"
+        "chief guest talk",
+        "ಮುಖ್ಯ ಅತಿಥಿಗಳೊಂದಿಗೆ ಸಂವಾದ",
+        "ಅತಿಥಿಗಳ ಮಾತು"
       ],
       "event_date": "2026-11-15",
       "session": "morning",
@@ -183,7 +198,7 @@
       "programme_listing": "Samvada (Interaction with the Chief Guests)",
       "start_time": "09:30",
       "end_time": "10:30",
-      "content": "Samvada (Interaction with the Chief Guests) is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 9:30 AM to 10:30 AM (1 hr). Official listing: \"Samvada (Interaction with the Chief Guests)\". It is item 5 of 7 in that session. It comes after Welcome Address by the President and before Chief Guests Interaction with GSS Team. The Chief Guests for the morning are Shri Dharmendra Kumar Arenahalli and Shri Neernalli Ramakrishna."
+      "content": "Samvada (Interaction with the Chief Guests) is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 9:30 AM to 10:30 AM (1 hr). Official listing: \"Samvada (Interaction with the Chief Guests)\". It is item 5 of 7 in that session. It comes after Welcome Address by the President and before Chief Guests Interaction with GSS Team. The Chief Guests for the morning are Shri Dharmendra Kumar Arenahalli and Shri Neernalli Ramakrishna. ಕನ್ನಡದಲ್ಲಿ: ಸಂವಾದ — ಬೆಳಿಗ್ಗೆ 9:30 ರಿಂದ ಬೆಳಿಗ್ಗೆ 10:30."
     },
     {
       "category": "programme",
@@ -201,7 +216,8 @@
       "aliases": [
         "Chief Guests Interaction with GSS Team",
         "gss team",
-        "gss"
+        "gss",
+        "ಜಿಎಸ್ಎಸ್ ತಂಡ"
       ],
       "event_date": "2026-11-15",
       "session": "morning",
@@ -211,7 +227,7 @@
       "programme_listing": "Chief Guests Interaction with GSS Team",
       "start_time": "10:30",
       "end_time": "10:45",
-      "content": "Chief Guests Interaction with GSS Team is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 10:30 AM to 10:45 AM (15 min). Official listing: \"Chief Guests Interaction with GSS Team\". It is item 6 of 7 in that session. It comes after Samvada (Interaction with the Chief Guests) and before Inauguration of B7G Sante."
+      "content": "Chief Guests Interaction with GSS Team is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 10:30 AM to 10:45 AM (15 min). Official listing: \"Chief Guests Interaction with GSS Team\". It is item 6 of 7 in that session. It comes after Samvada (Interaction with the Chief Guests) and before Inauguration of B7G Sante. ಕನ್ನಡದಲ್ಲಿ: ಜಿಎಸ್ಎಸ್ ತಂಡ — ಬೆಳಿಗ್ಗೆ 10:30 ರಿಂದ ಬೆಳಿಗ್ಗೆ 10:45."
     },
     {
       "category": "programme",
@@ -233,7 +249,10 @@
         "B7G Santhe",
         "Santhe",
         "santhe inauguration",
-        "Taste of Karnataka"
+        "Taste of Karnataka",
+        "B7G ಸಂತೆ",
+        "ಸಂತೆ ಉದ್ಘಾಟನೆ",
+        "ಸಂತೆ"
       ],
       "event_date": "2026-11-15",
       "session": "morning",
@@ -243,7 +262,7 @@
       "programme_listing": "Inauguration of B7G Sante",
       "start_time": "10:45",
       "end_time": "11:00",
-      "content": "Inauguration of B7G Sante is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 10:45 AM to 11:00 AM (15 min). Official listing: \"Inauguration of B7G Sante\". It is item 7 of 7 in that session. It comes after Chief Guests Interaction with GSS Team and is the last item of the morning session. B7G Santhe (the community market of stalls run by B7G residents) stays open until the evening."
+      "content": "Inauguration of B7G Sante is part of the programme in the morning session (Morning Session) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 10:45 AM to 11:00 AM (15 min). Official listing: \"Inauguration of B7G Sante\". It is item 7 of 7 in that session. It comes after Chief Guests Interaction with GSS Team and is the last item of the morning session. B7G Santhe (the community market of stalls run by B7G residents) stays open until the evening. ಕನ್ನಡದಲ್ಲಿ: B7G ಸಂತೆ — ಬೆಳಿಗ್ಗೆ 10:45 ರಿಂದ ಬೆಳಿಗ್ಗೆ 11:00."
     },
     {
       "category": "programme",
@@ -264,7 +283,11 @@
       "item_count": 14,
       "start_time": "16:40",
       "end_time": "22:30",
-      "content": "The evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026 runs from 4:40 PM to 10:30 PM and has 14 items, in this order:\n1. 4:40 PM – 4:50 PM: Jai Bharat Juniors – Group song\n2. 4:50 PM – 5:00 PM: Danzo Chinnara Balaga – Kids dance\n3. 5:00 PM – 5:10 PM: Diganth – Flute\n4. 5:10 PM – 5:30 PM: Soul Stretch Yoga and Fitness Studio – Group yoga performance\n5. 5:30 PM – 5:40 PM: Double Chords – Instrumental\n6. 5:40 PM – 5:50 PM: SriRanga Group – Singing\n7. 5:50 PM – 6:00 PM: Tanya PV – Violin instrumental\n8. 6:00 PM – 6:15 PM: Kannadave Satya – Dance drama\n9. 6:15 PM – 6:25 PM: Chinnara Aatagalu – Dance cum skit\n10. 6:25 PM – 6:35 PM: Geetha Guchcha Group – Naada Geethe (patriotic song)\n11. 6:35 PM – 6:45 PM: Kannada Chinnaru – Singing\n12. 6:45 PM – 7:05 PM: Rhythm of B7G – Dance drama\n13. 7:05 PM – 8:00 PM: Sand Art\n14. 8:45 PM – 10:30 PM: Jamming"
+      "aliases": [
+        "ಸಂಜೆಯ ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮ",
+        "ಸಂಜೆಯ ಕಾರ್ಯಕ್ರಮ"
+      ],
+      "content": "The evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026 runs from 4:40 PM to 10:30 PM and has 14 items, in this order:\n1. 4:40 PM – 4:50 PM: Jai Bharat Juniors – Group song\n2. 4:50 PM – 5:00 PM: Danzo Chinnara Balaga – Kids dance\n3. 5:00 PM – 5:10 PM: Diganth – Flute\n4. 5:10 PM – 5:30 PM: Soul Stretch Yoga and Fitness Studio – Group yoga performance\n5. 5:30 PM – 5:40 PM: Double Chords – Instrumental\n6. 5:40 PM – 5:50 PM: SriRanga Group – Singing\n7. 5:50 PM – 6:00 PM: Tanya PV – Violin instrumental\n8. 6:00 PM – 6:15 PM: Kannadave Satya – Dance drama\n9. 6:15 PM – 6:25 PM: Chinnara Aatagalu – Dance cum skit\n10. 6:25 PM – 6:35 PM: Geetha Guchcha Group – Naada Geethe (patriotic song)\n11. 6:35 PM – 6:45 PM: Kannada Chinnaru – Singing\n12. 6:45 PM – 7:05 PM: Rhythm of B7G – Dance drama\n13. 7:05 PM – 8:00 PM: Sand Art\n14. 8:45 PM – 10:30 PM: Jamming\n\nಕನ್ನಡದಲ್ಲಿ: ನವೆಂಬರ್ 15, 2026 (ಭಾನುವಾರ) ಸಂಜೆಯ ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮ ಸಂಜೆ 4:40ಕ್ಕೆ ಶುರುವಾಗಿ ರಾತ್ರಿ 10:30ಕ್ಕೆ ಮುಗಿಯುತ್ತದೆ: ಸಂಜೆ 4:40 ಜೈ ಭಾರತ್ ಜೂನಿಯರ್ಸ್; ಸಂಜೆ 4:50 ಡಾನ್ಜೋ ಚಿಣ್ಣರ ಬಳಗ; ಸಂಜೆ 5:00 ದಿಗಂತ್; ಸಂಜೆ 5:10 ಯೋಗ; ಸಂಜೆ 5:30 ಡಬಲ್ ಕಾರ್ಡ್ಸ್; ಸಂಜೆ 5:40 ಶ್ರೀರಂಗ ತಂಡ; ಸಂಜೆ 5:50 ತಾನ್ಯಾ; ಸಂಜೆ 6:00 ಕನ್ನಡವೇ ಸತ್ಯ; ಸಂಜೆ 6:15 ಚಿಣ್ಣರ ಆಟಗಳು; ಸಂಜೆ 6:25 ಗೀತ ಗುಚ್ಛ; ಸಂಜೆ 6:35 ಕನ್ನಡ ಚಿಣ್ಣರು; ಸಂಜೆ 6:45 ರಿದಮ್ ಆಫ್ B7G; ಸಂಜೆ 7:05 ಮರಳು ಕಲೆ; ರಾತ್ರಿ 8:45 ಜಾಮಿಂಗ್."
     },
     {
       "category": "programme",
@@ -282,7 +305,9 @@
       "aliases": [
         "Jai Bharat Juniors – Group song",
         "Jai Bharat Juniors",
-        "jai bharat"
+        "jai bharat",
+        "ಜೈ ಭಾರತ್ ಜೂನಿಯರ್ಸ್",
+        "ಸಮೂಹ ಗೀತೆ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -292,7 +317,7 @@
       "programme_listing": "Jai Bharat Juniors – Group song",
       "start_time": "16:40",
       "end_time": "16:50",
-      "content": "Jai Bharat Juniors will present a group song performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 4:40 PM to 4:50 PM (10 min). Official listing: \"Jai Bharat Juniors – Group song\". It is item 1 of 14 in that session. It is the first item of the evening session and before Danzo Chinnara Balaga – Kids dance."
+      "content": "Jai Bharat Juniors will present a group song performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 4:40 PM to 4:50 PM (10 min). Official listing: \"Jai Bharat Juniors – Group song\". It is item 1 of 14 in that session. It is the first item of the evening session and before Danzo Chinnara Balaga – Kids dance. ಕನ್ನಡದಲ್ಲಿ: ಜೈ ಭಾರತ್ ಜೂನಿಯರ್ಸ್ — ಸಂಜೆ 4:40 ರಿಂದ ಸಂಜೆ 4:50."
     },
     {
       "category": "programme",
@@ -311,7 +336,9 @@
         "Danzo Chinnara Balaga – Kids dance",
         "Danzo Chinnara Balaga",
         "danzo",
-        "chinnara balaga"
+        "chinnara balaga",
+        "ಡಾನ್ಜೋ ಚಿಣ್ಣರ ಬಳಗ",
+        "ಮಕ್ಕಳ ನೃತ್ಯ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -321,7 +348,7 @@
       "programme_listing": "Danzo Chinnara Balaga – Kids dance",
       "start_time": "16:50",
       "end_time": "17:00",
-      "content": "Danzo Chinnara Balaga will present a kids dance performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 4:50 PM to 5:00 PM (10 min). Official listing: \"Danzo Chinnara Balaga – Kids dance\". It is item 2 of 14 in that session. It comes after Jai Bharat Juniors – Group song and before Diganth – Flute."
+      "content": "Danzo Chinnara Balaga will present a kids dance performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 4:50 PM to 5:00 PM (10 min). Official listing: \"Danzo Chinnara Balaga – Kids dance\". It is item 2 of 14 in that session. It comes after Jai Bharat Juniors – Group song and before Diganth – Flute. ಕನ್ನಡದಲ್ಲಿ: ಡಾನ್ಜೋ ಚಿಣ್ಣರ ಬಳಗ — ಸಂಜೆ 4:50 ರಿಂದ ಸಂಜೆ 5:00."
     },
     {
       "category": "programme",
@@ -339,7 +366,9 @@
       "aliases": [
         "Diganth – Flute",
         "Diganth",
-        "digant"
+        "digant",
+        "ದಿಗಂತ್",
+        "ಕೊಳಲು"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -349,7 +378,7 @@
       "programme_listing": "Diganth – Flute",
       "start_time": "17:00",
       "end_time": "17:10",
-      "content": "Diganth will present a flute performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 5:00 PM to 5:10 PM (10 min). Official listing: \"Diganth – Flute\". It is item 3 of 14 in that session. It comes after Danzo Chinnara Balaga – Kids dance and before Soul Stretch Yoga and Fitness Studio – Group yoga performance."
+      "content": "Diganth will present a flute performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 5:00 PM to 5:10 PM (10 min). Official listing: \"Diganth – Flute\". It is item 3 of 14 in that session. It comes after Danzo Chinnara Balaga – Kids dance and before Soul Stretch Yoga and Fitness Studio – Group yoga performance. ಕನ್ನಡದಲ್ಲಿ: ದಿಗಂತ್ — ಸಂಜೆ 5:00 ರಿಂದ ಸಂಜೆ 5:10."
     },
     {
       "category": "programme",
@@ -370,7 +399,9 @@
         "soul stretch",
         "soul strech",
         "soul stretch yoga",
-        "yoga"
+        "yoga",
+        "ಯೋಗ",
+        "ಯೋಗ ಪ್ರದರ್ಶನ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -380,7 +411,7 @@
       "programme_listing": "Soul Stretch Yoga and Fitness Studio – Group yoga performance",
       "start_time": "17:10",
       "end_time": "17:30",
-      "content": "Soul Stretch Yoga and Fitness Studio will present a group yoga performance performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 5:10 PM to 5:30 PM (20 min). Official listing: \"Soul Stretch Yoga and Fitness Studio – Group yoga performance\". It is item 4 of 14 in that session. It comes after Diganth – Flute and before Double Chords – Instrumental."
+      "content": "Soul Stretch Yoga and Fitness Studio will present a group yoga performance performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 5:10 PM to 5:30 PM (20 min). Official listing: \"Soul Stretch Yoga and Fitness Studio – Group yoga performance\". It is item 4 of 14 in that session. It comes after Diganth – Flute and before Double Chords – Instrumental. ಕನ್ನಡದಲ್ಲಿ: ಯೋಗ — ಸಂಜೆ 5:10 ರಿಂದ ಸಂಜೆ 5:30."
     },
     {
       "category": "programme",
@@ -398,7 +429,9 @@
       "aliases": [
         "Double Chords – Instrumental",
         "Double Chords",
-        "double chord"
+        "double chord",
+        "ಡಬಲ್ ಕಾರ್ಡ್ಸ್",
+        "ವಾದ್ಯ ಸಂಗೀತ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -408,7 +441,7 @@
       "programme_listing": "Double Chords – Instrumental",
       "start_time": "17:30",
       "end_time": "17:40",
-      "content": "Double Chords will present a instrumental performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 5:30 PM to 5:40 PM (10 min). Official listing: \"Double Chords – Instrumental\". It is item 5 of 14 in that session. It comes after Soul Stretch Yoga and Fitness Studio – Group yoga performance and before SriRanga Group – Singing."
+      "content": "Double Chords will present a instrumental performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 5:30 PM to 5:40 PM (10 min). Official listing: \"Double Chords – Instrumental\". It is item 5 of 14 in that session. It comes after Soul Stretch Yoga and Fitness Studio – Group yoga performance and before SriRanga Group – Singing. ಕನ್ನಡದಲ್ಲಿ: ಡಬಲ್ ಕಾರ್ಡ್ಸ್ — ಸಂಜೆ 5:30 ರಿಂದ ಸಂಜೆ 5:40."
     },
     {
       "category": "programme",
@@ -427,7 +460,9 @@
         "SriRanga Group – Singing",
         "SriRanga Group",
         "sriranga",
-        "sri ranga group"
+        "sri ranga group",
+        "ಶ್ರೀರಂಗ ತಂಡ",
+        "ಗಾಯನ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -437,7 +472,7 @@
       "programme_listing": "SriRanga Group – Singing",
       "start_time": "17:40",
       "end_time": "17:50",
-      "content": "SriRanga Group will present a singing performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 5:40 PM to 5:50 PM (10 min). Official listing: \"SriRanga Group – Singing\". It is item 6 of 14 in that session. It comes after Double Chords – Instrumental and before Tanya PV – Violin instrumental."
+      "content": "SriRanga Group will present a singing performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 5:40 PM to 5:50 PM (10 min). Official listing: \"SriRanga Group – Singing\". It is item 6 of 14 in that session. It comes after Double Chords – Instrumental and before Tanya PV – Violin instrumental. ಕನ್ನಡದಲ್ಲಿ: ಶ್ರೀರಂಗ ತಂಡ — ಸಂಜೆ 5:40 ರಿಂದ ಸಂಜೆ 5:50."
     },
     {
       "category": "programme",
@@ -456,7 +491,10 @@
         "Tanya PV – Violin instrumental",
         "Tanya PV",
         "tanya",
-        "violin"
+        "violin",
+        "ತಾನ್ಯಾ",
+        "ಪಿಟೀಲು",
+        "ವಯಲಿನ್"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -466,7 +504,7 @@
       "programme_listing": "Tanya PV – Violin instrumental",
       "start_time": "17:50",
       "end_time": "18:00",
-      "content": "Tanya PV will present a violin instrumental performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 5:50 PM to 6:00 PM (10 min). Official listing: \"Tanya PV – Violin instrumental\". It is item 7 of 14 in that session. It comes after SriRanga Group – Singing and before Kannadave Satya – Dance drama."
+      "content": "Tanya PV will present a violin instrumental performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 5:50 PM to 6:00 PM (10 min). Official listing: \"Tanya PV – Violin instrumental\". It is item 7 of 14 in that session. It comes after SriRanga Group – Singing and before Kannadave Satya – Dance drama. ಕನ್ನಡದಲ್ಲಿ: ತಾನ್ಯಾ — ಸಂಜೆ 5:50 ರಿಂದ ಸಂಜೆ 6:00."
     },
     {
       "category": "programme",
@@ -484,7 +522,9 @@
       "aliases": [
         "Kannadave Satya – Dance drama",
         "Kannadave Satya",
-        "kannadave sathya"
+        "kannadave sathya",
+        "ಕನ್ನಡವೇ ಸತ್ಯ",
+        "ನೃತ್ಯ ರೂಪಕ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -494,7 +534,7 @@
       "programme_listing": "Kannadave Satya – Dance drama",
       "start_time": "18:00",
       "end_time": "18:15",
-      "content": "Kannadave Satya will present a dance drama performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 6:00 PM to 6:15 PM (15 min). Official listing: \"Kannadave Satya – Dance drama\". It is item 8 of 14 in that session. It comes after Tanya PV – Violin instrumental and before Chinnara Aatagalu – Dance cum skit."
+      "content": "Kannadave Satya will present a dance drama performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 6:00 PM to 6:15 PM (15 min). Official listing: \"Kannadave Satya – Dance drama\". It is item 8 of 14 in that session. It comes after Tanya PV – Violin instrumental and before Chinnara Aatagalu – Dance cum skit. ಕನ್ನಡದಲ್ಲಿ: ಕನ್ನಡವೇ ಸತ್ಯ — ಸಂಜೆ 6:00 ರಿಂದ ಸಂಜೆ 6:15."
     },
     {
       "category": "programme",
@@ -512,7 +552,9 @@
       "aliases": [
         "Chinnara Aatagalu – Dance cum skit",
         "Chinnara Aatagalu",
-        "chinnara atagalu"
+        "chinnara atagalu",
+        "ಚಿಣ್ಣರ ಆಟಗಳು",
+        "ನೃತ್ಯ ಮತ್ತು ಕಿರು ನಾಟಕ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -522,7 +564,7 @@
       "programme_listing": "Chinnara Aatagalu – Dance cum skit",
       "start_time": "18:15",
       "end_time": "18:25",
-      "content": "Chinnara Aatagalu will present a dance cum skit performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 6:15 PM to 6:25 PM (10 min). Official listing: \"Chinnara Aatagalu – Dance cum skit\". It is item 9 of 14 in that session. It comes after Kannadave Satya – Dance drama and before Geetha Guchcha Group – Naada Geethe (patriotic song)."
+      "content": "Chinnara Aatagalu will present a dance cum skit performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 6:15 PM to 6:25 PM (10 min). Official listing: \"Chinnara Aatagalu – Dance cum skit\". It is item 9 of 14 in that session. It comes after Kannadave Satya – Dance drama and before Geetha Guchcha Group – Naada Geethe (patriotic song). ಕನ್ನಡದಲ್ಲಿ: ಚಿಣ್ಣರ ಆಟಗಳು — ಸಂಜೆ 6:15 ರಿಂದ ಸಂಜೆ 6:25."
     },
     {
       "category": "programme",
@@ -544,7 +586,10 @@
         "geetha guchha",
         "naada geethe",
         "nada geethe",
-        "patriotic song"
+        "patriotic song",
+        "ಗೀತ ಗುಚ್ಛ",
+        "ನಾಡಗೀತೆ",
+        "ದೇಶಭಕ್ತಿ ಗೀತೆ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -554,7 +599,7 @@
       "programme_listing": "Geetha Guchcha Group – Naada Geethe (patriotic song)",
       "start_time": "18:25",
       "end_time": "18:35",
-      "content": "Geetha Guchcha Group will present a Naada Geethe (patriotic song) performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 6:25 PM to 6:35 PM (10 min). Official listing: \"Geetha Guchcha Group – Naada Geethe (patriotic song)\". It is item 10 of 14 in that session. It comes after Chinnara Aatagalu – Dance cum skit and before Kannada Chinnaru – Singing."
+      "content": "Geetha Guchcha Group will present a Naada Geethe (patriotic song) performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 6:25 PM to 6:35 PM (10 min). Official listing: \"Geetha Guchcha Group – Naada Geethe (patriotic song)\". It is item 10 of 14 in that session. It comes after Chinnara Aatagalu – Dance cum skit and before Kannada Chinnaru – Singing. ಕನ್ನಡದಲ್ಲಿ: ಗೀತ ಗುಚ್ಛ — ಸಂಜೆ 6:25 ರಿಂದ ಸಂಜೆ 6:35."
     },
     {
       "category": "programme",
@@ -571,7 +616,9 @@
       "entity_name": "Kannada Chinnaru",
       "aliases": [
         "Kannada Chinnaru – Singing",
-        "Kannada Chinnaru"
+        "Kannada Chinnaru",
+        "ಕನ್ನಡ ಚಿಣ್ಣರು",
+        "ಗಾಯನ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -581,7 +628,7 @@
       "programme_listing": "Kannada Chinnaru – Singing",
       "start_time": "18:35",
       "end_time": "18:45",
-      "content": "Kannada Chinnaru will present a singing performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 6:35 PM to 6:45 PM (10 min). Official listing: \"Kannada Chinnaru – Singing\". It is item 11 of 14 in that session. It comes after Geetha Guchcha Group – Naada Geethe (patriotic song) and before Rhythm of B7G – Dance drama."
+      "content": "Kannada Chinnaru will present a singing performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 6:35 PM to 6:45 PM (10 min). Official listing: \"Kannada Chinnaru – Singing\". It is item 11 of 14 in that session. It comes after Geetha Guchcha Group – Naada Geethe (patriotic song) and before Rhythm of B7G – Dance drama. ಕನ್ನಡದಲ್ಲಿ: ಕನ್ನಡ ಚಿಣ್ಣರು — ಸಂಜೆ 6:35 ರಿಂದ ಸಂಜೆ 6:45."
     },
     {
       "category": "programme",
@@ -599,7 +646,9 @@
       "aliases": [
         "Rhythm of B7G – Dance drama",
         "Rhythm of B7G",
-        "rhythm"
+        "rhythm",
+        "ರಿದಮ್ ಆಫ್ B7G",
+        "ನೃತ್ಯ ರೂಪಕ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -609,7 +658,7 @@
       "programme_listing": "Rhythm of B7G – Dance drama",
       "start_time": "18:45",
       "end_time": "19:05",
-      "content": "Rhythm of B7G will present a dance drama performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 6:45 PM to 7:05 PM (20 min). Official listing: \"Rhythm of B7G – Dance drama\". It is item 12 of 14 in that session. It comes after Kannada Chinnaru – Singing and before Sand Art."
+      "content": "Rhythm of B7G will present a dance drama performance in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 6:45 PM to 7:05 PM (20 min). Official listing: \"Rhythm of B7G – Dance drama\". It is item 12 of 14 in that session. It comes after Kannada Chinnaru – Singing and before Sand Art. ಕನ್ನಡದಲ್ಲಿ: ರಿದಮ್ ಆಫ್ B7G — ಸಂಜೆ 6:45 ರಿಂದ ಸಂಜೆ 7:05."
     },
     {
       "category": "programme",
@@ -628,7 +677,10 @@
         "Sand Art",
         "sand art",
         "sand artist",
-        "raghavendra hegde"
+        "raghavendra hegde",
+        "ಮರಳು ಕಲೆ",
+        "ಮರಳು ಕಲಾವಿದ",
+        "ರಾಘವೇಂದ್ರ ಹೆಗಡೆ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -638,7 +690,7 @@
       "programme_listing": "Sand Art",
       "start_time": "19:05",
       "end_time": "20:00",
-      "content": "Sand Art is part of the programme in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 7:05 PM to 8:00 PM (55 min). Official listing: \"Sand Art\". It is item 13 of 14 in that session. It comes after Rhythm of B7G – Dance drama and before Jamming. The sand art performance is by Mr. Raghavendra Hegde, a renowned sand artist."
+      "content": "Sand Art is part of the programme in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 7:05 PM to 8:00 PM (55 min). Official listing: \"Sand Art\". It is item 13 of 14 in that session. It comes after Rhythm of B7G – Dance drama and before Jamming. The sand art performance is by Mr. Raghavendra Hegde, a renowned sand artist. ಕನ್ನಡದಲ್ಲಿ: ಮರಳು ಕಲೆ — ಸಂಜೆ 7:05 ರಿಂದ ರಾತ್ರಿ 8:00."
     },
     {
       "category": "programme",
@@ -657,7 +709,9 @@
         "Jamming",
         "jamming",
         "jam session",
-        "live band"
+        "live band",
+        "ಜಾಮಿಂಗ್",
+        "ಸಂಗೀತ"
       ],
       "event_date": "2026-11-15",
       "session": "evening",
@@ -667,7 +721,7 @@
       "programme_listing": "Jamming",
       "start_time": "20:45",
       "end_time": "22:30",
-      "content": "Jamming is part of the programme in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 8:45 PM to 10:30 PM (1 hr 45 min). Official listing: \"Jamming\". It is item 14 of 14 in that session. It comes after Sand Art and is the last item of the evening session. Jamming is the last item of the day."
+      "content": "Jamming is part of the programme in the evening session (Evening Session · Cultural Programme) of B7G Kannada Rajyotsava 2026 on Sunday, 15 November 2026, from 8:45 PM to 10:30 PM (1 hr 45 min). Official listing: \"Jamming\". It is item 14 of 14 in that session. It comes after Sand Art and is the last item of the evening session. Jamming is the last item of the day. ಕನ್ನಡದಲ್ಲಿ: ಜಾಮಿಂಗ್ — ರಾತ್ರಿ 8:45 ರಿಂದ ರಾತ್ರಿ 10:30."
     }
   ]
 }

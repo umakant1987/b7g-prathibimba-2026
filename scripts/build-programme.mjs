@@ -49,6 +49,38 @@ const SESSIONS = {
   evening: { name: 'Evening Session · Cultural Programme', items: EVENING },
 };
 
+
+/** Kannada names / words people may use, so Kannada questions find the items. */
+const KN = {
+  "Arrival of Guests": "ಅತಿಥಿಗಳ ಆಗಮನ",
+  "Breakfast with the Chief Guests": "ಮುಖ್ಯ ಅತಿಥಿಗಳೊಂದಿಗೆ ಉಪಾಹಾರ | ತಿಂಡಿ",
+  "Invocation Song by Poornima & Lamp Lighting Ceremony": "ಪ್ರಾರ್ಥನೆ | ದೀಪ ಬೆಳಗಿಸುವುದು | ಉದ್ಘಾಟನೆ | ಪೂರ್ಣಿಮಾ",
+  "Welcome Address by the President": "ಸ್ವಾಗತ ಭಾಷಣ | ಅಧ್ಯಕ್ಷರು",
+  "Samvada (Interaction with the Chief Guests)": "ಸಂವಾದ | ಮುಖ್ಯ ಅತಿಥಿಗಳೊಂದಿಗೆ ಸಂವಾದ | ಅತಿಥಿಗಳ ಮಾತು",
+  "Chief Guests Interaction with GSS Team": "ಜಿಎಸ್ಎಸ್ ತಂಡ",
+  "Inauguration of B7G Sante": "B7G ಸಂತೆ | ಸಂತೆ ಉದ್ಘಾಟನೆ | ಸಂತೆ",
+  "Jai Bharat Juniors": "ಜೈ ಭಾರತ್ ಜೂನಿಯರ್ಸ್ | ಸಮೂಹ ಗೀತೆ",
+  "Danzo Chinnara Balaga": "ಡಾನ್ಜೋ ಚಿಣ್ಣರ ಬಳಗ | ಮಕ್ಕಳ ನೃತ್ಯ",
+  "Diganth": "ದಿಗಂತ್ | ಕೊಳಲು",
+  "Soul Stretch Yoga and Fitness Studio": "ಯೋಗ | ಯೋಗ ಪ್ರದರ್ಶನ",
+  "Double Chords": "ಡಬಲ್ ಕಾರ್ಡ್ಸ್ | ವಾದ್ಯ ಸಂಗೀತ",
+  "SriRanga Group": "ಶ್ರೀರಂಗ ತಂಡ | ಗಾಯನ",
+  "Tanya PV": "ತಾನ್ಯಾ | ಪಿಟೀಲು | ವಯಲಿನ್",
+  "Kannadave Satya": "ಕನ್ನಡವೇ ಸತ್ಯ | ನೃತ್ಯ ರೂಪಕ",
+  "Chinnara Aatagalu": "ಚಿಣ್ಣರ ಆಟಗಳು | ನೃತ್ಯ ಮತ್ತು ಕಿರು ನಾಟಕ",
+  "Geetha Guchcha Group": "ಗೀತ ಗುಚ್ಛ | ನಾಡಗೀತೆ | ದೇಶಭಕ್ತಿ ಗೀತೆ",
+  "Kannada Chinnaru": "ಕನ್ನಡ ಚಿಣ್ಣರು | ಗಾಯನ",
+  "Rhythm of B7G": "ರಿದಮ್ ಆಫ್ B7G | ನೃತ್ಯ ರೂಪಕ",
+  "Sand Art": "ಮರಳು ಕಲೆ | ಮರಳು ಕಲಾವಿದ | ರಾಘವೇಂದ್ರ ಹೆಗಡೆ",
+  "Jamming": "ಜಾಮಿಂಗ್ | ಸಂಗೀತ",
+};
+/** Kannada clock: "16:40" → "ಸಂಜೆ 4:40". */
+function clockKn(t) {
+  const [h, m] = t.split(":").map(Number);
+  return `${h < 12 ? "ಬೆಳಿಗ್ಗೆ" : h < 16 ? "ಮಧ್ಯಾಹ್ನ" : h < 20 ? "ಸಂಜೆ" : "ರಾತ್ರಿ"} ${((h + 11) % 12) + 1}:${String(m).padStart(2, "0")}`;
+}
+const SESSION_KN = { morning: "ಬೆಳಗಿನ ಕಾರ್ಯಕ್ರಮ", evening: "ಸಂಜೆಯ ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮ" };
+
 const toMin = (t) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3));
 function clock(t) {
   const [h, m] = t.split(':').map(Number);
@@ -93,7 +125,11 @@ for (const [session, { name, items }] of Object.entries(SESSIONS)) {
     item_count: items.length,
     start_time: first[3],
     end_time: last[4],
-    content: `The ${session} session (${name}) of ${EVENT} on ${DAY} runs from ${clock(first[3])} to ${clock(last[4])} and has ${items.length} items, in this order:\n${allLines(items)}`,
+    aliases: [SESSION_KN[session], session === 'evening' ? 'ಸಂಜೆಯ ಕಾರ್ಯಕ್ರಮ' : 'ಬೆಳಿಗ್ಗೆಯ ಕಾರ್ಯಕ್ರಮ'],
+    content:
+      `The ${session} session (${name}) of ${EVENT} on ${DAY} runs from ${clock(first[3])} to ${clock(last[4])} and has ${items.length} items, in this order:\n${allLines(items)}\n\n` +
+      `ಕನ್ನಡದಲ್ಲಿ: ನವೆಂಬರ್ 15, 2026 (ಭಾನುವಾರ) ${SESSION_KN[session]} ${clockKn(first[3])}ಕ್ಕೆ ಶುರುವಾಗಿ ${clockKn(last[4])}ಕ್ಕೆ ಮುಗಿಯುತ್ತದೆ: ` +
+      items.map(([l, , , st]) => `${clockKn(st)} ${(KN[l] ?? l).split(' | ')[0]}`).join('; ') + '.',
   });
 
   items.forEach(([listing, performer, type, start, end, aliases = [], note], i) => {
@@ -113,7 +149,7 @@ for (const [session, { name, items }] of Object.entries(SESSIONS)) {
       subcategory: 'performance',
       entity_type: performer ? 'performer' : 'programme_item',
       entity_name: listing === 'Inauguration of B7G Sante' ? 'B7G Santhe' : performer && performer === listing ? performer : listing,
-      aliases: [...new Set([t, listing, ...aliases])],
+      aliases: [...new Set([t, listing, ...aliases, ...(KN[listing] ? KN[listing].split(' | ') : [])])],
       event_date: DATE,
       session,
       sequence: i + 1,
@@ -125,7 +161,8 @@ for (const [session, { name, items }] of Object.entries(SESSIONS)) {
       content:
         `${what} in the ${session} session (${name}) of ${EVENT} on ${DAY}, from ${clock(start)} to ${clock(end)} (${duration(start, end)}). ` +
         `Official listing: "${t}". It is item ${i + 1} of ${items.length} in that session. ${order}` +
-        (note ? ` ${note}` : ''),
+        (note ? ` ${note}` : '') +
+        (KN[listing] ? ` ಕನ್ನಡದಲ್ಲಿ: ${KN[listing].split(' | ')[0]} — ${clockKn(start)} ರಿಂದ ${clockKn(end)}.` : ''),
     });
   });
 }
