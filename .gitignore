@@ -46,3 +46,6 @@ coverage
 
 # Promo videos/GIFs (large media, not part of the site)
 promo/
+
+# Exported event feedback (personal responses — never commit)
+feedback-export/

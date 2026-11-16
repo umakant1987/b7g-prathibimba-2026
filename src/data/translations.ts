@@ -7,6 +7,7 @@ export const translations = {
     sponsors: { en: 'Sponsors', kn: 'ಪ್ರೋತ್ಸಾಹಕರು' },
     contribute: { en: 'Contribute', kn: 'ಕೊಡುಗೆ ನೀಡಿ' },
     siri: { en: 'B7G Siri', kn: 'B7G ಸಿರಿ' },
+    feedback: { en: 'Feedback', kn: 'ಅಭಿಪ್ರಾಯ' },
   },
   hero: {
     titleLines: ['ಕನ್ನಡ ನಮ್ಮ ಹೆಮ್ಮೆ', 'ಕನ್ನಡ ನಮ್ಮ ಗುರುತು', 'ಕನ್ನಡವೇ ನಮ್ಮ ಸಂಭ್ರಮ'],

@@ -12,7 +12,8 @@
     "rag:server": "node --experimental-strip-types --no-warnings=ExperimentalWarning --env-file-if-exists=.env backend/server.ts",
     "rag:ingest": "node --experimental-strip-types --no-warnings=ExperimentalWarning --env-file-if-exists=.env backend/rag/ingestion/cli.ts",
     "rag:test": "node --experimental-strip-types --no-warnings=ExperimentalWarning --test \"backend/tests/*.test.ts\"",
-    "rag:eval": "node --experimental-strip-types --no-warnings=ExperimentalWarning --env-file-if-exists=.env backend/scripts/evalLive.ts"
+    "rag:eval": "node --experimental-strip-types --no-warnings=ExperimentalWarning --env-file-if-exists=.env backend/scripts/evalLive.ts",
+    "feedback:export": "node --experimental-strip-types --no-warnings=ExperimentalWarning --env-file-if-exists=.env backend/scripts/exportFeedback.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",

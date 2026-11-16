@@ -8,5 +8,11 @@
     "api/**/*.ts": {
       "maxDuration": 60
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/feedback",
+      "destination": "/index.html"
+    }
+  ]
 }

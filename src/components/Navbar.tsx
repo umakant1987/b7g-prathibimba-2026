@@ -11,6 +11,7 @@ const NAV_LINKS: { key: keyof typeof translations.nav; href: string }[] = [
   { key: 'schedule', href: '#schedule' },
   { key: 'gallery', href: '#gallery' },
   { key: 'sponsors', href: '#sponsors' },
+  { key: 'feedback', href: '/feedback' },
 ];
 
 export function Navbar() {

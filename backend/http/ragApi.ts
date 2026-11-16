@@ -17,6 +17,7 @@ import { ClaudeAnswerModel } from '../rag/generation/llm.ts';
 import { RagService, RagUnavailableError } from '../rag/ragService.ts';
 import { SupabaseVectorStore } from '../rag/store/supabaseVectorStore.ts';
 import type { ConversationTurn } from '../rag/types.ts';
+import { parseFeedback, saveFeedback } from './feedback.ts';
 
 const MAX_BODY_BYTES = 16 * 1024;
 const MAX_QUESTION_CHARS = 1000;
@@ -82,9 +83,39 @@ export function createRagApi(config: RagConfig, rag: RagService = createRagServi
     }
   }
 
-  async function handleQuery(req: IncomingMessage, res: ServerResponse): Promise<void> {
+  function clientIp(req: IncomingMessage): string {
     const forwarded = config.server.trustProxy ? String(req.headers['x-forwarded-for'] ?? '').split(',')[0].trim() : '';
-    const ip = forwarded || req.socket.remoteAddress || 'unknown';
+    return forwarded || req.socket.remoteAddress || 'unknown';
+  }
+
+  async function handleFeedback(req: IncomingMessage, res: ServerResponse): Promise<void> {
+    if (rateLimited(clientIp(req))) {
+      send(res, 429, { error: 'rate_limited', message: 'Please wait a moment and try again.' });
+      return;
+    }
+    let body: Record<string, unknown>;
+    try {
+      body = (await readJson(req)) as Record<string, unknown>;
+    } catch (error) {
+      send(res, (error as Error).message === 'too_large' ? 413 : 400, { error: 'invalid_request', message: 'Send a JSON body.' });
+      return;
+    }
+    const parsed = parseFeedback(body);
+    if ('error' in parsed) {
+      send(res, 400, { error: 'invalid_feedback', message: parsed.error });
+      return;
+    }
+    try {
+      await saveFeedback(getServiceClient(config), parsed.entry);
+      send(res, 200, { ok: true });
+    } catch (error) {
+      logger.error('feedback save failed', (error as Error).message);
+      send(res, 503, { error: 'feedback_unavailable', message: 'Sorry, we could not save your feedback. Please try again.' });
+    }
+  }
+
+  async function handleQuery(req: IncomingMessage, res: ServerResponse): Promise<void> {
+    const ip = clientIp(req);
     if (rateLimited(ip)) {
       send(res, 429, { error: 'rate_limited', answer: "You're asking very quickly — please wait a moment and try again." });
       return;
@@ -125,6 +156,8 @@ export function createRagApi(config: RagConfig, rag: RagService = createRagServi
       res.writeHead(204).end();
     } else if (req.method === 'POST' && url.pathname === '/api/rag/query') {
       await handleQuery(req, res);
+    } else if (req.method === 'POST' && url.pathname === '/api/feedback') {
+      await handleFeedback(req, res);
     } else if (req.method === 'GET' && url.pathname === '/api/health') {
       send(res, 200, { ok: true, embeddingModel: config.embedding.model, llmModel: config.llm.model });
     } else {
